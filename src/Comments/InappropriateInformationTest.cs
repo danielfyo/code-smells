@@ -1,7 +1,7 @@
 ﻿using Xunit;
 using Xunit.Categories;
 
-namespace CodeSmells
+namespace CodeSmells.Comments
 {
     /// <summary>
     /// Any comment with information that is better registered in another system must be eliminated and your information transferred to said system.
