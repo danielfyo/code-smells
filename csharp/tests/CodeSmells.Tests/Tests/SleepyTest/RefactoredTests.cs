@@ -9,7 +9,7 @@ public class RefactoredTests
     [Fact]
     public async Task Sends_notification_in_background()
     {
-        var queue = new NotificationQueue();
+        var queue = new NotificationOutbox();
 
         queue.Enqueue("Order #1 shipped");
         await queue.WhenIdleAsync().WaitAsync(TimeSpan.FromSeconds(5));

@@ -16,7 +16,7 @@ public class ShippingLabelPrinter(ShippingOptions options)
     public string Print(string orderId, string city) => $"[{orderId}] {city} - {_rates.Cheapest(city)}";
 }
 
-internal class RateTable(ShippingOptions options)
+internal sealed class RateTable(ShippingOptions options)
 {
     public string Cheapest(string city)
     {

@@ -1,3 +1,4 @@
+using System.Globalization;
 using S = CodeSmells.CsharpSpecific.StaticMutableState.Smelly;
 using R = CodeSmells.CsharpSpecific.StaticMutableState.Refactored;
 
@@ -11,8 +12,8 @@ public class StaticMutableStateTests
         var spain = new S.InvoiceNumberGenerator("ES");
         var portugal = new S.InvoiceNumberGenerator("PT");
 
-        var first = int.Parse(spain.Next()[3..]);
-        var second = int.Parse(portugal.Next()[3..]);
+        var first = int.Parse(spain.Next()[3..], CultureInfo.InvariantCulture);
+        var second = int.Parse(portugal.Next()[3..], CultureInfo.InvariantCulture);
 
         Assert.Equal(first + 1, second); // Portugal "inherits" Spain's sequence
     }

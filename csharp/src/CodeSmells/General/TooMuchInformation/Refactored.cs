@@ -22,10 +22,8 @@ public class BankAccount(decimal overdraftLimit = 0m)
         Apply(-amount);
     }
 
-    private static void ValidatePositive(decimal amount)
-    {
-        if (amount <= 0) throw new ArgumentOutOfRangeException(nameof(amount));
-    }
+    private static void ValidatePositive(decimal amount) =>
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(amount);
 
     private void Apply(decimal signedAmount)
     {

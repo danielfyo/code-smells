@@ -16,15 +16,16 @@ public sealed class EmailChannel : INotificationChannel
 {
     public List<string> Outbox { get; } = new();
     public bool CanReach(Customer customer) => customer.Email is not null;
-    public void Send(Customer customer, Notification n) =>
-        Outbox.Add($"EMAIL to={customer.Email} subject={n.Subject} body={n.Body}");
+    public void Send(Customer customer, Notification notification) =>
+        Outbox.Add($"EMAIL to={customer.Email} subject={notification.Subject} body={notification.Body}");
 }
 
 public sealed class SmsChannel : INotificationChannel
 {
     public List<string> Log { get; } = new();
     public bool CanReach(Customer customer) => customer.Phone is not null;
-    public void Send(Customer customer, Notification n) => Log.Add($"SMS to={customer.Phone} text={n.Body}");
+    public void Send(Customer customer, Notification notification) =>
+        Log.Add($"SMS to={customer.Phone} text={notification.Body}");
 }
 
 public sealed class ShipmentNotifier(IReadOnlyList<INotificationChannel> channelsByPreference)

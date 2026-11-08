@@ -68,7 +68,7 @@ public sealed class ReceiptService
     {
         var c = CultureInfo.InvariantCulture;
         var sb = new StringBuilder();
-        sb.AppendLine($"Customer: {order.CustomerName}");
+        sb.AppendLine(c, $"Customer: {order.CustomerName}");
         foreach (var line in order.Lines)
             sb.AppendLine(string.Format(c, "{0} x{1} {2:0.00}", line.Sku, line.Quantity, line.Amount));
         sb.AppendLine(string.Format(c, "Subtotal: {0:0.00}", t.Subtotal));

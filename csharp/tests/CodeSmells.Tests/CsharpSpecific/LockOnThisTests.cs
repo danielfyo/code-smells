@@ -14,7 +14,8 @@ public class LockOnThisTests
         lock (counter) // unrelated code that "happens" to lock on the same object
         {
             adding = Task.Run(() => counter.Add(1));
-            Assert.False(adding.Wait(150), "Add should be blocked by the external lock");
+            // A bounded spin instead of Task.Wait: we cannot await while holding the lock.
+            Assert.False(SpinWait.SpinUntil(() => adding.IsCompleted, 150), "Add should be blocked by the external lock");
         }
 
         await adding;
@@ -29,7 +30,7 @@ public class LockOnThisTests
         lock (counter)
         {
             var adding = Task.Run(() => counter.Add(1));
-            Assert.True(adding.Wait(TimeSpan.FromSeconds(5)));
+            Assert.True(SpinWait.SpinUntil(() => adding.IsCompleted, TimeSpan.FromSeconds(5)));
         }
 
         Assert.Equal(1, counter.Units);

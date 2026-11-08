@@ -21,7 +21,7 @@ public class Order
     public void AddLine(string sku, int quantity, decimal unitPrice)
     {
         if (Status != OrderStatus.Draft) throw new InvalidOperationException("Order is not editable");
-        if (quantity <= 0) throw new ArgumentOutOfRangeException(nameof(quantity));
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(quantity);
         _lines.Add(new OrderLine(sku, quantity, unitPrice));
     }
 

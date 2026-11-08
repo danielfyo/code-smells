@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace CodeSmells.General.MissingExplanatoryVariables.Refactored;
 
 public sealed record Customer(DateOnly SignupDate, int OrdersLastYear, bool HasUnpaidInvoices);
@@ -23,8 +25,8 @@ public static class FreeShippingPolicy
     {
         var parts = code.Split('-');
         var country = parts[0];
-        var year = int.Parse(parts[1]);
-        var sequenceNumber = int.Parse(parts[^1]);
+        var year = int.Parse(parts[1], CultureInfo.InvariantCulture);
+        var sequenceNumber = int.Parse(parts[^1], CultureInfo.InvariantCulture);
         return (country, year, sequenceNumber);
     }
 }

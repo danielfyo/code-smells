@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Text;
 
 namespace CodeSmells.CsharpSpecific.StringConcatInLoop.Refactored;
@@ -14,7 +15,7 @@ public static class OrderCsv
         {
             csv.Append(order.Id).Append(';')
                .Append(order.Customer).Append(';')
-               .Append(order.Amount.ToString("0.00")).Append('\n');
+               .Append(order.Amount.ToString("0.00", CultureInfo.InvariantCulture)).Append('\n');
         }
         return csv.ToString();
     }

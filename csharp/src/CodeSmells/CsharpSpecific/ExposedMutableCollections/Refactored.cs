@@ -14,7 +14,7 @@ public class Order
 
     public void AddLine(string sku, int quantity, decimal unitPrice)
     {
-        if (quantity <= 0) throw new ArgumentOutOfRangeException(nameof(quantity));
+        ArgumentOutOfRangeException.ThrowIfNegativeOrZero(quantity);
         if (_lines.Count >= MaxLines) throw new InvalidOperationException("Too many lines");
         _lines.Add(new OrderLine(sku, quantity, unitPrice));
     }

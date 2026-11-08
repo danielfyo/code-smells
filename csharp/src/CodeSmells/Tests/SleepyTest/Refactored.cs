@@ -2,7 +2,7 @@ namespace CodeSmells.Tests.SleepyTest.Refactored;
 
 // REFACTOR: background work leaves an observable signal (WhenIdleAsync) that lets callers wait
 //           exactly as long as needed. Also useful in production (e.g. for a graceful shutdown).
-public class NotificationQueue
+public class NotificationOutbox
 {
     private readonly List<string> _sent = new();
     private readonly List<Task> _pending = new();

@@ -2,7 +2,7 @@ namespace CodeSmells.Tests.SleepyTest.Smelly;
 
 // SMELL (design that causes the sleepy test): work is fired off in the background "and that's it";
 //        there is no way to know when it finishes, so the test can only sleep and cross its fingers.
-public class NotificationQueue
+public class NotificationOutbox
 {
     private readonly List<string> _sent = new();
 

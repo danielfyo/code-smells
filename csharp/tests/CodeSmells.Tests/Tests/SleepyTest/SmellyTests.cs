@@ -9,7 +9,7 @@ public class SmellyTests
     [Fact]
     public void Sends_notification_in_background()
     {
-        var queue = new NotificationQueue();
+        var queue = new NotificationOutbox();
 
         queue.Enqueue("Order #1 shipped");
         Thread.Sleep(200);

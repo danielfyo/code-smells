@@ -1,4 +1,6 @@
+using System.Globalization;
 using System.Net;
+using System.Text;
 
 namespace CodeSmells.General.MultipleLanguagesInFile.Refactored;
 
@@ -26,14 +28,20 @@ public static class OrderReportTemplate
 
 public class OrderReportPage
 {
+    // The templates are parsed once and reused for every render.
+    private static readonly CompositeFormat Layout = CompositeFormat.Parse(OrderReportTemplate.Layout);
+    private static readonly CompositeFormat Row = CompositeFormat.Parse(OrderReportTemplate.Row);
+
     public string Render(IEnumerable<Order> orders)
     {
+        var culture = CultureInfo.InvariantCulture;
         var rows = orders.Select(o => string.Format(
-            OrderReportTemplate.Row,
+            culture,
+            Row,
             o.Id,
             WebUtility.HtmlEncode(o.Customer), // REFACTOR: data is always escaped.
-            o.Total.ToString("0.00")));
+            o.Total.ToString("0.00", culture)));
 
-        return string.Format(OrderReportTemplate.Layout, string.Concat(rows));
+        return string.Format(culture, Layout, string.Concat(rows));
     }
 }

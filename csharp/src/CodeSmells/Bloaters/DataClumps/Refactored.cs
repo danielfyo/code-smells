@@ -7,7 +7,7 @@ public sealed record Address(string Street, string City, string PostalCode, stri
     public bool IsDomestic => Country == "ES";
 
     public bool IsCanaryIslands =>
-        Country == "ES" && (PostalCode.StartsWith("35") || PostalCode.StartsWith("38"));
+        Country == "ES" && (PostalCode.StartsWith("35", StringComparison.Ordinal) || PostalCode.StartsWith("38", StringComparison.Ordinal));
 
     public string ToLabelLines() => $"{Street}\n{PostalCode} {City}\n{Country.ToUpperInvariant()}";
 }
