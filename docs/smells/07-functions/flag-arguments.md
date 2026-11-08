@@ -98,6 +98,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Functions/FlagArguments/`](../../../csharp/src/CodeSmells/Functions/FlagArguments/) |
 | React + TS | [`react-ts/src/smells/functions/flag-arguments/`](../../../react-ts/src/smells/functions/flag-arguments/) |
 | Go | [`go/smells/functions/flag-arguments/`](../../../go/smells/functions/flag-arguments/) |
+| Angular | [`angular/src/smells/functions/flag-arguments/`](../../../angular/src/smells/functions/flag-arguments/) |
 
 ## References
 

@@ -89,6 +89,7 @@ public class InvoicePrinter
 - C#: [`csharp/src/CodeSmells/General/HiddenLogicalDependency/`](../../../csharp/src/CodeSmells/General/HiddenLogicalDependency/)
 - React + TS: [`react-ts/src/smells/general/hidden-logical-dependency/`](../../../react-ts/src/smells/general/hidden-logical-dependency/)
 - Go: [`go/smells/general/hidden-logical-dependency/`](../../../go/smells/general/hidden-logical-dependency/)
+- Angular: [`angular/src/smells/general/hidden-logical-dependency/`](../../../angular/src/smells/general/hidden-logical-dependency/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

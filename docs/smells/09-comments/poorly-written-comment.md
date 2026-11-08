@@ -89,6 +89,7 @@ Only a person can judge whether a comment is clear: it is a natural point for co
 - C#: [`csharp/src/CodeSmells/Comments/PoorlyWrittenComment/`](../../../csharp/src/CodeSmells/Comments/PoorlyWrittenComment/)
 - React + TS: [`react-ts/src/smells/comments/poorly-written-comment/`](../../../react-ts/src/smells/comments/poorly-written-comment/)
 - Go: [`go/smells/comments/poorly-written-comment/`](../../../go/smells/comments/poorly-written-comment/)
+- Angular: [`angular/src/smells/comments/poorly-written-comment/`](../../../angular/src/smells/comments/poorly-written-comment/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

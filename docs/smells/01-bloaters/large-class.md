@@ -116,6 +116,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Bloaters/LargeClass/`](../../../csharp/src/CodeSmells/Bloaters/LargeClass/) |
 | React + TS | [`react-ts/src/smells/bloaters/large-class/`](../../../react-ts/src/smells/bloaters/large-class/) |
 | Go | [`go/smells/bloaters/large-class/`](../../../go/smells/bloaters/large-class/) |
+| Angular | [`angular/src/smells/bloaters/large-class/`](../../../angular/src/smells/bloaters/large-class/) |
 
 ## References
 

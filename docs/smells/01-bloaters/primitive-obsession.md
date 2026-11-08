@@ -121,6 +121,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Bloaters/PrimitiveObsession/`](../../../csharp/src/CodeSmells/Bloaters/PrimitiveObsession/) |
 | React + TS | [`react-ts/src/smells/bloaters/primitive-obsession/`](../../../react-ts/src/smells/bloaters/primitive-obsession/) |
 | Go | [`go/smells/bloaters/primitive-obsession/`](../../../go/smells/bloaters/primitive-obsession/) |
+| Angular | [`angular/src/smells/bloaters/primitive-obsession/`](../../../angular/src/smells/bloaters/primitive-obsession/) |
 
 ## References
 

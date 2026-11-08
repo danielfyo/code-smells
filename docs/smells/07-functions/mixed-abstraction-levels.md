@@ -110,6 +110,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Functions/MixedAbstractionLevels/`](../../../csharp/src/CodeSmells/Functions/MixedAbstractionLevels/) |
 | React + TS | [`react-ts/src/smells/functions/mixed-abstraction-levels/`](../../../react-ts/src/smells/functions/mixed-abstraction-levels/) |
 | Go | [`go/smells/functions/mixed-abstraction-levels/`](../../../go/smells/functions/mixed-abstraction-levels/) |
+| Angular | [`angular/src/smells/functions/mixed-abstraction-levels/`](../../../angular/src/smells/functions/mixed-abstraction-levels/) |
 
 ## References
 

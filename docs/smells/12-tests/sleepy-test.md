@@ -100,6 +100,7 @@ Other options: inject a fake clock (`freezegun`/`time-machine` in Python, `TimeP
 - C#: [`csharp/src/CodeSmells/Tests/SleepyTest/`](../../../csharp/src/CodeSmells/Tests/SleepyTest/)
 - React + TS: [`react-ts/src/smells/tests/sleepy-test/`](../../../react-ts/src/smells/tests/sleepy-test/)
 - Go: [`go/smells/tests/sleepy-test/`](../../../go/smells/tests/sleepy-test/)
+- Angular: [`angular/src/smells/tests/sleepy-test/`](../../../angular/src/smells/tests/sleepy-test/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

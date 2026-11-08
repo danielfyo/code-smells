@@ -112,6 +112,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/OoAbusers/AlternativeClassesDifferentInterfaces/`](../../../csharp/src/CodeSmells/OoAbusers/AlternativeClassesDifferentInterfaces/) |
 | React + TS | [`react-ts/src/smells/oo_abusers/alternative-classes-different-interfaces/`](../../../react-ts/src/smells/oo_abusers/alternative-classes-different-interfaces/) |
 | Go | [`go/smells/oo_abusers/alternative-classes-different-interfaces/`](../../../go/smells/oo_abusers/alternative-classes-different-interfaces/) |
+| Angular | [`angular/src/smells/oo_abusers/alternative-classes-different-interfaces/`](../../../angular/src/smells/oo_abusers/alternative-classes-different-interfaces/) |
 
 ## References
 

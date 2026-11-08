@@ -98,6 +98,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Functions/NegativeConditionals/`](../../../csharp/src/CodeSmells/Functions/NegativeConditionals/) |
 | React + TS | [`react-ts/src/smells/functions/negative-conditionals/`](../../../react-ts/src/smells/functions/negative-conditionals/) |
 | Go | [`go/smells/functions/negative-conditionals/`](../../../go/smells/functions/negative-conditionals/) |
+| Angular | [`angular/src/smells/functions/negative-conditionals/`](../../../angular/src/smells/functions/negative-conditionals/) |
 
 ## References
 

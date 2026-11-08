@@ -79,6 +79,7 @@ def test_vip_customer_gets_discount():
 - C#: [`csharp/src/CodeSmells/Tests/MysteryGuest/`](../../../csharp/src/CodeSmells/Tests/MysteryGuest/)
 - React + TS: [`react-ts/src/smells/tests/mystery-guest/`](../../../react-ts/src/smells/tests/mystery-guest/)
 - Go: [`go/smells/tests/mystery-guest/`](../../../go/smells/tests/mystery-guest/)
+- Angular: [`angular/src/smells/tests/mystery-guest/`](../../../angular/src/smells/tests/mystery-guest/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

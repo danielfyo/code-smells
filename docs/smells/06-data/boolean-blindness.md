@@ -106,6 +106,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Data/BooleanBlindness/`](../../../csharp/src/CodeSmells/Data/BooleanBlindness/) |
 | React + TS | [`react-ts/src/smells/data/boolean-blindness/`](../../../react-ts/src/smells/data/boolean-blindness/) |
 | Go | [`go/smells/data/boolean-blindness/`](../../../go/smells/data/boolean-blindness/) |
+| Angular | [`angular/src/smells/data/boolean-blindness/`](../../../angular/src/smells/data/boolean-blindness/) |
 
 ## References
 

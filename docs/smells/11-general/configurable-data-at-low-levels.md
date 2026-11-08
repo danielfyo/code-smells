@@ -104,6 +104,7 @@ func (c *RatesClient) FetchExchangeRate(currency string) (float64, error) {
 - C#: [`csharp/src/CodeSmells/General/ConfigurableDataAtLowLevels/`](../../../csharp/src/CodeSmells/General/ConfigurableDataAtLowLevels/)
 - React + TS: [`react-ts/src/smells/general/configurable-data-at-low-levels/`](../../../react-ts/src/smells/general/configurable-data-at-low-levels/)
 - Go: [`go/smells/general/configurable-data-at-low-levels/`](../../../go/smells/general/configurable-data-at-low-levels/)
+- Angular: [`angular/src/smells/general/configurable-data-at-low-levels/`](../../../angular/src/smells/general/configurable-data-at-low-levels/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

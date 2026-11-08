@@ -104,7 +104,7 @@ Write-Host "Configuring $Repo (protected branch: $Branch)" -ForegroundColor Gree
 
 if ($Repo -eq 'danielfyo/code-smells') {
   if (-not $Description) {
-    $Description = 'A hands-on catalog of 176 code smells: explained, implemented smelly vs. refactored, and tested in Python, C#/.NET, React + TypeScript and Go.'
+    $Description = 'A hands-on catalog of 198 code smells: explained, implemented smelly vs. refactored, and tested in Python, C#/.NET, React + TypeScript, Go and Angular.'
   }
   if (-not $Topics) {
     $Topics = @('code-smells', 'refactoring', 'clean-code', 'software-design', 'code-quality', 'best-practices',
@@ -174,7 +174,7 @@ Set-Ruleset @{
         allowed_merge_methods             = @('merge', 'squash') } },
     @{ type = 'required_status_checks'; parameters = @{
         strict_required_status_checks_policy = $false
-        required_status_checks = @('catalog', 'python', 'csharp', 'react-ts', 'go', 'conventional-commits') |
+        required_status_checks = @('catalog', 'python', 'csharp', 'react-ts', 'go', 'angular', 'conventional-commits') |
           ForEach-Object { @{ context = $_ } } } },
     @{ type = 'code_scanning'; parameters = @{
         code_scanning_tools = @(@{ tool = 'CodeQL'; security_alerts_threshold = 'high_or_higher'; alerts_threshold = 'errors' }) } }

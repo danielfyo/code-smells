@@ -100,6 +100,7 @@ def test_unknown_code_is_rejected():
 - C#: [`csharp/src/CodeSmells/Tests/InsufficientTests/`](../../../csharp/src/CodeSmells/Tests/InsufficientTests/)
 - React + TS: [`react-ts/src/smells/tests/insufficient-tests/`](../../../react-ts/src/smells/tests/insufficient-tests/)
 - Go: [`go/smells/tests/insufficient-tests/`](../../../go/smells/tests/insufficient-tests/)
+- Angular: [`angular/src/smells/tests/insufficient-tests/`](../../../angular/src/smells/tests/insufficient-tests/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

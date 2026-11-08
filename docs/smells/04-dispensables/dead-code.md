@@ -101,6 +101,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Dispensables/DeadCode/`](../../../csharp/src/CodeSmells/Dispensables/DeadCode/) |
 | React + TS | [`react-ts/src/smells/dispensables/dead-code/`](../../../react-ts/src/smells/dispensables/dead-code/) |
 | Go | [`go/smells/dispensables/dead-code/`](../../../go/smells/dispensables/dead-code/) |
+| Angular | [`angular/src/smells/dispensables/dead-code/`](../../../angular/src/smells/dispensables/dead-code/) |
 
 ## References
 

@@ -101,6 +101,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Data/StatusVariable/`](../../../csharp/src/CodeSmells/Data/StatusVariable/) |
 | React + TS | [`react-ts/src/smells/data/status-variable/`](../../../react-ts/src/smells/data/status-variable/) |
 | Go | [`go/smells/data/status-variable/`](../../../go/smells/data/status-variable/) |
+| Angular | [`angular/src/smells/data/status-variable/`](../../../angular/src/smells/data/status-variable/) |
 
 ## References
 

@@ -1,7 +1,7 @@
 # One command to verify everything (Clean Code E1/E2). Mirrors .github/workflows/ci.yml.
-.PHONY: all catalog python csharp react-ts go setup-repo
+.PHONY: all catalog python csharp react-ts go angular setup-repo
 
-all: catalog python csharp react-ts go
+all: catalog python csharp react-ts go angular
 
 catalog:
 	python3 tools/build_catalog.py
@@ -19,6 +19,9 @@ csharp:
 
 react-ts:
 	cd react-ts && npm ci && npm audit --audit-level=moderate && npm run typecheck && npm run coverage
+
+angular:
+	cd angular && npm ci && npm audit --audit-level=moderate && npm run typecheck && npm run coverage && npm run build
 
 go:
 	cd go && test -z "$$(gofmt -l .)" && go vet ./... && go test -race ./...

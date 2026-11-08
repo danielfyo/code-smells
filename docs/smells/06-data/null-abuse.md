@@ -119,6 +119,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Data/NullAbuse/`](../../../csharp/src/CodeSmells/Data/NullAbuse/) |
 | React + TS | [`react-ts/src/smells/data/null-abuse/`](../../../react-ts/src/smells/data/null-abuse/) |
 | Go | [`go/smells/data/null-abuse/`](../../../go/smells/data/null-abuse/) |
+| Angular | [`angular/src/smells/data/null-abuse/`](../../../angular/src/smells/data/null-abuse/) |
 
 ## References
 

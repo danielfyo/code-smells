@@ -93,6 +93,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Dispensables/LazyClass/`](../../../csharp/src/CodeSmells/Dispensables/LazyClass/) |
 | React + TS | [`react-ts/src/smells/dispensables/lazy-class/`](../../../react-ts/src/smells/dispensables/lazy-class/) |
 | Go | [`go/smells/dispensables/lazy-class/`](../../../go/smells/dispensables/lazy-class/) |
+| Angular | [`angular/src/smells/dispensables/lazy-class/`](../../../angular/src/smells/dispensables/lazy-class/) |
 
 ## References
 

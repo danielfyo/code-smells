@@ -89,6 +89,7 @@ class ReportBuilder:
 - C#: [`csharp/src/CodeSmells/Names/ShortNamesLongScopes/`](../../../csharp/src/CodeSmells/Names/ShortNamesLongScopes/)
 - React + TS: [`react-ts/src/smells/names/short-names-long-scopes/`](../../../react-ts/src/smells/names/short-names-long-scopes/)
 - Go: [`go/smells/names/short-names-long-scopes/`](../../../go/smells/names/short-names-long-scopes/)
+- Angular: [`angular/src/smells/names/short-names-long-scopes/`](../../../angular/src/smells/names/short-names-long-scopes/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

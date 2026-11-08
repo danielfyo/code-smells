@@ -57,7 +57,7 @@ JSON
 if [[ "$REPO" == "danielfyo/code-smells" ]]; then
   step "Description and topics"
   api -X PATCH "repos/$REPO" --input - <<'JSON'
-{ "description": "A hands-on catalog of 176 code smells: explained, implemented smelly vs. refactored, and tested in Python, C#/.NET, React + TypeScript and Go." }
+{ "description": "A hands-on catalog of 198 code smells: explained, implemented smelly vs. refactored, and tested in Python, C#/.NET, React + TypeScript, Go and Angular." }
 JSON
   api -X PUT "repos/$REPO/topics" --input - <<'JSON'
 { "names": ["code-smells", "refactoring", "clean-code", "software-design", "code-quality", "best-practices",
@@ -119,7 +119,7 @@ upsert_ruleset "Protect $BRANCH" '{
         "strict_required_status_checks_policy": false,
         "required_status_checks": [
           { "context": "catalog" }, { "context": "python" }, { "context": "csharp" },
-          { "context": "react-ts" }, { "context": "go" }, { "context": "conventional-commits" } ] } },
+          { "context": "react-ts" }, { "context": "go" }, { "context": "angular" }, { "context": "conventional-commits" } ] } },
     { "type": "code_scanning", "parameters": {
         "code_scanning_tools": [
           { "tool": "CodeQL", "security_alerts_threshold": "high_or_higher", "alerts_threshold": "errors" } ] } }

@@ -112,6 +112,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Bloaters/LongParameterList/`](../../../csharp/src/CodeSmells/Bloaters/LongParameterList/) |
 | React + TS | [`react-ts/src/smells/bloaters/long-parameter-list/`](../../../react-ts/src/smells/bloaters/long-parameter-list/) |
 | Go | [`go/smells/bloaters/long-parameter-list/`](../../../go/smells/bloaters/long-parameter-list/) |
+| Angular | [`angular/src/smells/bloaters/long-parameter-list/`](../../../angular/src/smells/bloaters/long-parameter-list/) |
 
 ## References
 

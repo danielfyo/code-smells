@@ -103,6 +103,7 @@ The right location depends on the domain; detection is mostly a design and revie
 - C#: [`csharp/src/CodeSmells/General/MisplacedResponsibility/`](../../../csharp/src/CodeSmells/General/MisplacedResponsibility/)
 - React + TS: [`react-ts/src/smells/general/misplaced-responsibility/`](../../../react-ts/src/smells/general/misplaced-responsibility/)
 - Go: [`go/smells/general/misplaced-responsibility/`](../../../go/smells/general/misplaced-responsibility/)
+- Angular: [`angular/src/smells/general/misplaced-responsibility/`](../../../angular/src/smells/general/misplaced-responsibility/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

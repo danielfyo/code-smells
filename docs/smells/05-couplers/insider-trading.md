@@ -107,6 +107,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/InsiderTrading/`](../../../csharp/src/CodeSmells/Couplers/InsiderTrading/) |
 | React + TS | [`react-ts/src/smells/couplers/insider-trading/`](../../../react-ts/src/smells/couplers/insider-trading/) |
 | Go | [`go/smells/couplers/insider-trading/`](../../../go/smells/couplers/insider-trading/) |
+| Angular | [`angular/src/smells/couplers/insider-trading/`](../../../angular/src/smells/couplers/insider-trading/) |
 
 ## References
 

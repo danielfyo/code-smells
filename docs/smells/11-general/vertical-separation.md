@@ -97,6 +97,7 @@ There is no standard "usage distance" metric; code review and function extractio
 - C#: [`csharp/src/CodeSmells/General/VerticalSeparation/`](../../../csharp/src/CodeSmells/General/VerticalSeparation/)
 - React + TS: [`react-ts/src/smells/general/vertical-separation/`](../../../react-ts/src/smells/general/vertical-separation/)
 - Go: [`go/smells/general/vertical-separation/`](../../../go/smells/general/vertical-separation/)
+- Angular: [`angular/src/smells/general/vertical-separation/`](../../../angular/src/smells/general/vertical-separation/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

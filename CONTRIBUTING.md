@@ -11,8 +11,8 @@ typo fixes, clearer explanations, better examples, new smells or new detection r
 - **Smelly and refactored versions.** Each smell shows a `smelly` version (marked with `SMELL:` comments)
   and a `refactored` version (marked with `REFACTOR:` comments naming the technique). Tests prove both
   behave the same, or expose the bug the smell hides.
-- **Equivalence across languages.** Generic smells exist in Python, C#, React + TypeScript and Go. A change
-  to one example should be mirrored in the other three, with equivalent tests.
+- **Equivalence across languages.** Generic smells exist in Python, C#, React + TypeScript, Go and Angular.
+  A change to one example should be mirrored in the other four, with equivalent tests.
 - **Smelly code is bad on purpose.** Linters and analyzers are disabled for `smelly` files only; everything
   else (refactored code, production code of the test smells, clean tests) must pass every check.
 - **English only** for code, comments, docs, commits and pull requests.
@@ -23,7 +23,7 @@ typo fixes, clearer explanations, better examples, new smells or new detection r
 | --- | --- |
 | Python | 3.11+ |
 | .NET SDK | 8.0 (see `global.json`) |
-| Node.js | 20+ |
+| Node.js | 22.22+ (required by Angular 22) |
 | Go | 1.24+ |
 
 ## Running the checks
@@ -47,10 +47,13 @@ cd react-ts && npm ci && npm run typecheck && npm test
 
 # Go
 cd go && test -z "$(gofmt -l .)" && go vet ./... && go test ./...
+
+# Angular
+cd angular && npm ci && npm run typecheck && npm test && npm run build
 ```
 
 Each project also has a coverage command (`pytest --cov`, `dotnet test --collect:"XPlat Code Coverage"`,
-`npm run coverage`, `go test -cover ./...`). CI publishes a coverage summary on every run.
+`npm run coverage` in react-ts and angular, `go test -cover ./...`). CI publishes a coverage summary on every run.
 
 ## Adding a new smell
 
@@ -81,7 +84,7 @@ docs: clarify the difference between feature envy and inappropriate intimacy
 | `test`, `refactor`, `perf`, `style` | code changes without new behaviour | none |
 | `build`, `ci`, `chore` | tooling, dependencies, pipelines | none |
 
-Useful scopes: `python`, `csharp`, `react-ts`, `go`, `catalog`, `docs`, `ci`.
+Useful scopes: `python`, `csharp`, `react-ts`, `go`, `angular`, `catalog`, `docs`, `ci`.
 Add `!` after the type (`feat!:`) for breaking changes.
 
 ## Pull request process

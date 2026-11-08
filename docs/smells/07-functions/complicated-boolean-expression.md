@@ -97,6 +97,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Functions/ComplicatedBooleanExpression/`](../../../csharp/src/CodeSmells/Functions/ComplicatedBooleanExpression/) |
 | React + TS | [`react-ts/src/smells/functions/complicated-boolean-expression/`](../../../react-ts/src/smells/functions/complicated-boolean-expression/) |
 | Go | [`go/smells/functions/complicated-boolean-expression/`](../../../go/smells/functions/complicated-boolean-expression/) |
+| Angular | [`angular/src/smells/functions/complicated-boolean-expression/`](../../../angular/src/smells/functions/complicated-boolean-expression/) |
 
 ## References
 

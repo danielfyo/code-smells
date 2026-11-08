@@ -108,6 +108,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Functions/CommandQueryViolation/`](../../../csharp/src/CodeSmells/Functions/CommandQueryViolation/) |
 | React + TS | [`react-ts/src/smells/functions/command-query-violation/`](../../../react-ts/src/smells/functions/command-query-violation/) |
 | Go | [`go/smells/functions/command-query-violation/`](../../../go/smells/functions/command-query-violation/) |
+| Angular | [`angular/src/smells/functions/command-query-violation/`](../../../angular/src/smells/functions/command-query-violation/) |
 
 ## References
 

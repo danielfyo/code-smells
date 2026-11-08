@@ -86,6 +86,7 @@ it("adds a product to the cart", async () => {
 - C#: [`csharp/src/CodeSmells/Tests/FragileTest/`](../../../csharp/src/CodeSmells/Tests/FragileTest/)
 - React + TS: [`react-ts/src/smells/tests/fragile-test/`](../../../react-ts/src/smells/tests/fragile-test/)
 - Go: [`go/smells/tests/fragile-test/`](../../../go/smells/tests/fragile-test/)
+- Angular: [`angular/src/smells/tests/fragile-test/`](../../../angular/src/smells/tests/fragile-test/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

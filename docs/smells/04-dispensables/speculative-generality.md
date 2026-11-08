@@ -101,6 +101,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Dispensables/SpeculativeGenerality/`](../../../csharp/src/CodeSmells/Dispensables/SpeculativeGenerality/) |
 | React + TS | [`react-ts/src/smells/dispensables/speculative-generality/`](../../../react-ts/src/smells/dispensables/speculative-generality/) |
 | Go | [`go/smells/dispensables/speculative-generality/`](../../../go/smells/dispensables/speculative-generality/) |
+| Angular | [`angular/src/smells/dispensables/speculative-generality/`](../../../angular/src/smells/dispensables/speculative-generality/) |
 
 ## References
 

@@ -102,6 +102,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/ChangePreventers/ShotgunSurgery/`](../../../csharp/src/CodeSmells/ChangePreventers/ShotgunSurgery/) |
 | React + TS | [`react-ts/src/smells/change_preventers/shotgun-surgery/`](../../../react-ts/src/smells/change_preventers/shotgun-surgery/) |
 | Go | [`go/smells/change_preventers/shotgun-surgery/`](../../../go/smells/change_preventers/shotgun-surgery/) |
+| Angular | [`angular/src/smells/change_preventers/shotgun-surgery/`](../../../angular/src/smells/change_preventers/shotgun-surgery/) |
 
 ## References
 

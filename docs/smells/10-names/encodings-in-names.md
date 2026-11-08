@@ -99,6 +99,7 @@ guidelines and is not considered a problematic encoding. The same applies to the
 - C#: [`csharp/src/CodeSmells/Names/EncodingsInNames/`](../../../csharp/src/CodeSmells/Names/EncodingsInNames/)
 - React + TS: [`react-ts/src/smells/names/encodings-in-names/`](../../../react-ts/src/smells/names/encodings-in-names/)
 - Go: [`go/smells/names/encodings-in-names/`](../../../go/smells/names/encodings-in-names/)
+- Angular: [`angular/src/smells/names/encodings-in-names/`](../../../angular/src/smells/names/encodings-in-names/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

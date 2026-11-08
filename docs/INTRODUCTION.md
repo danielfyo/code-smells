@@ -33,7 +33,7 @@ Three key ideas:
 ## Taxonomy used in this repository
 
 We start from Mäntylä's taxonomy (categories 01-05), extend it with categories from Fowler's second
-edition, *Clean Code* and Jerzyk's catalog (06-13), and add idiomatic smells for each language (14-17):
+edition, *Clean Code* and Jerzyk's catalog (06-13), and add idiomatic smells for each language (14-18):
 
 | # | Category | Idea |
 |---|---|---|
@@ -50,7 +50,7 @@ edition, *Clean Code* and Jerzyk's catalog (06-13), and add idiomatic smells for
 | 11 | General | Clean Code G1-G36, Kerievsky and Jerzyk. |
 | 12 | Test Smells | Clean Code T1-T9 and *xUnit Test Patterns*. |
 | 13 | Environment | Clean Code E1-E2. |
-| 14-17 | Language-specific | Python, C#/.NET, React + TypeScript and Go. |
+| 14-18 | Language-specific | Python, C#/.NET, React + TypeScript, Go and Angular. |
 
 The full list is in [CATALOG.md](CATALOG.md).
 
@@ -89,4 +89,5 @@ observable behavior, plus a test proving it. We recommend:
 - Language-specific: PEP 8, *The Little Book of Python Anti-Patterns*; Microsoft Learn and
   [David Fowler's AsyncGuidance](https://github.com/davidfowl/AspNetCoreDiagnosticScenarios/blob/master/AsyncGuidance.md);
   [react.dev](https://react.dev); [Effective Go](https://go.dev/doc/effective_go),
-  [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments) and *100 Go Mistakes* (T. Harsanyi).
+  [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments) and *100 Go Mistakes* (T. Harsanyi);
+  [angular.dev](https://angular.dev) and [RxJS](https://rxjs.dev).

@@ -112,6 +112,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Bloaters/DataClumps/`](../../../csharp/src/CodeSmells/Bloaters/DataClumps/) |
 | React + TS | [`react-ts/src/smells/bloaters/data-clumps/`](../../../react-ts/src/smells/bloaters/data-clumps/) |
 | Go | [`go/smells/bloaters/data-clumps/`](../../../go/smells/bloaters/data-clumps/) |
+| Angular | [`angular/src/smells/bloaters/data-clumps/`](../../../angular/src/smells/bloaters/data-clumps/) |
 
 ## References
 

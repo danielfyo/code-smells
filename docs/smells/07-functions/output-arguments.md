@@ -101,6 +101,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Functions/OutputArguments/`](../../../csharp/src/CodeSmells/Functions/OutputArguments/) |
 | React + TS | [`react-ts/src/smells/functions/output-arguments/`](../../../react-ts/src/smells/functions/output-arguments/) |
 | Go | [`go/smells/functions/output-arguments/`](../../../go/smells/functions/output-arguments/) |
+| Angular | [`angular/src/smells/functions/output-arguments/`](../../../angular/src/smells/functions/output-arguments/) |
 
 ## References
 

@@ -95,6 +95,7 @@ it("creates one line per ordered product", () => {
 - C#: [`csharp/src/CodeSmells/Tests/AssertionRoulette/`](../../../csharp/src/CodeSmells/Tests/AssertionRoulette/)
 - React + TS: [`react-ts/src/smells/tests/assertion-roulette/`](../../../react-ts/src/smells/tests/assertion-roulette/)
 - Go: [`go/smells/tests/assertion-roulette/`](../../../go/smells/tests/assertion-roulette/)
+- Angular: [`angular/src/smells/tests/assertion-roulette/`](../../../angular/src/smells/tests/assertion-roulette/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

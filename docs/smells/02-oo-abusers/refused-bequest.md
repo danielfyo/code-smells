@@ -110,6 +110,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/OoAbusers/RefusedBequest/`](../../../csharp/src/CodeSmells/OoAbusers/RefusedBequest/) |
 | React + TS | [`react-ts/src/smells/oo_abusers/refused-bequest/`](../../../react-ts/src/smells/oo_abusers/refused-bequest/) |
 | Go | [`go/smells/oo_abusers/refused-bequest/`](../../../go/smells/oo_abusers/refused-bequest/) |
+| Angular | [`angular/src/smells/oo_abusers/refused-bequest/`](../../../angular/src/smells/oo_abusers/refused-bequest/) |
 
 ## References
 

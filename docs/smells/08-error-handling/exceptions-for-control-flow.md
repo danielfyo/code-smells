@@ -99,6 +99,7 @@ Detection is mostly manual: the key question is whether the caught situation is 
 - C#: [`csharp/src/CodeSmells/ErrorHandling/ExceptionsForControlFlow/`](../../../csharp/src/CodeSmells/ErrorHandling/ExceptionsForControlFlow/)
 - React + TS: [`react-ts/src/smells/error_handling/exceptions-for-control-flow/`](../../../react-ts/src/smells/error_handling/exceptions-for-control-flow/)
 - Go: [`go/smells/error_handling/exceptions-for-control-flow/`](../../../go/smells/error_handling/exceptions-for-control-flow/)
+- Angular: [`angular/src/smells/error_handling/exceptions-for-control-flow/`](../../../angular/src/smells/error_handling/exceptions-for-control-flow/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

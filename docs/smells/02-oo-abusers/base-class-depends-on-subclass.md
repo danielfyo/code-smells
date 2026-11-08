@@ -110,6 +110,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/OoAbusers/BaseClassDependsOnSubclass/`](../../../csharp/src/CodeSmells/OoAbusers/BaseClassDependsOnSubclass/) |
 | React + TS | [`react-ts/src/smells/oo_abusers/base-class-depends-on-subclass/`](../../../react-ts/src/smells/oo_abusers/base-class-depends-on-subclass/) |
 | Go | [`go/smells/oo_abusers/base-class-depends-on-subclass/`](../../../go/smells/oo_abusers/base-class-depends-on-subclass/) |
+| Angular | [`angular/src/smells/oo_abusers/base-class-depends-on-subclass/`](../../../angular/src/smells/oo_abusers/base-class-depends-on-subclass/) |
 
 ## References
 

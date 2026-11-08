@@ -98,6 +98,7 @@ def test_total_is_zero_for_empty_cart(cart):
 - C#: [`csharp/src/CodeSmells/Tests/InterdependentTests/`](../../../csharp/src/CodeSmells/Tests/InterdependentTests/)
 - React + TS: [`react-ts/src/smells/tests/interdependent-tests/`](../../../react-ts/src/smells/tests/interdependent-tests/)
 - Go: [`go/smells/tests/interdependent-tests/`](../../../go/smells/tests/interdependent-tests/)
+- Angular: [`angular/src/smells/tests/interdependent-tests/`](../../../angular/src/smells/tests/interdependent-tests/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

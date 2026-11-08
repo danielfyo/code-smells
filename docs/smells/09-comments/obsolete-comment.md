@@ -90,6 +90,7 @@ Semantic staleness (a different number or behavior) can only be caught in code r
 - C#: [`csharp/src/CodeSmells/Comments/ObsoleteComment/`](../../../csharp/src/CodeSmells/Comments/ObsoleteComment/)
 - React + TS: [`react-ts/src/smells/comments/obsolete-comment/`](../../../react-ts/src/smells/comments/obsolete-comment/)
 - Go: [`go/smells/comments/obsolete-comment/`](../../../go/smells/comments/obsolete-comment/)
+- Angular: [`angular/src/smells/comments/obsolete-comment/`](../../../angular/src/smells/comments/obsolete-comment/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

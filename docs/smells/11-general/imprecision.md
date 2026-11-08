@@ -94,6 +94,7 @@ def find_customer(email: str) -> Customer:
 - C#: [`csharp/src/CodeSmells/General/Imprecision/`](../../../csharp/src/CodeSmells/General/Imprecision/)
 - React + TS: [`react-ts/src/smells/general/imprecision/`](../../../react-ts/src/smells/general/imprecision/)
 - Go: [`go/smells/general/imprecision/`](../../../go/smells/general/imprecision/)
+- Angular: [`angular/src/smells/general/imprecision/`](../../../angular/src/smells/general/imprecision/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

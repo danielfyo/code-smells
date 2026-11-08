@@ -115,6 +115,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/OoAbusers/InappropriateStatic/`](../../../csharp/src/CodeSmells/OoAbusers/InappropriateStatic/) |
 | React + TS | [`react-ts/src/smells/oo_abusers/inappropriate-static/`](../../../react-ts/src/smells/oo_abusers/inappropriate-static/) |
 | Go | [`go/smells/oo_abusers/inappropriate-static/`](../../../go/smells/oo_abusers/inappropriate-static/) |
+| Angular | [`angular/src/smells/oo_abusers/inappropriate-static/`](../../../angular/src/smells/oo_abusers/inappropriate-static/) |
 
 ## References
 

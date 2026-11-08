@@ -119,6 +119,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/OoAbusers/TemporaryField/`](../../../csharp/src/CodeSmells/OoAbusers/TemporaryField/) |
 | React + TS | [`react-ts/src/smells/oo_abusers/temporary-field/`](../../../react-ts/src/smells/oo_abusers/temporary-field/) |
 | Go | [`go/smells/oo_abusers/temporary-field/`](../../../go/smells/oo_abusers/temporary-field/) |
+| Angular | [`angular/src/smells/oo_abusers/temporary-field/`](../../../angular/src/smells/oo_abusers/temporary-field/) |
 
 ## References
 

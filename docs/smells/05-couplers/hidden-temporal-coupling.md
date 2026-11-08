@@ -102,6 +102,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/HiddenTemporalCoupling/`](../../../csharp/src/CodeSmells/Couplers/HiddenTemporalCoupling/) |
 | React + TS | [`react-ts/src/smells/couplers/hidden-temporal-coupling/`](../../../react-ts/src/smells/couplers/hidden-temporal-coupling/) |
 | Go | [`go/smells/couplers/hidden-temporal-coupling/`](../../../go/smells/couplers/hidden-temporal-coupling/) |
+| Angular | [`angular/src/smells/couplers/hidden-temporal-coupling/`](../../../angular/src/smells/couplers/hidden-temporal-coupling/) |
 
 ## References
 

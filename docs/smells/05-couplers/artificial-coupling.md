@@ -104,6 +104,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/ArtificialCoupling/`](../../../csharp/src/CodeSmells/Couplers/ArtificialCoupling/) |
 | React + TS | [`react-ts/src/smells/couplers/artificial-coupling/`](../../../react-ts/src/smells/couplers/artificial-coupling/) |
 | Go | [`go/smells/couplers/artificial-coupling/`](../../../go/smells/couplers/artificial-coupling/) |
+| Angular | [`angular/src/smells/couplers/artificial-coupling/`](../../../angular/src/smells/couplers/artificial-coupling/) |
 
 ## References
 

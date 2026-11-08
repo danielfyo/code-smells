@@ -110,6 +110,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Data/MutableData/`](../../../csharp/src/CodeSmells/Data/MutableData/) |
 | React + TS | [`react-ts/src/smells/data/mutable-data/`](../../../react-ts/src/smells/data/mutable-data/) |
 | Go | [`go/smells/data/mutable-data/`](../../../go/smells/data/mutable-data/) |
+| Angular | [`angular/src/smells/data/mutable-data/`](../../../angular/src/smells/data/mutable-data/) |
 
 ## References
 

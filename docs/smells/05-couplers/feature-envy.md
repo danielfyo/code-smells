@@ -102,6 +102,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/FeatureEnvy/`](../../../csharp/src/CodeSmells/Couplers/FeatureEnvy/) |
 | React + TS | [`react-ts/src/smells/couplers/feature-envy/`](../../../react-ts/src/smells/couplers/feature-envy/) |
 | Go | [`go/smells/couplers/feature-envy/`](../../../go/smells/couplers/feature-envy/) |
+| Angular | [`angular/src/smells/couplers/feature-envy/`](../../../angular/src/smells/couplers/feature-envy/) |
 
 ## References
 

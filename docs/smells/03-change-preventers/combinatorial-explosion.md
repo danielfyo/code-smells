@@ -114,6 +114,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/ChangePreventers/CombinatorialExplosion/`](../../../csharp/src/CodeSmells/ChangePreventers/CombinatorialExplosion/) |
 | React + TS | [`react-ts/src/smells/change_preventers/combinatorial-explosion/`](../../../react-ts/src/smells/change_preventers/combinatorial-explosion/) |
 | Go | [`go/smells/change_preventers/combinatorial-explosion/`](../../../go/smells/change_preventers/combinatorial-explosion/) |
+| Angular | [`angular/src/smells/change_preventers/combinatorial-explosion/`](../../../angular/src/smells/change_preventers/combinatorial-explosion/) |
 
 ## References
 
