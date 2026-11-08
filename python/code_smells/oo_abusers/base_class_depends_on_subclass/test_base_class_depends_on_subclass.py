@@ -18,7 +18,7 @@ def test_new_subclass_without_touching_base() -> None:
 
     assert Receipt("1", 3).describe() == "TIC-1: 3.00"
 
-    class SmellyReceipt(smelly.Document):
+    class SmellyReceipt(smelly.Document):  # type: ignore[misc]  # smelly is not type-checked
         pass
 
     # In the smelly version the base does not know the new class and falls into the generic case.

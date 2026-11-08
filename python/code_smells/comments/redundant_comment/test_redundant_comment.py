@@ -1,10 +1,12 @@
+from types import ModuleType
+
 import pytest
 
 from . import refactored, smelly
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_cart_totals(module) -> None:
+def test_cart_totals(module: ModuleType) -> None:
     cart = module.Cart()
     cart.add("BOOK-1", 12.99, 2)
     cart.add("PEN-7", 1.10)
@@ -13,6 +15,6 @@ def test_cart_totals(module) -> None:
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_rejects_non_positive_quantity(module) -> None:
+def test_rejects_non_positive_quantity(module: ModuleType) -> None:
     with pytest.raises(ValueError):
         module.Cart().add("BOOK-1", 12.99, 0)

@@ -15,5 +15,5 @@ class VisitTracker:
     def register_visit(self, recipe: str) -> int:
         self.visits += 1
         others = [r for r in self.recent_recipes if r != recipe]
-        self.recent_recipes = ([recipe] + others)[: self.max_recent]
+        self.recent_recipes = ([recipe, *others])[: self.max_recent]
         return self.visits

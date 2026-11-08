@@ -1,9 +1,12 @@
 """Same results without navigation chains in the client."""
 
+from types import ModuleType
+from typing import Any
+
 from code_smells.couplers.message_chains import refactored, smelly
 
 
-def build(m):
+def build(m: ModuleType) -> Any:
     return m.Booking(m.Customer("Ana", m.Address("Lisbon", m.Country("PT", 0.23))), 150.0)
 
 

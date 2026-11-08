@@ -1,5 +1,7 @@
 """The pipelines produce the same as the manual loops."""
 
+from typing import Any
+
 import pytest
 
 from code_smells.data.loops import refactored, smelly
@@ -12,6 +14,6 @@ SHIPMENTS = [
 
 
 @pytest.mark.parametrize("data", [SHIPMENTS, []])
-def test_same_results(data: list[dict]) -> None:
+def test_same_results(data: list[dict[str, Any]]) -> None:
     for fn in ("delayed_tracking_codes", "weight_by_carrier", "heaviest"):
         assert getattr(smelly, fn)(data) == getattr(refactored, fn)(data)

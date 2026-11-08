@@ -3,6 +3,7 @@
 import subprocess
 import sys
 from pathlib import Path
+from types import ModuleType
 
 import pytest
 
@@ -33,7 +34,7 @@ def _run(module: str, *flags: str) -> str:
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_valid_transfer(module) -> None:
+def test_valid_transfer(module: ModuleType) -> None:
     balances = {"anna": 100.0}
     module.transfer(balances, "anna", "louis", 30.0)
     assert balances == {"anna": 70.0, "louis": 30.0}

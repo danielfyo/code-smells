@@ -5,7 +5,7 @@ import warnings
 from code_smells.error_handling.overridden_safeties import refactored, smelly
 
 GOOD = [("A", "10,50"), ("B", "3")]
-BAD = GOOD + [("C", "-4")]
+BAD = [*GOOD, ("C", "-4")]
 
 
 def test_same_prices_for_valid_rows() -> None:
@@ -18,7 +18,7 @@ def test_smelly_hides_invalid_prices_and_global_warnings() -> None:
         prices = smelly.import_price_list(BAD)
         assert prices["C"] == -4.0  # the negative price got in without warning
         with warnings.catch_warnings(record=True) as caught:
-            warnings.warn("warning from another module", DeprecationWarning)
+            warnings.warn("warning from another module", DeprecationWarning, stacklevel=2)
         assert caught == []  # the global filter silenced other modules too!
 
 

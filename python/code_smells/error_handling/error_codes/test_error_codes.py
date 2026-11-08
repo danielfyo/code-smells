@@ -5,7 +5,7 @@ import pytest
 from code_smells.error_handling.error_codes import refactored, smelly
 
 
-@pytest.mark.parametrize("amount,frozen", [(30, False), (500, False), (-5, False), (10, True)])
+@pytest.mark.parametrize(("amount", "frozen"), [(30, False), (500, False), (-5, False), (10, True)])
 def test_same_messages(amount: float, frozen: bool) -> None:
     old, new = smelly.Wallet(100), refactored.Wallet(100)
     old.frozen = new.frozen = frozen

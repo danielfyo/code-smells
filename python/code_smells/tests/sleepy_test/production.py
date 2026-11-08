@@ -17,7 +17,12 @@ class EmailQueue:
     def wait_until_idle(self, timeout: float = 2.0) -> None:
         """Block until every queued email has been sent."""
         done = threading.Event()
-        threading.Thread(target=lambda: (self._pending.join(), done.set()), daemon=True).start()
+
+        def drain() -> None:
+            self._pending.join()
+            done.set()
+
+        threading.Thread(target=drain, daemon=True).start()
         if not done.wait(timeout):
             raise TimeoutError("the queue did not drain in time")
 

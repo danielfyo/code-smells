@@ -1,7 +1,9 @@
+from typing import Any
+
 from . import refactored, smelly
 
 
-def _fill(store) -> None:
+def _fill(store: Any) -> None:
     store.save("Annual Report.pdf", "...")
     store.save("notes.txt", "...")
     store.save(" Board Minutes.docx", "...")

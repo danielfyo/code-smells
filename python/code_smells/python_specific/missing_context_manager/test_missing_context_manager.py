@@ -1,6 +1,8 @@
 import builtins
 import sqlite3
 from pathlib import Path
+from types import ModuleType
+from typing import Any
 from unittest import mock
 
 import pytest
@@ -11,17 +13,17 @@ READINGS = [("M-1", 120.5), ("M-2", 98.0)]
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_same_file_content(module, tmp_path: Path) -> None:
+def test_same_file_content(module: ModuleType, tmp_path: Path) -> None:
     target = tmp_path / "out.csv"
     module.export_readings(target, READINGS)
     assert target.read_text(encoding="utf-8") == "M-1;120.5\nM-2;98.0\n"
 
 
-def _track_open_files(monkeypatch: pytest.MonkeyPatch) -> list:
-    opened: list = []
+def _track_open_files(monkeypatch: pytest.MonkeyPatch) -> list[Any]:
+    opened: list[Any] = []
     real_open = builtins.open
 
-    def tracking_open(*args, **kwargs):
+    def tracking_open(*args: Any, **kwargs: Any) -> Any:
         handle = real_open(*args, **kwargs)
         opened.append(handle)
         return handle

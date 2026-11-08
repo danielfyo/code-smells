@@ -27,7 +27,8 @@ def test_refactored_boundaries() -> None:
     assert refactored.page_count(21, 10) == 3
     assert refactored.get_page(INVOICES, 3, 10) == ["F-21"]
     assert refactored.is_last_page(21, 3, 10)
-    assert refactored.page_count(0, 10) == 1 and refactored.is_last_page(0, 1, 10)
+    assert refactored.page_count(0, 10) == 1
+    assert refactored.is_last_page(0, 1, 10)
     for bad_page in (0, -1, 4):
         with pytest.raises(IndexError):
             refactored.get_page(INVOICES, bad_page, 10)

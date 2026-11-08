@@ -24,6 +24,6 @@ def test_smelly_fails_with_large_capacities() -> None:
 
 
 def test_smelly_fails_with_runtime_strings() -> None:
-    ticket = "".join(["V", "I", "P"])  # noqa: FLY002 (string built at runtime)
+    ticket = "".join(["V", "I", "P"])
     assert not smelly.is_vip(ticket)  # bug!
     assert refactored.is_vip(ticket)

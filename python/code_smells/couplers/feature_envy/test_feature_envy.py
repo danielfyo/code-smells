@@ -9,7 +9,7 @@ def test_same_results() -> None:
     old_lines = [smelly.OrderLine(*r) for r in RAW]
     new_lines = [refactored.OrderLine(*r) for r in RAW]
     billing = smelly.BillingService()
-    for old, new in zip(old_lines, new_lines):
+    for old, new in zip(old_lines, new_lines, strict=False):
         assert billing.line_total(old) == new.total
         assert billing.line_shipping_weight(old) == new.shipping_weight
     assert billing.invoice_total(old_lines) == refactored.BillingService().invoice_total(new_lines)

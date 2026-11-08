@@ -18,4 +18,5 @@ def export_readings(path: Path, readings: list[tuple[str, float]]) -> None:
 
 def count_readings(db_path: Path) -> int:
     with closing(sqlite3.connect(db_path)) as conn:
-        return conn.execute("SELECT COUNT(*) FROM readings").fetchone()[0]
+        total: int = conn.execute("SELECT COUNT(*) FROM readings").fetchone()[0]
+        return total

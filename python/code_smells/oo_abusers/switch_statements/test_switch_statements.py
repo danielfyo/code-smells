@@ -7,7 +7,7 @@ from code_smells.oo_abusers.switch_statements import refactored, smelly
 CASES = [("salaried", 36000, 0), ("hourly", 15, 120), ("contractor", 40, 100)]
 
 
-@pytest.mark.parametrize("kind,base,hours", CASES)
+@pytest.mark.parametrize(("kind", "base", "hours"), CASES)
 def test_same_behaviour(kind: str, base: float, hours: float) -> None:
     old = smelly.Employee("Ana", kind, base, hours)
     new = refactored.employee_from(kind, "Ana", base, hours)

@@ -1,6 +1,7 @@
 """Refactored version: the function returns an immutable result."""
 
 from dataclasses import dataclass
+from typing import Any
 
 
 @dataclass(frozen=True)
@@ -16,7 +17,7 @@ class ValidationResult:
 
 # REFACTOR: Replace Output Parameter with Return Value. Everything the function
 # produces comes out through the return value; arguments are only inputs.
-def validate_order(order: dict) -> ValidationResult:
+def validate_order(order: dict[str, Any]) -> ValidationResult:
     lines = order.get("lines", [])
     errors = []
     if not order.get("customer"):

@@ -13,7 +13,9 @@ class InsufficientStock(StockError):
     pass
 
 
-def transfer_stock(stock: dict[str, dict[str, int]], sku: str, src: str, dst: str, qty: int) -> None:
+def transfer_stock(
+    stock: dict[str, dict[str, int]], sku: str, src: str, dst: str, qty: int
+) -> None:
     # REFACTOR: Fail Fast. Every check happens BEFORE modifying anything, so a
     # failed operation never leaves the inventory half-done.
     for warehouse in (src, dst):

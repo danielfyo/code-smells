@@ -10,7 +10,7 @@ def test_full_time_equivalent(gross: float) -> None:
     assert smelly.full_time_net_salary(gross) == refactored.full_time_net_salary(gross)
 
 
-@pytest.mark.parametrize("rate,hours", [(10, 80), (20, 120)])
+@pytest.mark.parametrize(("rate", "hours"), [(10, 80), (20, 120)])
 def test_part_time_equivalent_in_lower_brackets(rate: float, hours: float) -> None:
     assert smelly.part_time_net_salary(rate, hours) == refactored.part_time_net_salary(rate, hours)
 

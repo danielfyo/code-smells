@@ -15,5 +15,47 @@ addopts = "-q"
 [tool.ruff]
 line-length = 100
 target-version = "py311"
-# Smelly examples contain anti-patterns on purpose.
-extend-exclude = ["**/smelly.py"]
+# Smelly examples contain anti-patterns on purpose, so they are not linted.
+extend-exclude = ["**/smelly.py", "**/smelly/**"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF", "C4", "PIE", "PT"]
+# E501: line length is owned by the formatter (long strings/docstrings are allowed).
+# UP042: StrEnum would change the examples' public types for no teaching benefit.
+# PT011: the examples raise ValueError with teaching-oriented messages that may be reworded.
+ignore = ["E501", "UP042", "PT011"]
+
+[tool.ruff.lint.per-file-ignores]
+# Test-smell examples demonstrate bad testing practices on purpose.
+"code_smells/tests/**/test_smelly.py" = ["B", "PT", "SIM", "RUF"]
+
+[tool.mypy]
+strict = true
+python_version = "3.11"
+packages = ["code_smells"]
+# The sample project runs its unit tests from its own folder (`from pricing import ...`),
+# so it is type-checked as top-level modules found through mypy_path.
+mypy_path = "code_smells/environment/multi_step_tests/sample_project"
+modules = ["pricing", "pricing_unit", "check_discounts"]
+# Smelly examples are deliberately badly typed, so they are not type-checked.
+exclude = [
+    '(^|/)smelly\.py$',
+    '(^|/)test_smelly\.py$',
+    '(^|/)smelly/',
+    '(^|/)sample_project/',
+]
+
+# Tests import the smelly examples to prove equivalent behavior; treat them as untyped (Any)
+# instead of type-checking deliberately bad code.
+[[tool.mypy.overrides]]
+module = ["code_smells.*.smelly", "code_smells.*.smelly.*"]
+follow_imports = "skip"
+
+[tool.coverage.run]
+source = ["code_smells"]
+branch = true
+omit = ["*/test_*.py"]
+
+[tool.coverage.report]
+show_missing = false
+skip_covered = true

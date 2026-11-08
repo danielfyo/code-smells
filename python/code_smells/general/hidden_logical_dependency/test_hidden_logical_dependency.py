@@ -1,10 +1,12 @@
+from types import ModuleType
+
 import pytest
 
 from . import refactored, smelly
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_roundtrip(module) -> None:
+def test_roundtrip(module: ModuleType) -> None:
     record = module.build_record("ES12AB", 12345)
     assert module.parse_record(record) == ("ES12AB", 12345)
     assert module.total_cents([record, module.build_record("FR99", 5)]) == 12350

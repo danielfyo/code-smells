@@ -23,7 +23,8 @@ def conn() -> sqlite3.Connection:
 def test_same_orders_listed(conn: sqlite3.Connection) -> None:
     old, new = smelly.pending_orders_report(conn), refactored.pending_orders_report(conn)
     for fragment in ("<td>10</td>", "<td>20.50</td>", "<td>12</td>", "<td>7.25</td>"):
-        assert fragment in old and fragment in new
+        assert fragment in old
+        assert fragment in new
     assert "<td>11</td>" not in new
 
 

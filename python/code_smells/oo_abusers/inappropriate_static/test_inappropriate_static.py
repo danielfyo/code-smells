@@ -10,8 +10,9 @@ from code_smells.oo_abusers.inappropriate_static import refactored, smelly
 @pytest.mark.parametrize("offset", [-10, 10])
 def test_same_result_with_real_clock(offset: int) -> None:
     due = date.today() + timedelta(days=offset)
-    assert smelly.InvoiceService.amount_due_eur(100, "USD", due) == \
-        refactored.InvoiceService().amount_due_eur(100, "USD", due)
+    assert smelly.InvoiceService.amount_due_eur(
+        100, "USD", due
+    ) == refactored.InvoiceService().amount_due_eur(100, "USD", due)
 
 
 def test_smelly_needs_monkeypatch(monkeypatch: pytest.MonkeyPatch) -> None:

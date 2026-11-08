@@ -1,24 +1,26 @@
 """Documents the contamination of global state and the isolation of the new version."""
 
+from collections.abc import Iterator
+
 import pytest
 
 from code_smells.couplers.global_data import refactored, smelly
 
 
 @pytest.fixture
-def reset_globals():
+def reset_globals() -> Iterator[None]:
     yield
     smelly.CONFIG.update(prefix="INV", tax_rate=0.21)
     smelly.next_invoice_number = 1
 
 
-def test_same_sequence(reset_globals) -> None:
+def test_same_sequence(reset_globals: None) -> None:
     issuer = refactored.InvoiceIssuer()
     for net in (100, 50):
         assert smelly.issue_invoice(net) == issuer.issue(net)
 
 
-def test_smelly_global_state_leaks(reset_globals) -> None:
+def test_smelly_global_state_leaks(reset_globals: None) -> None:
     smelly.issue_invoice(10)
     smelly.switch_to_reduced_vat()
     # Another independent "client" sees the number and VAT modified by the first one.

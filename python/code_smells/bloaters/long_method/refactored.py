@@ -1,6 +1,7 @@
 """Refactored version: the main method orchestrates small, named steps."""
 
 from dataclasses import dataclass
+from typing import Any
 
 TAX_RATE = 0.21
 FREE_SHIPPING_THRESHOLD = 50
@@ -19,7 +20,7 @@ class Totals:
         return round(self.subtotal - self.discount + self.tax + self.shipping, 2)
 
 
-def process_order(order: dict) -> str:
+def process_order(order: dict[str, Any]) -> str:
     # REFACTOR: Compose Method. The main method reads like a table of contents;
     # each step was obtained with Extract Method and can be tested in isolation.
     validate(order)
@@ -27,7 +28,7 @@ def process_order(order: dict) -> str:
     return format_receipt(order, totals)
 
 
-def validate(order: dict) -> None:
+def validate(order: dict[str, Any]) -> None:
     if not order.get("items"):
         raise ValueError("The order has no lines")
     for item in order["items"]:
@@ -35,8 +36,9 @@ def validate(order: dict) -> None:
             raise ValueError(f"Invalid quantity for {item['sku']}")
 
 
-def subtotal_of(order: dict) -> float:
-    return sum(item["price"] * item["qty"] for item in order["items"])
+def subtotal_of(order: dict[str, Any]) -> float:
+    subtotal: float = sum(item["price"] * item["qty"] for item in order["items"])
+    return subtotal
 
 
 def discount_for(subtotal: float, coupon: str | None) -> float:
@@ -51,7 +53,7 @@ def shipping_for(taxable: float) -> float:
     return 0.0 if taxable >= FREE_SHIPPING_THRESHOLD else STANDARD_SHIPPING
 
 
-def compute_totals(order: dict) -> Totals:
+def compute_totals(order: dict[str, Any]) -> Totals:
     # REFACTOR: Replace Temp with Query. Each amount comes from a named function.
     subtotal = subtotal_of(order)
     discount = discount_for(subtotal, order.get("coupon"))
@@ -59,7 +61,7 @@ def compute_totals(order: dict) -> Totals:
     return Totals(subtotal, discount, taxable * TAX_RATE, shipping_for(taxable))
 
 
-def format_receipt(order: dict, totals: Totals) -> str:
+def format_receipt(order: dict[str, Any], totals: Totals) -> str:
     lines = [f"Order for {order['customer']}"]
     lines += [f"  {i['qty']} x {i['sku']} @ {i['price']:.2f}" for i in order["items"]]
     lines += [

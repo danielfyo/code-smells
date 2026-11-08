@@ -24,13 +24,15 @@ class BusinessCalendar:
 
 
 CALENDAR = BusinessCalendar(holidays=frozenset({date(2026, 12, 25)}))
+NO_HOLIDAYS = BusinessCalendar()
 
 
-def invoice_due_date(issued: date, calendar: BusinessCalendar = BusinessCalendar()) -> date:
+def invoice_due_date(issued: date, calendar: BusinessCalendar = NO_HOLIDAYS) -> date:
     # REFACTOR: the original behaviour (no holidays) is kept by default.
     return calendar.add_business_days(issued, 30)
 
 
-def shipment_eta(dispatched: date, business_days: int,
-                 calendar: BusinessCalendar = CALENDAR) -> date:
+def shipment_eta(
+    dispatched: date, business_days: int, calendar: BusinessCalendar = CALENDAR
+) -> date:
     return calendar.add_business_days(dispatched, business_days)

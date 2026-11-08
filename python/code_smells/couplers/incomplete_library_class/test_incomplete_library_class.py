@@ -12,7 +12,7 @@ def test_same_due_date(issued: date) -> None:
     assert smelly.invoice_due_date(issued) == refactored.invoice_due_date(issued)
 
 
-@pytest.mark.parametrize("start,days", [(date(2026, 12, 23), 3), (date(2026, 3, 6), 1)])
+@pytest.mark.parametrize(("start", "days"), [(date(2026, 12, 23), 3), (date(2026, 3, 6), 1)])
 def test_same_eta(start: date, days: int) -> None:
     assert smelly.shipment_eta(start, days) == refactored.shipment_eta(start, days)
     assert refactored.shipment_eta(date(2026, 12, 24), 1) == date(2026, 12, 28)

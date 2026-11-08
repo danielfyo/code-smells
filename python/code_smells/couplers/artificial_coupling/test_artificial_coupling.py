@@ -9,9 +9,15 @@ DUE = datetime(2026, 4, 15, 9, 0)
 
 
 def test_same_behaviour() -> None:
-    assert smelly.PaymentReminder().message(DUE, NOW) == refactored.PaymentReminder().message(DUE, NOW)
-    assert smelly.PaymentReminder().next_reminder(NOW) == refactored.PaymentReminder().next_reminder(NOW)
-    assert smelly.PdfInvoiceRenderer().header("F-1", NOW) == refactored.PdfInvoiceRenderer().header("F-1", NOW)
+    assert smelly.PaymentReminder().message(DUE, NOW) == refactored.PaymentReminder().message(
+        DUE, NOW
+    )
+    assert smelly.PaymentReminder().next_reminder(
+        NOW
+    ) == refactored.PaymentReminder().next_reminder(NOW)
+    assert smelly.PdfInvoiceRenderer().header("F-1", NOW) == refactored.PdfInvoiceRenderer().header(
+        "F-1", NOW
+    )
 
 
 def test_reminder_no_longer_depends_on_renderer() -> None:

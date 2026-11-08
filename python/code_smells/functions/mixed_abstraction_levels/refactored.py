@@ -23,6 +23,7 @@ def import_customers(csv_text: str, existing: dict[str, str]) -> list[str]:
 
 # --- Low-level details, below and separated ---
 
+
 def parse_rows(csv_text: str) -> Iterator[CustomerRow]:
     for raw in csv_text.splitlines()[1:]:
         if raw.strip():

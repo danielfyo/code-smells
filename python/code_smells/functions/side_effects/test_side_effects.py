@@ -25,4 +25,5 @@ def test_smelly_check_mutates_but_query_does_not() -> None:
     account = refactored.Account("secret")
     for _ in range(3):
         account.password_matches("bad")
-    assert not account.locked and account.failures == 0
+    assert not account.locked
+    assert account.failures == 0

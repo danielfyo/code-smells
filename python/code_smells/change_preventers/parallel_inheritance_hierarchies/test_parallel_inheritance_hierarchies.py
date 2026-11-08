@@ -19,7 +19,7 @@ def test_new_vehicle_needs_one_class() -> None:
 
     assert refactored.delivery_cost(Drone("D-1"), 2) == 18.0
 
-    class SmellyDrone(smelly.Vehicle):
+    class SmellyDrone(smelly.Vehicle):  # type: ignore[misc]  # smelly is not type-checked
         pass
 
     with pytest.raises(KeyError):  # we forgot to create and register its twin

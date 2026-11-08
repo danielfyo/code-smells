@@ -17,4 +17,5 @@ def test_bonus_is_not_capped() -> None:
 
 def test_refactored_has_no_commented_code() -> None:
     source = inspect.getsource(refactored)
-    assert "# def " not in source and "# print(" not in source
+    assert "# def " not in source
+    assert "# print(" not in source

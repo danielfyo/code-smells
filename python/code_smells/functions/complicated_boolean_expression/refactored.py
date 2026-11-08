@@ -1,6 +1,7 @@
 """Refactored version: each part of the condition has a name."""
 
 from dataclasses import dataclass
+from typing import Any
 
 MIN_AGE, MAX_AGE = 18, 70
 MIN_INCOME, MIN_INCOME_WITH_GUARANTOR = 1200, 800
@@ -37,9 +38,13 @@ class Applicant:
 
     def is_eligible(self) -> bool:
         # REFACTOR: the complete rule reads like a sentence.
-        return (self.has_valid_age() and self.has_enough_income()
-                and self.has_affordable_debt() and self.has_clean_history())
+        return (
+            self.has_valid_age()
+            and self.has_enough_income()
+            and self.has_affordable_debt()
+            and self.has_clean_history()
+        )
 
 
-def is_eligible(applicant: dict) -> bool:
+def is_eligible(applicant: dict[str, Any]) -> bool:
     return Applicant(**applicant).is_eligible()

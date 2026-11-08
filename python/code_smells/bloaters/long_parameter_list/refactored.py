@@ -2,6 +2,7 @@
 
 from dataclasses import dataclass
 from enum import Enum
+from typing import Any
 
 
 # REFACTOR: Introduce Parameter Object. Sender/recipient and parcel become types.
@@ -34,8 +35,9 @@ class Service(Enum):
     EXPRESS = 1.5
 
 
-def create_shipment(sender: Party, recipient: Party, parcel: Parcel,
-                    service: Service = Service.STANDARD) -> dict:
+def create_shipment(
+    sender: Party, recipient: Party, parcel: Parcel, service: Service = Service.STANDARD
+) -> dict[str, Any]:
     price = (5 + parcel.billable_kg * 1.2) * service.value
     return {
         "from": str(sender),

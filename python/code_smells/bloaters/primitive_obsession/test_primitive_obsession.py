@@ -25,8 +25,13 @@ def test_same_totals() -> None:
 
 def test_both_reject_mixed_currencies() -> None:
     with pytest.raises(ValueError):
-        smelly.total([smelly.register_payment("a@b.c", 1, "EUR"),
-                      smelly.register_payment("a@b.c", 1, "USD")])
+        smelly.total(
+            [smelly.register_payment("a@b.c", 1, "EUR"), smelly.register_payment("a@b.c", 1, "USD")]
+        )
     with pytest.raises(ValueError):
-        refactored.total([refactored.register_payment("a@b.c", 1, "EUR"),
-                          refactored.register_payment("a@b.c", 1, "USD")])
+        refactored.total(
+            [
+                refactored.register_payment("a@b.c", 1, "EUR"),
+                refactored.register_payment("a@b.c", 1, "USD"),
+            ]
+        )

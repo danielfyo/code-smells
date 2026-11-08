@@ -18,6 +18,6 @@ def test_same_bin(volume: float) -> None:
 
 
 def test_same_validation() -> None:
-    broken = BINS + [{"code": "C1", "capacity": 1, "used": 2, "blocked": False}]
+    broken = [*BINS, {"code": "C1", "capacity": 1, "used": 2, "blocked": False}]
     for bins in (BINS, broken, []):
         assert smelly.all_bins_ok(bins) == refactored.all_bins_ok(bins)

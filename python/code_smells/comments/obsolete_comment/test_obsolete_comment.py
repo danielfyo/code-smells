@@ -1,12 +1,14 @@
 """The tests document the real behavior (the one the obsolete comment contradicts)."""
 
+from types import ModuleType
+
 import pytest
 
 from . import refactored, smelly
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_locks_after_five_failures_not_three(module) -> None:
+def test_locks_after_five_failures_not_three(module: ModuleType) -> None:
     guard = module.LoginGuard()
     for _ in range(3):
         guard.register_failure("anna")
@@ -17,7 +19,7 @@ def test_locks_after_five_failures_not_three(module) -> None:
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_success_resets_counter(module) -> None:
+def test_success_resets_counter(module: ModuleType) -> None:
     guard = module.LoginGuard()
     for _ in range(5):
         guard.register_failure("louis")
@@ -26,5 +28,5 @@ def test_success_resets_counter(module) -> None:
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_lock_is_thirty_minutes(module) -> None:
+def test_lock_is_thirty_minutes(module: ModuleType) -> None:
     assert module.LoginGuard().lock_minutes() == 30

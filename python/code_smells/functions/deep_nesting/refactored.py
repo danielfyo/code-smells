@@ -1,9 +1,10 @@
 """Refactored version: guard clauses and a flat main path."""
 
 from datetime import date
+from typing import Any
 
 
-def approve_leave(request: dict | None, balance: dict[str, int], today: date) -> str:
+def approve_leave(request: dict[str, Any] | None, balance: dict[str, int], today: date) -> str:
     # REFACTOR: Replace Nested Conditional with Guard Clauses. Each error case exits
     # as soon as it is detected; the happy path stays at the end, without indentation.
     if request is None:

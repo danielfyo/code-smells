@@ -17,5 +17,6 @@ def test_refactored_uses_precise_pi() -> None:
 
 
 def test_smelly_namespace_is_polluted() -> None:
-    assert hasattr(smelly, "sqrt") and hasattr(smelly, "factorial")
+    assert hasattr(smelly, "sqrt")
+    assert hasattr(smelly, "factorial")
     assert not hasattr(refactored, "sqrt")

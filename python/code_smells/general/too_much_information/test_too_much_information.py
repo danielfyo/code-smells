@@ -1,10 +1,12 @@
+from types import ModuleType
+
 import pytest
 
 from . import refactored, smelly
 
 
 @pytest.mark.parametrize("module", [smelly, refactored])
-def test_same_operations(module) -> None:
+def test_same_operations(module: ModuleType) -> None:
     account = module.BankAccount("ES00 0000")
     account.deposit(100)
     account.withdraw(30)

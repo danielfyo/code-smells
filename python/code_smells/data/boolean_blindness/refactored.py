@@ -2,6 +2,7 @@
 
 from dataclasses import dataclass
 from enum import Enum
+from typing import Any
 
 
 # REFACTOR: Replace Boolean Parameter with Enum. Each decision has its own type, so
@@ -37,9 +38,14 @@ class Booking:
     def price(self) -> float:
         return 120.0 * self.cabin.multiplier + self.fare.value
 
-    def as_dict(self) -> dict:
-        return {"passenger": self.passenger, "flight": self.flight, "seat": self.seat.value,
-                "cabin": self.cabin.label, "price": self.price}
+    def as_dict(self) -> dict[str, Any]:
+        return {
+            "passenger": self.passenger,
+            "flight": self.flight,
+            "seat": self.seat.value,
+            "cabin": self.cabin.label,
+            "price": self.price,
+        }
 
 
 def book_seat(passenger: str, flight: str, seat: Seat, cabin: Cabin, fare: Fare) -> Booking:
