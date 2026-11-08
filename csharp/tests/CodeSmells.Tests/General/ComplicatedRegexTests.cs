@@ -1,5 +1,5 @@
-using S = CodeSmells.General.ComplicatedRegex.Smelly;
 using R = CodeSmells.General.ComplicatedRegex.Refactored;
+using S = CodeSmells.General.ComplicatedRegex.Smelly;
 
 namespace CodeSmells.Tests.General;
 

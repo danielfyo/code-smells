@@ -10,7 +10,11 @@ public readonly record struct Stay
 
     public Stay(DateOnly checkIn, DateOnly checkOut)
     {
-        if (checkOut <= checkIn) throw new ArgumentException("Check-out must be after check-in");
+        if (checkOut <= checkIn)
+        {
+            throw new ArgumentException("Check-out must be after check-in");
+        }
+
         (CheckIn, CheckOut) = (checkIn, checkOut);
     }
 }
@@ -29,9 +33,15 @@ public sealed class HotelBookingService
         var nights = request.Stay.Nights;
         var total = nights * request.Rooms * nightlyRate;
         if (request.BreakfastIncluded)
+        {
             total += nights * (request.Guests.Adults * 12m + request.Guests.Children * 6m);
+        }
+
         if (request.PromoCode == "SUMMER10")
+        {
             total *= 0.90m;
+        }
+
         return Math.Round(total, 2);
     }
 }

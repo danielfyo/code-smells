@@ -1,5 +1,5 @@
-using S = CodeSmells.Dispensables.SpeculativeGenerality.Smelly;
 using R = CodeSmells.Dispensables.SpeculativeGenerality.Refactored;
+using S = CodeSmells.Dispensables.SpeculativeGenerality.Smelly;
 
 namespace CodeSmells.Tests.Dispensables;
 

@@ -1,5 +1,5 @@
-using S = CodeSmells.OoAbusers.BaseClassDependsOnSubclass.Smelly;
 using R = CodeSmells.OoAbusers.BaseClassDependsOnSubclass.Refactored;
+using S = CodeSmells.OoAbusers.BaseClassDependsOnSubclass.Smelly;
 
 namespace CodeSmells.Tests.OoAbusers;
 

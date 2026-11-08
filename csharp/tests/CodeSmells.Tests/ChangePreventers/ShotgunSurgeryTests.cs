@@ -1,5 +1,5 @@
-using S = CodeSmells.ChangePreventers.ShotgunSurgery.Smelly;
 using R = CodeSmells.ChangePreventers.ShotgunSurgery.Refactored;
+using S = CodeSmells.ChangePreventers.ShotgunSurgery.Smelly;
 
 namespace CodeSmells.Tests.ChangePreventers;
 
@@ -17,6 +17,8 @@ public class ShotgunSurgeryTests
         Assert.Equal(sCart.Total(), rCart.Total());
         Assert.Equal(new S.InvoiceBuilder().TaxAmount(sItems), new R.InvoiceBuilder().TaxAmount(rItems));
         for (var i = 0; i < sItems.Length; i++)
+        {
             Assert.Equal(new S.ReceiptPrinter().Line(sItems[i]), new R.ReceiptPrinter().Line(rItems[i]));
+        }
     }
 }

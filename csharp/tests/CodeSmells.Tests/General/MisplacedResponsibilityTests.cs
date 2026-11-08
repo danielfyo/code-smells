@@ -1,5 +1,5 @@
-using S = CodeSmells.General.MisplacedResponsibility.Smelly;
 using R = CodeSmells.General.MisplacedResponsibility.Refactored;
+using S = CodeSmells.General.MisplacedResponsibility.Smelly;
 
 namespace CodeSmells.Tests.General;
 

@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.ShortNamesLongScopes.Smelly;
 using R = CodeSmells.Names.ShortNamesLongScopes.Refactored;
+using S = CodeSmells.Names.ShortNamesLongScopes.Smelly;
 
 namespace CodeSmells.Tests.Names;
 

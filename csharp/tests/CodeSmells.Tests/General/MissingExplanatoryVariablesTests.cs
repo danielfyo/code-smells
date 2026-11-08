@@ -1,5 +1,5 @@
-using S = CodeSmells.General.MissingExplanatoryVariables.Smelly;
 using R = CodeSmells.General.MissingExplanatoryVariables.Refactored;
+using S = CodeSmells.General.MissingExplanatoryVariables.Smelly;
 
 namespace CodeSmells.Tests.General;
 

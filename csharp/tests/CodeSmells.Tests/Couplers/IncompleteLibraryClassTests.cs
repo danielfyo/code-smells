@@ -1,5 +1,5 @@
-using S = CodeSmells.Couplers.IncompleteLibraryClass.Smelly;
 using R = CodeSmells.Couplers.IncompleteLibraryClass.Refactored;
+using S = CodeSmells.Couplers.IncompleteLibraryClass.Smelly;
 
 namespace CodeSmells.Tests.Couplers;
 

@@ -36,7 +36,11 @@ public sealed class HtmlSalesFormatter : ISalesFormatter
     {
         var c = CultureInfo.InvariantCulture;
         var sb = new StringBuilder("<h1>Sales</h1><ul>");
-        foreach (var r in summary.Rows) sb.Append(c, $"<li>{r.Product}: {r.Revenue:0.00}</li>");
+        foreach (var r in summary.Rows)
+        {
+            sb.Append(c, $"<li>{r.Product}: {r.Revenue:0.00}</li>");
+        }
+
         sb.Append("</ul>");
         sb.Append(c, $"<p>Total: {summary.TotalRevenue:0.00}</p><p>Best seller: {summary.BestSeller}</p>");
         return sb.ToString();

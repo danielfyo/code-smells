@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.InconsistentNames.Smelly;
 using R = CodeSmells.Names.InconsistentNames.Refactored;
+using S = CodeSmells.Names.InconsistentNames.Smelly;
 
 namespace CodeSmells.Tests.Names;
 

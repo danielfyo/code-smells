@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.NullForgivingAbuse.Smelly;
 using R = CodeSmells.CsharpSpecific.NullForgivingAbuse.Refactored;
+using S = CodeSmells.CsharpSpecific.NullForgivingAbuse.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

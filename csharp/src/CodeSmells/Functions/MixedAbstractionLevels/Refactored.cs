@@ -25,12 +25,18 @@ public sealed class RegistrationService
 
     private static void EnsureStrong(string password)
     {
-        if (password.Length < 8 || !password.Any(char.IsDigit)) throw new ArgumentException("Weak password");
+        if (password.Length < 8 || !password.Any(char.IsDigit))
+        {
+            throw new ArgumentException("Weak password");
+        }
     }
 
     private void EnsureNotRegistered(string email)
     {
-        if (Users.ContainsKey(email)) throw new InvalidOperationException("Email already registered");
+        if (Users.ContainsKey(email))
+        {
+            throw new InvalidOperationException("Email already registered");
+        }
     }
 
     private static string HashPassword(string email, string password) =>

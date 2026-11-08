@@ -1,5 +1,5 @@
-using S = CodeSmells.Data.Loops.Smelly;
 using R = CodeSmells.Data.Loops.Refactored;
+using S = CodeSmells.Data.Loops.Smelly;
 
 namespace CodeSmells.Tests.Data;
 

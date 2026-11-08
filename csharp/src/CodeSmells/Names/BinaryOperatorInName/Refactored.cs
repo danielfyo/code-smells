@@ -8,8 +8,16 @@ public static class OrderValidator
     public static IReadOnlyList<string> Validate(Order order)
     {
         var errors = new List<string>();
-        if (!order.CustomerEmail.Contains('@')) errors.Add("Invalid email");
-        if (order.Amount <= 0) errors.Add("Amount must be positive");
+        if (!order.CustomerEmail.Contains('@'))
+        {
+            errors.Add("Invalid email");
+        }
+
+        if (order.Amount <= 0)
+        {
+            errors.Add("Amount must be positive");
+        }
+
         return errors;
     }
 }

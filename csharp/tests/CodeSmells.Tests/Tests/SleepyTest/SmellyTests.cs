@@ -2,6 +2,8 @@ using CodeSmells.Tests.SleepyTest.Smelly;
 
 namespace CodeSmells.Tests.Tests.SleepyTest;
 
+// Runs outside the parallel test pool so that the smell is shown without making CI flaky.
+[Collection(TimingSensitiveTests.Name)]
 public class SmellyTests
 {
     // SMELL: "magic" Thread.Sleep. If the CI machine is busy and sending takes longer than 200 ms, the test

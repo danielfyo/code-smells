@@ -25,7 +25,9 @@ public sealed class InvoiceMailer
         var attachment = options.Attachment == Attachment.Pdf ? $"{invoice.Number}.pdf" : "none";
         Sent.Add($"to={invoice.CustomerEmail};subject={subject};attachment={attachment}");
         if (options.AccountingCopy == AccountingCopy.Yes)
+        {
             Sent.Add($"to={AccountingEmail};subject={subject};attachment={attachment}");
+        }
     }
 
     // REFACTOR: Rename + return an enum instead of an anonymous bool.

@@ -1,5 +1,5 @@
-using S = CodeSmells.Bloaters.LargeClass.Smelly;
 using R = CodeSmells.Bloaters.LargeClass.Refactored;
+using S = CodeSmells.Bloaters.LargeClass.Smelly;
 
 namespace CodeSmells.Tests.Bloaters;
 

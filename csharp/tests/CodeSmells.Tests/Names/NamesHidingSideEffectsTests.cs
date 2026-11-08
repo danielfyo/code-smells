@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.NamesHidingSideEffects.Smelly;
 using R = CodeSmells.Names.NamesHidingSideEffects.Refactored;
+using S = CodeSmells.Names.NamesHidingSideEffects.Smelly;
 
 namespace CodeSmells.Tests.Names;
 

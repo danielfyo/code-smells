@@ -16,12 +16,22 @@ public static class DirectoryImporter
 
     public static ImportResult ToDirectoryEntry(EmployeeRecord record)
     {
-        if (string.IsNullOrWhiteSpace(record.Id)) return new ImportResult.Invalid("Missing Id");
-        if (record.Email is not { } rawEmail) return new ImportResult.Invalid($"{record.Id}: missing email");
+        if (string.IsNullOrWhiteSpace(record.Id))
+        {
+            return new ImportResult.Invalid("Missing Id");
+        }
+
+        if (record.Email is not { } rawEmail)
+        {
+            return new ImportResult.Invalid($"{record.Id}: missing email");
+        }
 
         var email = rawEmail.Trim().ToLowerInvariant();
         var at = email.IndexOf('@');
-        if (at < 0) return new ImportResult.Invalid($"{record.Id}: email without domain");
+        if (at < 0)
+        {
+            return new ImportResult.Invalid($"{record.Id}: email without domain");
+        }
 
         var manager = record.Manager?.ToUpperInvariant() ?? NoManager; // the CEO has no manager
         return new ImportResult.Ok($"{record.Id}|{email}|{email[(at + 1)..]}|{manager}");

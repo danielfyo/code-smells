@@ -1,5 +1,5 @@
-using S = CodeSmells.ErrorHandling.SwallowedExceptions.Smelly;
 using R = CodeSmells.ErrorHandling.SwallowedExceptions.Refactored;
+using S = CodeSmells.ErrorHandling.SwallowedExceptions.Smelly;
 
 namespace CodeSmells.Tests.ErrorHandling;
 

@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.AmbiguousName.Smelly;
 using R = CodeSmells.Names.AmbiguousName.Refactored;
+using S = CodeSmells.Names.AmbiguousName.Smelly;
 
 namespace CodeSmells.Tests.Names;
 

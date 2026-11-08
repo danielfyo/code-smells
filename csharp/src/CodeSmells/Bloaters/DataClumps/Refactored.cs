@@ -19,7 +19,11 @@ public sealed class ShippingService
     public decimal ShippingCost(Address address, decimal weightKg)
     {
         var baseCost = address.IsDomestic ? 3.5m : 12m;
-        if (address.IsCanaryIslands) baseCost += 6m;
+        if (address.IsCanaryIslands)
+        {
+            baseCost += 6m;
+        }
+
         return baseCost + weightKg * 0.8m;
     }
 }

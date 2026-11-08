@@ -1,5 +1,5 @@
-using S = CodeSmells.Functions.CommandQueryViolation.Smelly;
 using R = CodeSmells.Functions.CommandQueryViolation.Refactored;
+using S = CodeSmells.Functions.CommandQueryViolation.Smelly;
 
 namespace CodeSmells.Tests.Functions;
 

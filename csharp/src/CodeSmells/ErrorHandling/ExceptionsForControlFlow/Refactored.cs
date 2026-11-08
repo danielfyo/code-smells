@@ -12,8 +12,14 @@ public sealed class StockImporter(Dictionary<string, int> stock)
         int applied = 0, rejected = 0;
         foreach (var line in lines)
         {
-            if (TryApply(line)) applied++;
-            else rejected++;
+            if (TryApply(line))
+            {
+                applied++;
+            }
+            else
+            {
+                rejected++;
+            }
         }
         return (applied, rejected);
     }
@@ -21,9 +27,21 @@ public sealed class StockImporter(Dictionary<string, int> stock)
     private bool TryApply(string line)
     {
         var parts = line.Split(',');
-        if (parts.Length != 2) return false;
-        if (!int.TryParse(parts[1], NumberStyles.Integer, CultureInfo.InvariantCulture, out var delta)) return false;
-        if (!stock.TryGetValue(parts[0], out var current)) return false;
+        if (parts.Length != 2)
+        {
+            return false;
+        }
+
+        if (!int.TryParse(parts[1], NumberStyles.Integer, CultureInfo.InvariantCulture, out var delta))
+        {
+            return false;
+        }
+
+        if (!stock.TryGetValue(parts[0], out var current))
+        {
+            return false;
+        }
+
         stock[parts[0]] = current + delta;
         return true;
     }

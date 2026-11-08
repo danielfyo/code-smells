@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.RegionAbuse.Smelly;
 using R = CodeSmells.CsharpSpecific.RegionAbuse.Refactored;
+using S = CodeSmells.CsharpSpecific.RegionAbuse.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

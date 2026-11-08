@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.WrongAbstractionLevelName.Smelly;
 using R = CodeSmells.Names.WrongAbstractionLevelName.Refactored;
+using S = CodeSmells.Names.WrongAbstractionLevelName.Smelly;
 
 namespace CodeSmells.Tests.Names;
 

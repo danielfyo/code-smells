@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.BinaryOperatorInName.Smelly;
 using R = CodeSmells.Names.BinaryOperatorInName.Refactored;
+using S = CodeSmells.Names.BinaryOperatorInName.Smelly;
 
 namespace CodeSmells.Tests.Names;
 

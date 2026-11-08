@@ -1,8 +1,8 @@
 using System.Net;
 using CodeSmells.CsharpSpecific.HttpclientPerRequest.Refactored;
 using Microsoft.Extensions.DependencyInjection;
-using S = CodeSmells.CsharpSpecific.HttpclientPerRequest.Smelly;
 using R = CodeSmells.CsharpSpecific.HttpclientPerRequest.Refactored;
+using S = CodeSmells.CsharpSpecific.HttpclientPerRequest.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

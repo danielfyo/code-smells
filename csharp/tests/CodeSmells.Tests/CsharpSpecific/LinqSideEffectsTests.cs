@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.LinqSideEffects.Smelly;
 using R = CodeSmells.CsharpSpecific.LinqSideEffects.Refactored;
+using S = CodeSmells.CsharpSpecific.LinqSideEffects.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

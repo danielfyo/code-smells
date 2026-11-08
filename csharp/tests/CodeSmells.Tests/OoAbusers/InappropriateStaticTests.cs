@@ -1,5 +1,5 @@
-using S = CodeSmells.OoAbusers.InappropriateStatic.Smelly;
 using R = CodeSmells.OoAbusers.InappropriateStatic.Refactored;
+using S = CodeSmells.OoAbusers.InappropriateStatic.Smelly;
 
 namespace CodeSmells.Tests.OoAbusers;
 

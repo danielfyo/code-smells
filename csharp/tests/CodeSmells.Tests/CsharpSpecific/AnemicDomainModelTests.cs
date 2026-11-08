@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.AnemicDomainModel.Smelly;
 using R = CodeSmells.CsharpSpecific.AnemicDomainModel.Refactored;
+using S = CodeSmells.CsharpSpecific.AnemicDomainModel.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

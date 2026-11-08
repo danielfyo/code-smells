@@ -10,7 +10,11 @@ public sealed record Email
     {
         var value = raw.Trim().ToLowerInvariant();
         var at = value.IndexOf('@');
-        if (at <= 0 || at == value.Length - 1) throw new ArgumentException("Invalid email");
+        if (at <= 0 || at == value.Length - 1)
+        {
+            throw new ArgumentException("Invalid email");
+        }
+
         Value = value;
     }
 
@@ -30,7 +34,11 @@ public readonly record struct Money
 
     public Money(decimal amount, Currency currency)
     {
-        if (amount < 0) throw new ArgumentException("Negative amount");
+        if (amount < 0)
+        {
+            throw new ArgumentException("Negative amount");
+        }
+
         (Amount, Currency) = (amount, currency);
     }
 

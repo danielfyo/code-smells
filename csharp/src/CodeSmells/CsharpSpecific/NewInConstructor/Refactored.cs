@@ -12,7 +12,11 @@ public class OrderProcessor(IOrderRepository repository, IEmailSender emailSende
 {
     public bool Process(Order order)
     {
-        if (order.Amount <= 0) return false;
+        if (order.Amount <= 0)
+        {
+            return false;
+        }
+
         repository.Save(order);
         emailSender.Send(order.CustomerEmail, $"Order {order.Id} received");
         return true;

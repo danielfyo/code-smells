@@ -33,10 +33,15 @@ public sealed class ReceiptService
     private static void Validate(Order order)
     {
         if (order.Lines.Count == 0)
+        {
             throw new ArgumentException("The order has no lines");
+        }
+
         var invalid = order.Lines.FirstOrDefault(l => l.Quantity <= 0);
         if (invalid is not null)
+        {
             throw new ArgumentException($"Invalid quantity for {invalid.Sku}");
+        }
     }
 
     // REFACTOR: Replace Temp with Query / Extract Method for each business rule.
@@ -70,7 +75,10 @@ public sealed class ReceiptService
         var sb = new StringBuilder();
         sb.AppendLine(c, $"Customer: {order.CustomerName}");
         foreach (var line in order.Lines)
+        {
             sb.AppendLine(string.Format(c, "{0} x{1} {2:0.00}", line.Sku, line.Quantity, line.Amount));
+        }
+
         sb.AppendLine(string.Format(c, "Subtotal: {0:0.00}", t.Subtotal));
         sb.AppendLine(string.Format(c, "Discount: {0:0.00}", t.Discount));
         sb.AppendLine(string.Format(c, "VAT: {0:0.00}", t.Tax));

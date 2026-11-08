@@ -1,5 +1,5 @@
-using S = CodeSmells.Bloaters.PrimitiveObsession.Smelly;
 using R = CodeSmells.Bloaters.PrimitiveObsession.Refactored;
+using S = CodeSmells.Bloaters.PrimitiveObsession.Smelly;
 
 namespace CodeSmells.Tests.Bloaters;
 

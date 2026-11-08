@@ -1,5 +1,5 @@
-using S = CodeSmells.ErrorHandling.OverriddenSafeties.Smelly;
 using R = CodeSmells.ErrorHandling.OverriddenSafeties.Refactored;
+using S = CodeSmells.ErrorHandling.OverriddenSafeties.Smelly;
 
 namespace CodeSmells.Tests.ErrorHandling;
 

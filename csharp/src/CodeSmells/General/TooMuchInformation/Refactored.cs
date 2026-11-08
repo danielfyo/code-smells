@@ -18,7 +18,11 @@ public class BankAccount(decimal overdraftLimit = 0m)
     public void Withdraw(decimal amount)
     {
         ValidatePositive(amount);
-        if (Balance + overdraftLimit < amount) throw new InvalidOperationException("Insufficient funds");
+        if (Balance + overdraftLimit < amount)
+        {
+            throw new InvalidOperationException("Insufficient funds");
+        }
+
         Apply(-amount);
     }
 

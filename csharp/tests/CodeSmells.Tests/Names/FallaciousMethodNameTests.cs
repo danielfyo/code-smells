@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.FallaciousMethodName.Smelly;
 using R = CodeSmells.Names.FallaciousMethodName.Refactored;
+using S = CodeSmells.Names.FallaciousMethodName.Smelly;
 
 namespace CodeSmells.Tests.Names;
 

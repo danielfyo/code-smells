@@ -1,5 +1,5 @@
-using S = CodeSmells.Functions.OutputArguments.Smelly;
 using R = CodeSmells.Functions.OutputArguments.Refactored;
+using S = CodeSmells.Functions.OutputArguments.Smelly;
 
 namespace CodeSmells.Tests.Functions;
 

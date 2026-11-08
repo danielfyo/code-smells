@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.NewInConstructor.Smelly;
 using R = CodeSmells.CsharpSpecific.NewInConstructor.Refactored;
+using S = CodeSmells.CsharpSpecific.NewInConstructor.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

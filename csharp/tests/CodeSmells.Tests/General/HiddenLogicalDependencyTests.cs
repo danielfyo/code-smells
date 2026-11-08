@@ -1,5 +1,5 @@
-using S = CodeSmells.General.HiddenLogicalDependency.Smelly;
 using R = CodeSmells.General.HiddenLogicalDependency.Refactored;
+using S = CodeSmells.General.HiddenLogicalDependency.Smelly;
 
 namespace CodeSmells.Tests.General;
 

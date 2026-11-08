@@ -1,5 +1,5 @@
-using S = CodeSmells.Dispensables.ExcessiveComments.Smelly;
 using R = CodeSmells.Dispensables.ExcessiveComments.Refactored;
+using S = CodeSmells.Dispensables.ExcessiveComments.Smelly;
 
 namespace CodeSmells.Tests.Dispensables;
 

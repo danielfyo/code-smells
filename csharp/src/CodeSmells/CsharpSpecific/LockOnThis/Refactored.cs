@@ -17,6 +17,10 @@ public class StockCounter
 
     public int Units
     {
-        get { lock (_gate) return _units; }
+        get { lock (_gate)
+            {
+                return _units;
+            }
+        }
     }
 }

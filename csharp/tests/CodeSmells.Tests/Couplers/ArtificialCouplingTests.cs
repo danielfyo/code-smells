@@ -1,5 +1,5 @@
-using S = CodeSmells.Couplers.ArtificialCoupling.Smelly;
 using R = CodeSmells.Couplers.ArtificialCoupling.Refactored;
+using S = CodeSmells.Couplers.ArtificialCoupling.Smelly;
 
 namespace CodeSmells.Tests.Couplers;
 

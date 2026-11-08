@@ -1,5 +1,5 @@
-using S = CodeSmells.Couplers.MessageChains.Smelly;
 using R = CodeSmells.Couplers.MessageChains.Refactored;
+using S = CodeSmells.Couplers.MessageChains.Smelly;
 
 namespace CodeSmells.Tests.Couplers;
 

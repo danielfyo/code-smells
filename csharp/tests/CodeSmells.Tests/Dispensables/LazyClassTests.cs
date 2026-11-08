@@ -1,5 +1,5 @@
-using S = CodeSmells.Dispensables.LazyClass.Smelly;
 using R = CodeSmells.Dispensables.LazyClass.Refactored;
+using S = CodeSmells.Dispensables.LazyClass.Smelly;
 
 namespace CodeSmells.Tests.Dispensables;
 

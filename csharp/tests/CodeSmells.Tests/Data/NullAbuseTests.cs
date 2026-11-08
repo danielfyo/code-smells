@@ -1,5 +1,5 @@
-using S = CodeSmells.Data.NullAbuse.Smelly;
 using R = CodeSmells.Data.NullAbuse.Refactored;
+using S = CodeSmells.Data.NullAbuse.Smelly;
 
 namespace CodeSmells.Tests.Data;
 

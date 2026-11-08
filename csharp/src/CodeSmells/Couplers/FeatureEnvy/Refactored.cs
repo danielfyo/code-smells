@@ -6,7 +6,11 @@ public sealed record Customer(string Name, int YearsAsCustomer, decimal SpentLas
 {
     public decimal DiscountRate()
     {
-        if (IsEmployee) return 0.30m;
+        if (IsEmployee)
+        {
+            return 0.30m;
+        }
+
         var rate = (YearsAsCustomer >= 5 ? 0.05m : 0m)
                  + (SpentLastYear > 1000m ? 0.05m : 0m)
                  - (ReturnedOrders > 3 ? 0.03m : 0m);

@@ -1,5 +1,5 @@
-using S = CodeSmells.General.ConfigurableDataAtLowLevels.Smelly;
 using R = CodeSmells.General.ConfigurableDataAtLowLevels.Refactored;
+using S = CodeSmells.General.ConfigurableDataAtLowLevels.Smelly;
 
 namespace CodeSmells.Tests.General;
 

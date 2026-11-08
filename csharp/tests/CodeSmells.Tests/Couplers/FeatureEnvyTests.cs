@@ -1,5 +1,5 @@
-using S = CodeSmells.Couplers.FeatureEnvy.Smelly;
 using R = CodeSmells.Couplers.FeatureEnvy.Refactored;
+using S = CodeSmells.Couplers.FeatureEnvy.Smelly;
 
 namespace CodeSmells.Tests.Couplers;
 

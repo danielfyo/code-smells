@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.CatchGeneralException.Smelly;
 using R = CodeSmells.CsharpSpecific.CatchGeneralException.Refactored;
+using S = CodeSmells.CsharpSpecific.CatchGeneralException.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

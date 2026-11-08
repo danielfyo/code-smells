@@ -9,7 +9,11 @@ public class NotificationOutbox
 
     public IReadOnlyList<string> Sent
     {
-        get { lock (_sent) return _sent.ToList(); }
+        get { lock (_sent)
+            {
+                return _sent.ToList();
+            }
+        }
     }
 
     public void Enqueue(string message)
@@ -17,13 +21,22 @@ public class NotificationOutbox
         var work = Task.Run(async () =>
         {
             await Task.Delay(20);
-            lock (_sent) _sent.Add(message);
+            lock (_sent)
+            {
+                _sent.Add(message);
+            }
         });
-        lock (_pending) _pending.Add(work);
+        lock (_pending)
+        {
+            _pending.Add(work);
+        }
     }
 
     public Task WhenIdleAsync()
     {
-        lock (_pending) return Task.WhenAll(_pending.ToArray());
+        lock (_pending)
+        {
+            return Task.WhenAll(_pending.ToArray());
+        }
     }
 }

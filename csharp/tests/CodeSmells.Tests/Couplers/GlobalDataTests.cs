@@ -1,5 +1,5 @@
-using S = CodeSmells.Couplers.GlobalData.Smelly;
 using R = CodeSmells.Couplers.GlobalData.Refactored;
+using S = CodeSmells.Couplers.GlobalData.Smelly;
 
 namespace CodeSmells.Tests.Couplers;
 

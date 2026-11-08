@@ -1,5 +1,5 @@
-using S = CodeSmells.Functions.MixedAbstractionLevels.Smelly;
 using R = CodeSmells.Functions.MixedAbstractionLevels.Refactored;
+using S = CodeSmells.Functions.MixedAbstractionLevels.Smelly;
 
 namespace CodeSmells.Tests.Functions;
 

@@ -1,5 +1,5 @@
-using S = CodeSmells.Dispensables.Clutter.Smelly;
 using R = CodeSmells.Dispensables.Clutter.Refactored;
+using S = CodeSmells.Dispensables.Clutter.Smelly;
 
 namespace CodeSmells.Tests.Dispensables;
 

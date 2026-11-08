@@ -1,5 +1,5 @@
-using S = CodeSmells.Comments.PoorlyWrittenComment.Smelly;
 using R = CodeSmells.Comments.PoorlyWrittenComment.Refactored;
+using S = CodeSmells.Comments.PoorlyWrittenComment.Smelly;
 
 namespace CodeSmells.Tests.Comments;
 

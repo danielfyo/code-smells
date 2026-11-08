@@ -1,5 +1,5 @@
-using S = CodeSmells.General.OddballSolution.Smelly;
 using R = CodeSmells.General.OddballSolution.Refactored;
+using S = CodeSmells.General.OddballSolution.Smelly;
 
 namespace CodeSmells.Tests.General;
 

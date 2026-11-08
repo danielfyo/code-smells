@@ -13,9 +13,21 @@ public static class WarrantyDesk
 {
     public static string Review(WarrantyClaim claim, DateOnly today)
     {
-        if (!claim.HasReceipt) return "Rejected: missing receipt";
-        if (!claim.IsCovered(today)) return "Rejected: warranty expired";
-        if (claim.WasDamagedByUser) return "Rejected: damage caused by misuse";
+        if (!claim.HasReceipt)
+        {
+            return "Rejected: missing receipt";
+        }
+
+        if (!claim.IsCovered(today))
+        {
+            return "Rejected: warranty expired";
+        }
+
+        if (claim.WasDamagedByUser)
+        {
+            return "Rejected: damage caused by misuse";
+        }
+
         return "Accepted";
     }
 }

@@ -1,5 +1,5 @@
-using S = CodeSmells.OoAbusers.AlternativeClassesDifferentInterfaces.Smelly;
 using R = CodeSmells.OoAbusers.AlternativeClassesDifferentInterfaces.Refactored;
+using S = CodeSmells.OoAbusers.AlternativeClassesDifferentInterfaces.Smelly;
 
 namespace CodeSmells.Tests.OoAbusers;
 

@@ -1,5 +1,5 @@
-using S = CodeSmells.General.Imprecision.Smelly;
 using R = CodeSmells.General.Imprecision.Refactored;
+using S = CodeSmells.General.Imprecision.Smelly;
 
 namespace CodeSmells.Tests.General;
 

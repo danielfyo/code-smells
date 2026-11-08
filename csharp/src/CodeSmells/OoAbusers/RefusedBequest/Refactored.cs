@@ -21,7 +21,11 @@ public sealed class CheckingAccount : IWithdrawable
 
     public void Withdraw(decimal amount)
     {
-        if (amount > Balance) throw new InvalidOperationException("Insufficient funds");
+        if (amount > Balance)
+        {
+            throw new InvalidOperationException("Insufficient funds");
+        }
+
         Balance -= amount;
     }
 }
@@ -34,7 +38,11 @@ public sealed class FixedTermDeposit(decimal initial, DateOnly maturity) : IAcco
 
     public decimal Close(DateOnly today)
     {
-        if (today < MaturityDate) throw new InvalidOperationException("Not matured yet");
+        if (today < MaturityDate)
+        {
+            throw new InvalidOperationException("Not matured yet");
+        }
+
         var amount = Balance;
         Balance = 0;
         return amount;
@@ -47,6 +55,9 @@ public static class MonthlyFees
     // passing a fixed-term deposit.
     public static void Charge(IEnumerable<IWithdrawable> accounts, decimal fee)
     {
-        foreach (var account in accounts) account.Withdraw(fee);
+        foreach (var account in accounts)
+        {
+            account.Withdraw(fee);
+        }
     }
 }

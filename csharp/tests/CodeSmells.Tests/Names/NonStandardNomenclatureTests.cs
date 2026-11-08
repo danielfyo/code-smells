@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.NonStandardNomenclature.Smelly;
 using R = CodeSmells.Names.NonStandardNomenclature.Refactored;
+using S = CodeSmells.Names.NonStandardNomenclature.Smelly;
 
 namespace CodeSmells.Tests.Names;
 
