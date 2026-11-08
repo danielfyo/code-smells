@@ -7,6 +7,8 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "test:watch": "vitest",
     "check": "npm run typecheck && npm test"
   },
   "dependencies": {
@@ -19,8 +21,12 @@
     "@testing-library/user-event": "^14.6.8",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@vitest/coverage-v8": "^5.1.0",
     "jsdom": "^31.0.0",
     "typescript": "^5.9.3",
-    "vitest": "^3.2.7"
+    "vitest": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
