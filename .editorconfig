@@ -1,0 +1,53 @@
+# EditorConfig: consistent formatting across editors and IDEs. https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.{cs,csx}]
+indent_size = 4
+# .NET code style (enforced at build time through EnforceCodeStyleInBuild).
+csharp_style_namespace_declarations = file_scoped:warning
+csharp_prefer_braces = true:warning
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+dotnet_sort_system_directives_first = true
+dotnet_diagnostic.IDE0005.severity = warning # unnecessary using directives
+
+# Smelly examples are deliberately bad code: analyzers and style rules are switched off for them,
+# while refactored code and the clean tests must build with zero warnings.
+[**/Smelly*.cs]
+# Treated as generated code, which analyzers skip; nullable annotations are then informational only.
+generated_code = true
+dotnet_analyzer_diagnostic.severity = none
+dotnet_diagnostic.CS8669.severity = none
+dotnet_diagnostic.IDE0005.severity = none
+
+[*.{csproj,props,targets,xml,config}]
+indent_size = 2
+
+[*.sln]
+indent_style = tab
+
+[*.py]
+indent_size = 4
+max_line_length = 100
+
+[{*.go,go.mod,go.sum}]
+indent_style = tab
+indent_size = 4
+
+[*.{ts,tsx,js,jsx,json,yml,yaml,html,css}]
+indent_size = 2
+
+[*.md]
+# Two trailing spaces are a hard line break in Markdown.
+trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab
