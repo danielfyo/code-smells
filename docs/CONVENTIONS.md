@@ -56,8 +56,18 @@ Code categories: `bloaters`, `oo_abusers`, `change_preventers`, `dispensables`, 
 ## References
 ```
 
+## Quality gates
+
+- `smelly` files are exempt from linters on purpose: Ruff `extend-exclude`, mypy `exclude` +
+  `follow_imports = "skip"`, `.editorconfig` treats `Smelly*.cs` as generated code, CodeQL `paths-ignore`.
+- Everything else must pass: Ruff + mypy `--strict` (Python), warnings as errors with .NET analyzers
+  `latest-recommended` (C#), TypeScript `strict` (React + TS), `gofmt` + `go vet` + `go test -race` (Go).
+- Generated files (`catalog.json`, `docs/CATALOG.md`, `*/INDEX.md`) must match `tools/build_catalog.py`.
+- `make all` runs exactly what CI runs.
+
 ## Commits
 
 The history follows [Conventional Commits](https://www.conventionalcommits.org/):
 `feat(python): add long-method example`, `docs: describe shotgun surgery`, `fix(go): ...`,
-`test(csharp): ...`, `build: ...`, `ci: ...`, `chore: ...`.
+`test(csharp): ...`, `build: ...`, `ci: ...`, `chore: ...`. Pull request titles are validated in CI, and
+[release-please](https://github.com/googleapis/release-please) builds `CHANGELOG.md` and releases from them.
