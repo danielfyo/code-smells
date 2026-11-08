@@ -1,0 +1,1 @@
+"""Smell: global_statement."""

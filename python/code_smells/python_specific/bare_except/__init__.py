@@ -1,0 +1,1 @@
+"""Smell: bare_except."""
