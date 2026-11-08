@@ -91,6 +91,7 @@ func (s *CartService) Total(c Cart) Money {
 - C#: [`csharp/src/CodeSmells/Comments/CommentedOutCode/`](../../../csharp/src/CodeSmells/Comments/CommentedOutCode/)
 - React + TS: [`react-ts/src/smells/comments/commented-out-code/`](../../../react-ts/src/smells/comments/commented-out-code/)
 - Go: [`go/smells/comments/commented-out-code/`](../../../go/smells/comments/commented-out-code/)
+- Angular: [`angular/src/smells/comments/commented-out-code/`](../../../angular/src/smells/comments/commented-out-code/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

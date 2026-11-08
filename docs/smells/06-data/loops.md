@@ -101,6 +101,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Data/Loops/`](../../../csharp/src/CodeSmells/Data/Loops/) |
 | React + TS | [`react-ts/src/smells/data/loops/`](../../../react-ts/src/smells/data/loops/) |
 | Go | [`go/smells/data/loops/`](../../../go/smells/data/loops/) |
+| Angular | [`angular/src/smells/data/loops/`](../../../angular/src/smells/data/loops/) |
 
 ## References
 

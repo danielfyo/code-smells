@@ -1,10 +1,10 @@
 <a id="top"></a>
 
 <p align="center">
-  <img src=".github/assets/social-preview.png" alt="Code Smells: a hands-on catalog in Python, C#/.NET, React + TypeScript and Go" width="100%">
+  <img src=".github/assets/social-preview.png" alt="Code Smells: a hands-on catalog in Python, C#/.NET, React + TypeScript, Go and Angular" width="100%">
 </p>
 
-# Code Smells — a hands-on catalog in Python, C#/.NET, React + TypeScript and Go
+# Code Smells — a hands-on catalog in Python, C#/.NET, React + TypeScript, Go and Angular
 
 [![CI](https://github.com/danielfyo/code-smells/actions/workflows/ci.yml/badge.svg)](https://github.com/danielfyo/code-smells/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/danielfyo/code-smells/actions/workflows/codeql.yml/badge.svg)](https://github.com/danielfyo/code-smells/actions/workflows/codeql.yml)
@@ -18,14 +18,15 @@
 ![React 19](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![TypeScript 5](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
 ![Go 1.24](https://img.shields.io/badge/Go-1.24-00ADD8?logo=go&logoColor=white)
+![Angular 22](https://img.shields.io/badge/Angular-22-DD0031?logo=angular&logoColor=white)
 
 > *"If it stinks, change it."* — Kent Beck
 
-An educational repository with **176 code smells** organized in **17 categories**, each one with:
+An educational repository with **198 code smells** organized in **18 categories**, each one with:
 
 - 📖 **An explanation page**: definition, symptoms, causes, consequences, example, solution,
   recommended refactorings, exceptions, related smells, automatic detection and references.
-- 💻 **Implementations in 4 languages** (generic smells) or in their own language (idiomatic smells):
+- 💻 **Implementations in 5 languages** (generic smells) or in their own language (idiomatic smells):
   a **`smelly`** version (with the smell, marked with `SMELL:` comments) and a **`refactored`** version
   (the fix, with `REFACTOR:` comments naming the technique applied).
 - ✅ **Tests** proving both versions behave the same — or exposing the bug hidden behind the smell.
@@ -51,7 +52,8 @@ An educational repository with **176 code smells** organized in **17 categories*
 | 15 | [C# / .NET-specific](docs/smells/15-csharp/) | 20 | Microsoft, D. Fowler, M. Seemann |
 | 16 | [React + TypeScript-specific](docs/smells/16-react-ts/) | 22 | react.dev, typescript-eslint |
 | 17 | [Go-specific](docs/smells/17-go/) | 22 | Effective Go, Code Review Comments, 100 Go Mistakes |
-| | **Total** | **176** | |
+| 18 | [Angular-specific](docs/smells/18-angular/) | 22 | angular.dev, RxJS, angular-eslint |
+| | **Total** | **198** | |
 
 ➡️ **[Full catalog with every smell and link](docs/CATALOG.md)**
 
@@ -60,7 +62,7 @@ An educational repository with **176 code smells** organized in **17 categories*
 1. [Introduction: what a code smell is, history and taxonomies](docs/INTRODUCTION.md)
 2. [Full catalog](docs/CATALOG.md)
 3. [Repository conventions](docs/CONVENTIONS.md)
-4. Per-language indexes: [Python](python/INDEX.md) · [C#](csharp/INDEX.md) · [React + TS](react-ts/INDEX.md) · [Go](go/INDEX.md)
+4. Per-language indexes: [Python](python/INDEX.md) · [C#](csharp/INDEX.md) · [React + TS](react-ts/INDEX.md) · [Go](go/INDEX.md) · [Angular](angular/INDEX.md)
 
 ## Layout
 
@@ -77,19 +79,21 @@ An educational repository with **176 code smells** organized in **17 categories*
 │   └── tests/CodeSmells.Tests/<Category>/       <Slug>Tests.cs (xUnit)
 ├── react-ts/src/smells/<category>/<slug>/       Smelly.tsx · Refactored.tsx · *.test.tsx (Vitest)
 ├── go/smells/<category>/<slug>/                 smelly/ · refactored/ (with _test.go)
+├── angular/src/smells/<category>/<slug>/        smelly.ts · refactored.ts · *.spec.ts (Vitest + TestBed)
 └── tools/                    # Catalog generation and verification
 ```
 
 ## Running the examples
 
-Requirements: Python 3.11+ with `pytest`, .NET 8 SDK, Node 20+ and Go 1.24.
+Requirements: Python 3.11+ with `pytest`, .NET 8 SDK, Node 22.22+ and Go 1.24.
 
 ```bash
-make all          # everything: catalog + the 4 languages
+make all          # everything: catalog + the 5 languages
 make python       # cd python   && python3 -m pytest
 make csharp       # dotnet test CodeSmells.sln (repo root)
 make react-ts     # cd react-ts && npm ci && npm run check
 make go           # cd go       && go vet ./... && go test ./...
+make angular      # cd angular  && npm ci && npm run check
 ```
 
 The GitHub Actions workflow (`.github/workflows/ci.yml`) runs the same checks on every push.
@@ -107,7 +111,8 @@ pass the same gates locally and in CI:
 | C# / .NET | warnings as errors, .NET analyzers `latest-recommended`, code style enforced in build, NuGet lock files |
 | React + TS | TypeScript `strict`, Vitest + Testing Library with coverage, `npm audit` |
 | Go | `gofmt`, `go vet`, `go test -race` with coverage |
-| Security | CodeQL (5 languages + workflows), OpenSSF Scorecard, Dependabot, SHA-pinned actions, least-privilege tokens |
+| Angular | `strictTemplates` + extended diagnostics as errors, Vitest + TestBed with coverage, production build, `npm audit` |
+| Security | CodeQL (C#, Python, Go, JS/TS + workflows), OpenSSF Scorecard, Dependabot, SHA-pinned actions, least-privilege tokens |
 
 Formatting is shared through [`.editorconfig`](.editorconfig) and line endings through
 [`.gitattributes`](.gitattributes).

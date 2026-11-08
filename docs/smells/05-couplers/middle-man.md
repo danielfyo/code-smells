@@ -95,6 +95,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/MiddleMan/`](../../../csharp/src/CodeSmells/Couplers/MiddleMan/) |
 | React + TS | [`react-ts/src/smells/couplers/middle-man/`](../../../react-ts/src/smells/couplers/middle-man/) |
 | Go | [`go/smells/couplers/middle-man/`](../../../go/smells/couplers/middle-man/) |
+| Angular | [`angular/src/smells/couplers/middle-man/`](../../../angular/src/smells/couplers/middle-man/) |
 
 ## References
 

@@ -94,6 +94,7 @@ There are no standard rules for author or history headers; a regular-expression 
 - C#: [`csharp/src/CodeSmells/Comments/InappropriateInformation/`](../../../csharp/src/CodeSmells/Comments/InappropriateInformation/)
 - React + TS: [`react-ts/src/smells/comments/inappropriate-information/`](../../../react-ts/src/smells/comments/inappropriate-information/)
 - Go: [`go/smells/comments/inappropriate-information/`](../../../go/smells/comments/inappropriate-information/)
+- Angular: [`angular/src/smells/comments/inappropriate-information/`](../../../angular/src/smells/comments/inappropriate-information/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

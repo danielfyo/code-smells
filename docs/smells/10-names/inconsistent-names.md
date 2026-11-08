@@ -80,6 +80,7 @@ class CustomerRepository:
 - C#: [`csharp/src/CodeSmells/Names/InconsistentNames/`](../../../csharp/src/CodeSmells/Names/InconsistentNames/)
 - React + TS: [`react-ts/src/smells/names/inconsistent-names/`](../../../react-ts/src/smells/names/inconsistent-names/)
 - Go: [`go/smells/names/inconsistent-names/`](../../../go/smells/names/inconsistent-names/)
+- Angular: [`angular/src/smells/names/inconsistent-names/`](../../../angular/src/smells/names/inconsistent-names/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

@@ -98,6 +98,7 @@ If the API only offers callbacks, wrap it once (`util.promisify` in Node, `TaskC
 - C#: [`csharp/src/CodeSmells/General/CallbackHell/`](../../../csharp/src/CodeSmells/General/CallbackHell/)
 - React + TS: [`react-ts/src/smells/general/callback-hell/`](../../../react-ts/src/smells/general/callback-hell/)
 - Go: [`go/smells/general/callback-hell/`](../../../go/smells/general/callback-hell/)
+- Angular: [`angular/src/smells/general/callback-hell/`](../../../angular/src/smells/general/callback-hell/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

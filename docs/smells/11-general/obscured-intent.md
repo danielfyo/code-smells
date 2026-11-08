@@ -85,6 +85,7 @@ function shippingFee(order: Order): number {
 - C#: [`csharp/src/CodeSmells/General/ObscuredIntent/`](../../../csharp/src/CodeSmells/General/ObscuredIntent/)
 - React + TS: [`react-ts/src/smells/general/obscured-intent/`](../../../react-ts/src/smells/general/obscured-intent/)
 - Go: [`go/smells/general/obscured-intent/`](../../../go/smells/general/obscured-intent/)
+- Angular: [`angular/src/smells/general/obscured-intent/`](../../../angular/src/smells/general/obscured-intent/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

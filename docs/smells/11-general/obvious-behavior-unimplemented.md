@@ -93,6 +93,7 @@ In general, this smell is found by writing tests from the API consumer's perspec
 - C#: [`csharp/src/CodeSmells/General/ObviousBehaviorUnimplemented/`](../../../csharp/src/CodeSmells/General/ObviousBehaviorUnimplemented/)
 - React + TS: [`react-ts/src/smells/general/obvious-behavior-unimplemented/`](../../../react-ts/src/smells/general/obvious-behavior-unimplemented/)
 - Go: [`go/smells/general/obvious-behavior-unimplemented/`](../../../go/smells/general/obvious-behavior-unimplemented/)
+- Angular: [`angular/src/smells/general/obvious-behavior-unimplemented/`](../../../angular/src/smells/general/obvious-behavior-unimplemented/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

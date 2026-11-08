@@ -15,14 +15,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/01-bloaters/long-method.md",
         "code": {
           "python": "python/code_smells/bloaters/long_method/",
           "csharp": "csharp/src/CodeSmells/Bloaters/LongMethod/",
           "react-ts": "react-ts/src/smells/bloaters/long-method/",
-          "go": "go/smells/bloaters/long-method/"
+          "go": "go/smells/bloaters/long-method/",
+          "angular": "angular/src/smells/bloaters/long-method/"
         },
         "doc_focused": false
       },
@@ -36,14 +38,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/01-bloaters/large-class.md",
         "code": {
           "python": "python/code_smells/bloaters/large_class/",
           "csharp": "csharp/src/CodeSmells/Bloaters/LargeClass/",
           "react-ts": "react-ts/src/smells/bloaters/large-class/",
-          "go": "go/smells/bloaters/large-class/"
+          "go": "go/smells/bloaters/large-class/",
+          "angular": "angular/src/smells/bloaters/large-class/"
         },
         "doc_focused": false
       },
@@ -57,14 +61,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/01-bloaters/long-parameter-list.md",
         "code": {
           "python": "python/code_smells/bloaters/long_parameter_list/",
           "csharp": "csharp/src/CodeSmells/Bloaters/LongParameterList/",
           "react-ts": "react-ts/src/smells/bloaters/long-parameter-list/",
-          "go": "go/smells/bloaters/long-parameter-list/"
+          "go": "go/smells/bloaters/long-parameter-list/",
+          "angular": "angular/src/smells/bloaters/long-parameter-list/"
         },
         "doc_focused": false
       },
@@ -78,14 +84,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/01-bloaters/primitive-obsession.md",
         "code": {
           "python": "python/code_smells/bloaters/primitive_obsession/",
           "csharp": "csharp/src/CodeSmells/Bloaters/PrimitiveObsession/",
           "react-ts": "react-ts/src/smells/bloaters/primitive-obsession/",
-          "go": "go/smells/bloaters/primitive-obsession/"
+          "go": "go/smells/bloaters/primitive-obsession/",
+          "angular": "angular/src/smells/bloaters/primitive-obsession/"
         },
         "doc_focused": false
       },
@@ -99,14 +107,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/01-bloaters/data-clumps.md",
         "code": {
           "python": "python/code_smells/bloaters/data_clumps/",
           "csharp": "csharp/src/CodeSmells/Bloaters/DataClumps/",
           "react-ts": "react-ts/src/smells/bloaters/data-clumps/",
-          "go": "go/smells/bloaters/data-clumps/"
+          "go": "go/smells/bloaters/data-clumps/",
+          "angular": "angular/src/smells/bloaters/data-clumps/"
         },
         "doc_focused": false
       }
@@ -128,14 +138,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/02-oo-abusers/switch-statements.md",
         "code": {
           "python": "python/code_smells/oo_abusers/switch_statements/",
           "csharp": "csharp/src/CodeSmells/OoAbusers/SwitchStatements/",
           "react-ts": "react-ts/src/smells/oo_abusers/switch-statements/",
-          "go": "go/smells/oo_abusers/switch-statements/"
+          "go": "go/smells/oo_abusers/switch-statements/",
+          "angular": "angular/src/smells/oo_abusers/switch-statements/"
         },
         "doc_focused": false
       },
@@ -149,14 +161,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/02-oo-abusers/temporary-field.md",
         "code": {
           "python": "python/code_smells/oo_abusers/temporary_field/",
           "csharp": "csharp/src/CodeSmells/OoAbusers/TemporaryField/",
           "react-ts": "react-ts/src/smells/oo_abusers/temporary-field/",
-          "go": "go/smells/oo_abusers/temporary-field/"
+          "go": "go/smells/oo_abusers/temporary-field/",
+          "angular": "angular/src/smells/oo_abusers/temporary-field/"
         },
         "doc_focused": false
       },
@@ -170,14 +184,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/02-oo-abusers/refused-bequest.md",
         "code": {
           "python": "python/code_smells/oo_abusers/refused_bequest/",
           "csharp": "csharp/src/CodeSmells/OoAbusers/RefusedBequest/",
           "react-ts": "react-ts/src/smells/oo_abusers/refused-bequest/",
-          "go": "go/smells/oo_abusers/refused-bequest/"
+          "go": "go/smells/oo_abusers/refused-bequest/",
+          "angular": "angular/src/smells/oo_abusers/refused-bequest/"
         },
         "doc_focused": false
       },
@@ -191,14 +207,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/02-oo-abusers/alternative-classes-different-interfaces.md",
         "code": {
           "python": "python/code_smells/oo_abusers/alternative_classes_different_interfaces/",
           "csharp": "csharp/src/CodeSmells/OoAbusers/AlternativeClassesDifferentInterfaces/",
           "react-ts": "react-ts/src/smells/oo_abusers/alternative-classes-different-interfaces/",
-          "go": "go/smells/oo_abusers/alternative-classes-different-interfaces/"
+          "go": "go/smells/oo_abusers/alternative-classes-different-interfaces/",
+          "angular": "angular/src/smells/oo_abusers/alternative-classes-different-interfaces/"
         },
         "doc_focused": false
       },
@@ -212,14 +230,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/02-oo-abusers/base-class-depends-on-subclass.md",
         "code": {
           "python": "python/code_smells/oo_abusers/base_class_depends_on_subclass/",
           "csharp": "csharp/src/CodeSmells/OoAbusers/BaseClassDependsOnSubclass/",
           "react-ts": "react-ts/src/smells/oo_abusers/base-class-depends-on-subclass/",
-          "go": "go/smells/oo_abusers/base-class-depends-on-subclass/"
+          "go": "go/smells/oo_abusers/base-class-depends-on-subclass/",
+          "angular": "angular/src/smells/oo_abusers/base-class-depends-on-subclass/"
         },
         "doc_focused": false
       },
@@ -233,14 +253,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/02-oo-abusers/inappropriate-static.md",
         "code": {
           "python": "python/code_smells/oo_abusers/inappropriate_static/",
           "csharp": "csharp/src/CodeSmells/OoAbusers/InappropriateStatic/",
           "react-ts": "react-ts/src/smells/oo_abusers/inappropriate-static/",
-          "go": "go/smells/oo_abusers/inappropriate-static/"
+          "go": "go/smells/oo_abusers/inappropriate-static/",
+          "angular": "angular/src/smells/oo_abusers/inappropriate-static/"
         },
         "doc_focused": false
       }
@@ -262,14 +284,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/03-change-preventers/divergent-change.md",
         "code": {
           "python": "python/code_smells/change_preventers/divergent_change/",
           "csharp": "csharp/src/CodeSmells/ChangePreventers/DivergentChange/",
           "react-ts": "react-ts/src/smells/change_preventers/divergent-change/",
-          "go": "go/smells/change_preventers/divergent-change/"
+          "go": "go/smells/change_preventers/divergent-change/",
+          "angular": "angular/src/smells/change_preventers/divergent-change/"
         },
         "doc_focused": false
       },
@@ -283,14 +307,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/03-change-preventers/shotgun-surgery.md",
         "code": {
           "python": "python/code_smells/change_preventers/shotgun_surgery/",
           "csharp": "csharp/src/CodeSmells/ChangePreventers/ShotgunSurgery/",
           "react-ts": "react-ts/src/smells/change_preventers/shotgun-surgery/",
-          "go": "go/smells/change_preventers/shotgun-surgery/"
+          "go": "go/smells/change_preventers/shotgun-surgery/",
+          "angular": "angular/src/smells/change_preventers/shotgun-surgery/"
         },
         "doc_focused": false
       },
@@ -304,14 +330,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/03-change-preventers/parallel-inheritance-hierarchies.md",
         "code": {
           "python": "python/code_smells/change_preventers/parallel_inheritance_hierarchies/",
           "csharp": "csharp/src/CodeSmells/ChangePreventers/ParallelInheritanceHierarchies/",
           "react-ts": "react-ts/src/smells/change_preventers/parallel-inheritance-hierarchies/",
-          "go": "go/smells/change_preventers/parallel-inheritance-hierarchies/"
+          "go": "go/smells/change_preventers/parallel-inheritance-hierarchies/",
+          "angular": "angular/src/smells/change_preventers/parallel-inheritance-hierarchies/"
         },
         "doc_focused": false
       },
@@ -325,14 +353,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/03-change-preventers/combinatorial-explosion.md",
         "code": {
           "python": "python/code_smells/change_preventers/combinatorial_explosion/",
           "csharp": "csharp/src/CodeSmells/ChangePreventers/CombinatorialExplosion/",
           "react-ts": "react-ts/src/smells/change_preventers/combinatorial-explosion/",
-          "go": "go/smells/change_preventers/combinatorial-explosion/"
+          "go": "go/smells/change_preventers/combinatorial-explosion/",
+          "angular": "angular/src/smells/change_preventers/combinatorial-explosion/"
         },
         "doc_focused": false
       }
@@ -354,14 +384,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/04-dispensables/duplicate-code.md",
         "code": {
           "python": "python/code_smells/dispensables/duplicate_code/",
           "csharp": "csharp/src/CodeSmells/Dispensables/DuplicateCode/",
           "react-ts": "react-ts/src/smells/dispensables/duplicate-code/",
-          "go": "go/smells/dispensables/duplicate-code/"
+          "go": "go/smells/dispensables/duplicate-code/",
+          "angular": "angular/src/smells/dispensables/duplicate-code/"
         },
         "doc_focused": false
       },
@@ -375,14 +407,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/04-dispensables/lazy-class.md",
         "code": {
           "python": "python/code_smells/dispensables/lazy_class/",
           "csharp": "csharp/src/CodeSmells/Dispensables/LazyClass/",
           "react-ts": "react-ts/src/smells/dispensables/lazy-class/",
-          "go": "go/smells/dispensables/lazy-class/"
+          "go": "go/smells/dispensables/lazy-class/",
+          "angular": "angular/src/smells/dispensables/lazy-class/"
         },
         "doc_focused": false
       },
@@ -396,14 +430,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/04-dispensables/data-class.md",
         "code": {
           "python": "python/code_smells/dispensables/data_class/",
           "csharp": "csharp/src/CodeSmells/Dispensables/DataClass/",
           "react-ts": "react-ts/src/smells/dispensables/data-class/",
-          "go": "go/smells/dispensables/data-class/"
+          "go": "go/smells/dispensables/data-class/",
+          "angular": "angular/src/smells/dispensables/data-class/"
         },
         "doc_focused": false
       },
@@ -417,14 +453,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/04-dispensables/dead-code.md",
         "code": {
           "python": "python/code_smells/dispensables/dead_code/",
           "csharp": "csharp/src/CodeSmells/Dispensables/DeadCode/",
           "react-ts": "react-ts/src/smells/dispensables/dead-code/",
-          "go": "go/smells/dispensables/dead-code/"
+          "go": "go/smells/dispensables/dead-code/",
+          "angular": "angular/src/smells/dispensables/dead-code/"
         },
         "doc_focused": false
       },
@@ -438,14 +476,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/04-dispensables/speculative-generality.md",
         "code": {
           "python": "python/code_smells/dispensables/speculative_generality/",
           "csharp": "csharp/src/CodeSmells/Dispensables/SpeculativeGenerality/",
           "react-ts": "react-ts/src/smells/dispensables/speculative-generality/",
-          "go": "go/smells/dispensables/speculative-generality/"
+          "go": "go/smells/dispensables/speculative-generality/",
+          "angular": "angular/src/smells/dispensables/speculative-generality/"
         },
         "doc_focused": false
       },
@@ -459,14 +499,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/04-dispensables/excessive-comments.md",
         "code": {
           "python": "python/code_smells/dispensables/excessive_comments/",
           "csharp": "csharp/src/CodeSmells/Dispensables/ExcessiveComments/",
           "react-ts": "react-ts/src/smells/dispensables/excessive-comments/",
-          "go": "go/smells/dispensables/excessive-comments/"
+          "go": "go/smells/dispensables/excessive-comments/",
+          "angular": "angular/src/smells/dispensables/excessive-comments/"
         },
         "doc_focused": false
       },
@@ -480,14 +522,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/04-dispensables/clutter.md",
         "code": {
           "python": "python/code_smells/dispensables/clutter/",
           "csharp": "csharp/src/CodeSmells/Dispensables/Clutter/",
           "react-ts": "react-ts/src/smells/dispensables/clutter/",
-          "go": "go/smells/dispensables/clutter/"
+          "go": "go/smells/dispensables/clutter/",
+          "angular": "angular/src/smells/dispensables/clutter/"
         },
         "doc_focused": false
       }
@@ -509,14 +553,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/feature-envy.md",
         "code": {
           "python": "python/code_smells/couplers/feature_envy/",
           "csharp": "csharp/src/CodeSmells/Couplers/FeatureEnvy/",
           "react-ts": "react-ts/src/smells/couplers/feature-envy/",
-          "go": "go/smells/couplers/feature-envy/"
+          "go": "go/smells/couplers/feature-envy/",
+          "angular": "angular/src/smells/couplers/feature-envy/"
         },
         "doc_focused": false
       },
@@ -530,14 +576,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/inappropriate-intimacy.md",
         "code": {
           "python": "python/code_smells/couplers/inappropriate_intimacy/",
           "csharp": "csharp/src/CodeSmells/Couplers/InappropriateIntimacy/",
           "react-ts": "react-ts/src/smells/couplers/inappropriate-intimacy/",
-          "go": "go/smells/couplers/inappropriate-intimacy/"
+          "go": "go/smells/couplers/inappropriate-intimacy/",
+          "angular": "angular/src/smells/couplers/inappropriate-intimacy/"
         },
         "doc_focused": false
       },
@@ -551,14 +599,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/message-chains.md",
         "code": {
           "python": "python/code_smells/couplers/message_chains/",
           "csharp": "csharp/src/CodeSmells/Couplers/MessageChains/",
           "react-ts": "react-ts/src/smells/couplers/message-chains/",
-          "go": "go/smells/couplers/message-chains/"
+          "go": "go/smells/couplers/message-chains/",
+          "angular": "angular/src/smells/couplers/message-chains/"
         },
         "doc_focused": false
       },
@@ -572,14 +622,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/middle-man.md",
         "code": {
           "python": "python/code_smells/couplers/middle_man/",
           "csharp": "csharp/src/CodeSmells/Couplers/MiddleMan/",
           "react-ts": "react-ts/src/smells/couplers/middle-man/",
-          "go": "go/smells/couplers/middle-man/"
+          "go": "go/smells/couplers/middle-man/",
+          "angular": "angular/src/smells/couplers/middle-man/"
         },
         "doc_focused": false
       },
@@ -593,14 +645,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/incomplete-library-class.md",
         "code": {
           "python": "python/code_smells/couplers/incomplete_library_class/",
           "csharp": "csharp/src/CodeSmells/Couplers/IncompleteLibraryClass/",
           "react-ts": "react-ts/src/smells/couplers/incomplete-library-class/",
-          "go": "go/smells/couplers/incomplete-library-class/"
+          "go": "go/smells/couplers/incomplete-library-class/",
+          "angular": "angular/src/smells/couplers/incomplete-library-class/"
         },
         "doc_focused": false
       },
@@ -614,14 +668,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/global-data.md",
         "code": {
           "python": "python/code_smells/couplers/global_data/",
           "csharp": "csharp/src/CodeSmells/Couplers/GlobalData/",
           "react-ts": "react-ts/src/smells/couplers/global-data/",
-          "go": "go/smells/couplers/global-data/"
+          "go": "go/smells/couplers/global-data/",
+          "angular": "angular/src/smells/couplers/global-data/"
         },
         "doc_focused": false
       },
@@ -635,14 +691,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/insider-trading.md",
         "code": {
           "python": "python/code_smells/couplers/insider_trading/",
           "csharp": "csharp/src/CodeSmells/Couplers/InsiderTrading/",
           "react-ts": "react-ts/src/smells/couplers/insider-trading/",
-          "go": "go/smells/couplers/insider-trading/"
+          "go": "go/smells/couplers/insider-trading/",
+          "angular": "angular/src/smells/couplers/insider-trading/"
         },
         "doc_focused": false
       },
@@ -656,14 +714,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/artificial-coupling.md",
         "code": {
           "python": "python/code_smells/couplers/artificial_coupling/",
           "csharp": "csharp/src/CodeSmells/Couplers/ArtificialCoupling/",
           "react-ts": "react-ts/src/smells/couplers/artificial-coupling/",
-          "go": "go/smells/couplers/artificial-coupling/"
+          "go": "go/smells/couplers/artificial-coupling/",
+          "angular": "angular/src/smells/couplers/artificial-coupling/"
         },
         "doc_focused": false
       },
@@ -677,14 +737,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/05-couplers/hidden-temporal-coupling.md",
         "code": {
           "python": "python/code_smells/couplers/hidden_temporal_coupling/",
           "csharp": "csharp/src/CodeSmells/Couplers/HiddenTemporalCoupling/",
           "react-ts": "react-ts/src/smells/couplers/hidden-temporal-coupling/",
-          "go": "go/smells/couplers/hidden-temporal-coupling/"
+          "go": "go/smells/couplers/hidden-temporal-coupling/",
+          "angular": "angular/src/smells/couplers/hidden-temporal-coupling/"
         },
         "doc_focused": false
       }
@@ -706,14 +768,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/06-data/mutable-data.md",
         "code": {
           "python": "python/code_smells/data/mutable_data/",
           "csharp": "csharp/src/CodeSmells/Data/MutableData/",
           "react-ts": "react-ts/src/smells/data/mutable-data/",
-          "go": "go/smells/data/mutable-data/"
+          "go": "go/smells/data/mutable-data/",
+          "angular": "angular/src/smells/data/mutable-data/"
         },
         "doc_focused": false
       },
@@ -727,14 +791,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/06-data/magic-numbers.md",
         "code": {
           "python": "python/code_smells/data/magic_numbers/",
           "csharp": "csharp/src/CodeSmells/Data/MagicNumbers/",
           "react-ts": "react-ts/src/smells/data/magic-numbers/",
-          "go": "go/smells/data/magic-numbers/"
+          "go": "go/smells/data/magic-numbers/",
+          "angular": "angular/src/smells/data/magic-numbers/"
         },
         "doc_focused": false
       },
@@ -748,14 +814,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/06-data/boolean-blindness.md",
         "code": {
           "python": "python/code_smells/data/boolean_blindness/",
           "csharp": "csharp/src/CodeSmells/Data/BooleanBlindness/",
           "react-ts": "react-ts/src/smells/data/boolean-blindness/",
-          "go": "go/smells/data/boolean-blindness/"
+          "go": "go/smells/data/boolean-blindness/",
+          "angular": "angular/src/smells/data/boolean-blindness/"
         },
         "doc_focused": false
       },
@@ -769,14 +837,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/06-data/null-abuse.md",
         "code": {
           "python": "python/code_smells/data/null_abuse/",
           "csharp": "csharp/src/CodeSmells/Data/NullAbuse/",
           "react-ts": "react-ts/src/smells/data/null-abuse/",
-          "go": "go/smells/data/null-abuse/"
+          "go": "go/smells/data/null-abuse/",
+          "angular": "angular/src/smells/data/null-abuse/"
         },
         "doc_focused": false
       },
@@ -790,14 +860,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/06-data/status-variable.md",
         "code": {
           "python": "python/code_smells/data/status_variable/",
           "csharp": "csharp/src/CodeSmells/Data/StatusVariable/",
           "react-ts": "react-ts/src/smells/data/status-variable/",
-          "go": "go/smells/data/status-variable/"
+          "go": "go/smells/data/status-variable/",
+          "angular": "angular/src/smells/data/status-variable/"
         },
         "doc_focused": false
       },
@@ -811,14 +883,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/06-data/loops.md",
         "code": {
           "python": "python/code_smells/data/loops/",
           "csharp": "csharp/src/CodeSmells/Data/Loops/",
           "react-ts": "react-ts/src/smells/data/loops/",
-          "go": "go/smells/data/loops/"
+          "go": "go/smells/data/loops/",
+          "angular": "angular/src/smells/data/loops/"
         },
         "doc_focused": false
       }
@@ -840,14 +914,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/07-functions/output-arguments.md",
         "code": {
           "python": "python/code_smells/functions/output_arguments/",
           "csharp": "csharp/src/CodeSmells/Functions/OutputArguments/",
           "react-ts": "react-ts/src/smells/functions/output-arguments/",
-          "go": "go/smells/functions/output-arguments/"
+          "go": "go/smells/functions/output-arguments/",
+          "angular": "angular/src/smells/functions/output-arguments/"
         },
         "doc_focused": false
       },
@@ -861,14 +937,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/07-functions/flag-arguments.md",
         "code": {
           "python": "python/code_smells/functions/flag_arguments/",
           "csharp": "csharp/src/CodeSmells/Functions/FlagArguments/",
           "react-ts": "react-ts/src/smells/functions/flag-arguments/",
-          "go": "go/smells/functions/flag-arguments/"
+          "go": "go/smells/functions/flag-arguments/",
+          "angular": "angular/src/smells/functions/flag-arguments/"
         },
         "doc_focused": false
       },
@@ -882,14 +960,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/07-functions/side-effects.md",
         "code": {
           "python": "python/code_smells/functions/side_effects/",
           "csharp": "csharp/src/CodeSmells/Functions/SideEffects/",
           "react-ts": "react-ts/src/smells/functions/side-effects/",
-          "go": "go/smells/functions/side-effects/"
+          "go": "go/smells/functions/side-effects/",
+          "angular": "angular/src/smells/functions/side-effects/"
         },
         "doc_focused": false
       },
@@ -903,14 +983,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/07-functions/deep-nesting.md",
         "code": {
           "python": "python/code_smells/functions/deep_nesting/",
           "csharp": "csharp/src/CodeSmells/Functions/DeepNesting/",
           "react-ts": "react-ts/src/smells/functions/deep-nesting/",
-          "go": "go/smells/functions/deep-nesting/"
+          "go": "go/smells/functions/deep-nesting/",
+          "angular": "angular/src/smells/functions/deep-nesting/"
         },
         "doc_focused": false
       },
@@ -924,14 +1006,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/07-functions/complicated-boolean-expression.md",
         "code": {
           "python": "python/code_smells/functions/complicated_boolean_expression/",
           "csharp": "csharp/src/CodeSmells/Functions/ComplicatedBooleanExpression/",
           "react-ts": "react-ts/src/smells/functions/complicated-boolean-expression/",
-          "go": "go/smells/functions/complicated-boolean-expression/"
+          "go": "go/smells/functions/complicated-boolean-expression/",
+          "angular": "angular/src/smells/functions/complicated-boolean-expression/"
         },
         "doc_focused": false
       },
@@ -945,14 +1029,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/07-functions/negative-conditionals.md",
         "code": {
           "python": "python/code_smells/functions/negative_conditionals/",
           "csharp": "csharp/src/CodeSmells/Functions/NegativeConditionals/",
           "react-ts": "react-ts/src/smells/functions/negative-conditionals/",
-          "go": "go/smells/functions/negative-conditionals/"
+          "go": "go/smells/functions/negative-conditionals/",
+          "angular": "angular/src/smells/functions/negative-conditionals/"
         },
         "doc_focused": false
       },
@@ -966,14 +1052,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/07-functions/mixed-abstraction-levels.md",
         "code": {
           "python": "python/code_smells/functions/mixed_abstraction_levels/",
           "csharp": "csharp/src/CodeSmells/Functions/MixedAbstractionLevels/",
           "react-ts": "react-ts/src/smells/functions/mixed-abstraction-levels/",
-          "go": "go/smells/functions/mixed-abstraction-levels/"
+          "go": "go/smells/functions/mixed-abstraction-levels/",
+          "angular": "angular/src/smells/functions/mixed-abstraction-levels/"
         },
         "doc_focused": false
       },
@@ -987,14 +1075,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/07-functions/command-query-violation.md",
         "code": {
           "python": "python/code_smells/functions/command_query_violation/",
           "csharp": "csharp/src/CodeSmells/Functions/CommandQueryViolation/",
           "react-ts": "react-ts/src/smells/functions/command-query-violation/",
-          "go": "go/smells/functions/command-query-violation/"
+          "go": "go/smells/functions/command-query-violation/",
+          "angular": "angular/src/smells/functions/command-query-violation/"
         },
         "doc_focused": false
       }
@@ -1016,14 +1106,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/08-error-handling/swallowed-exceptions.md",
         "code": {
           "python": "python/code_smells/error_handling/swallowed_exceptions/",
           "csharp": "csharp/src/CodeSmells/ErrorHandling/SwallowedExceptions/",
           "react-ts": "react-ts/src/smells/error_handling/swallowed-exceptions/",
-          "go": "go/smells/error_handling/swallowed-exceptions/"
+          "go": "go/smells/error_handling/swallowed-exceptions/",
+          "angular": "angular/src/smells/error_handling/swallowed-exceptions/"
         },
         "doc_focused": false
       },
@@ -1037,14 +1129,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/08-error-handling/error-codes.md",
         "code": {
           "python": "python/code_smells/error_handling/error_codes/",
           "csharp": "csharp/src/CodeSmells/ErrorHandling/ErrorCodes/",
           "react-ts": "react-ts/src/smells/error_handling/error-codes/",
-          "go": "go/smells/error_handling/error-codes/"
+          "go": "go/smells/error_handling/error-codes/",
+          "angular": "angular/src/smells/error_handling/error-codes/"
         },
         "doc_focused": false
       },
@@ -1058,14 +1152,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/08-error-handling/exceptions-for-control-flow.md",
         "code": {
           "python": "python/code_smells/error_handling/exceptions_for_control_flow/",
           "csharp": "csharp/src/CodeSmells/ErrorHandling/ExceptionsForControlFlow/",
           "react-ts": "react-ts/src/smells/error_handling/exceptions-for-control-flow/",
-          "go": "go/smells/error_handling/exceptions-for-control-flow/"
+          "go": "go/smells/error_handling/exceptions-for-control-flow/",
+          "angular": "angular/src/smells/error_handling/exceptions-for-control-flow/"
         },
         "doc_focused": false
       },
@@ -1079,14 +1175,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/08-error-handling/overridden-safeties.md",
         "code": {
           "python": "python/code_smells/error_handling/overridden_safeties/",
           "csharp": "csharp/src/CodeSmells/ErrorHandling/OverriddenSafeties/",
           "react-ts": "react-ts/src/smells/error_handling/overridden-safeties/",
-          "go": "go/smells/error_handling/overridden-safeties/"
+          "go": "go/smells/error_handling/overridden-safeties/",
+          "angular": "angular/src/smells/error_handling/overridden-safeties/"
         },
         "doc_focused": false
       },
@@ -1100,14 +1198,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/08-error-handling/incorrect-boundary-behavior.md",
         "code": {
           "python": "python/code_smells/error_handling/incorrect_boundary_behavior/",
           "csharp": "csharp/src/CodeSmells/ErrorHandling/IncorrectBoundaryBehavior/",
           "react-ts": "react-ts/src/smells/error_handling/incorrect-boundary-behavior/",
-          "go": "go/smells/error_handling/incorrect-boundary-behavior/"
+          "go": "go/smells/error_handling/incorrect-boundary-behavior/",
+          "angular": "angular/src/smells/error_handling/incorrect-boundary-behavior/"
         },
         "doc_focused": false
       }
@@ -1129,14 +1229,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/09-comments/inappropriate-information.md",
         "code": {
           "python": "python/code_smells/comments/inappropriate_information/",
           "csharp": "csharp/src/CodeSmells/Comments/InappropriateInformation/",
           "react-ts": "react-ts/src/smells/comments/inappropriate-information/",
-          "go": "go/smells/comments/inappropriate-information/"
+          "go": "go/smells/comments/inappropriate-information/",
+          "angular": "angular/src/smells/comments/inappropriate-information/"
         },
         "doc_focused": false
       },
@@ -1150,14 +1252,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/09-comments/obsolete-comment.md",
         "code": {
           "python": "python/code_smells/comments/obsolete_comment/",
           "csharp": "csharp/src/CodeSmells/Comments/ObsoleteComment/",
           "react-ts": "react-ts/src/smells/comments/obsolete-comment/",
-          "go": "go/smells/comments/obsolete-comment/"
+          "go": "go/smells/comments/obsolete-comment/",
+          "angular": "angular/src/smells/comments/obsolete-comment/"
         },
         "doc_focused": false
       },
@@ -1171,14 +1275,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/09-comments/redundant-comment.md",
         "code": {
           "python": "python/code_smells/comments/redundant_comment/",
           "csharp": "csharp/src/CodeSmells/Comments/RedundantComment/",
           "react-ts": "react-ts/src/smells/comments/redundant-comment/",
-          "go": "go/smells/comments/redundant-comment/"
+          "go": "go/smells/comments/redundant-comment/",
+          "angular": "angular/src/smells/comments/redundant-comment/"
         },
         "doc_focused": false
       },
@@ -1192,14 +1298,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/09-comments/poorly-written-comment.md",
         "code": {
           "python": "python/code_smells/comments/poorly_written_comment/",
           "csharp": "csharp/src/CodeSmells/Comments/PoorlyWrittenComment/",
           "react-ts": "react-ts/src/smells/comments/poorly-written-comment/",
-          "go": "go/smells/comments/poorly-written-comment/"
+          "go": "go/smells/comments/poorly-written-comment/",
+          "angular": "angular/src/smells/comments/poorly-written-comment/"
         },
         "doc_focused": false
       },
@@ -1213,14 +1321,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/09-comments/commented-out-code.md",
         "code": {
           "python": "python/code_smells/comments/commented_out_code/",
           "csharp": "csharp/src/CodeSmells/Comments/CommentedOutCode/",
           "react-ts": "react-ts/src/smells/comments/commented-out-code/",
-          "go": "go/smells/comments/commented-out-code/"
+          "go": "go/smells/comments/commented-out-code/",
+          "angular": "angular/src/smells/comments/commented-out-code/"
         },
         "doc_focused": false
       }
@@ -1242,14 +1352,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/uncommunicative-name.md",
         "code": {
           "python": "python/code_smells/names/uncommunicative_name/",
           "csharp": "csharp/src/CodeSmells/Names/UncommunicativeName/",
           "react-ts": "react-ts/src/smells/names/uncommunicative-name/",
-          "go": "go/smells/names/uncommunicative-name/"
+          "go": "go/smells/names/uncommunicative-name/",
+          "angular": "angular/src/smells/names/uncommunicative-name/"
         },
         "doc_focused": false
       },
@@ -1263,14 +1375,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/wrong-abstraction-level-name.md",
         "code": {
           "python": "python/code_smells/names/wrong_abstraction_level_name/",
           "csharp": "csharp/src/CodeSmells/Names/WrongAbstractionLevelName/",
           "react-ts": "react-ts/src/smells/names/wrong-abstraction-level-name/",
-          "go": "go/smells/names/wrong-abstraction-level-name/"
+          "go": "go/smells/names/wrong-abstraction-level-name/",
+          "angular": "angular/src/smells/names/wrong-abstraction-level-name/"
         },
         "doc_focused": false
       },
@@ -1284,14 +1398,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/non-standard-nomenclature.md",
         "code": {
           "python": "python/code_smells/names/non_standard_nomenclature/",
           "csharp": "csharp/src/CodeSmells/Names/NonStandardNomenclature/",
           "react-ts": "react-ts/src/smells/names/non-standard-nomenclature/",
-          "go": "go/smells/names/non-standard-nomenclature/"
+          "go": "go/smells/names/non-standard-nomenclature/",
+          "angular": "angular/src/smells/names/non-standard-nomenclature/"
         },
         "doc_focused": false
       },
@@ -1305,14 +1421,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/ambiguous-name.md",
         "code": {
           "python": "python/code_smells/names/ambiguous_name/",
           "csharp": "csharp/src/CodeSmells/Names/AmbiguousName/",
           "react-ts": "react-ts/src/smells/names/ambiguous-name/",
-          "go": "go/smells/names/ambiguous-name/"
+          "go": "go/smells/names/ambiguous-name/",
+          "angular": "angular/src/smells/names/ambiguous-name/"
         },
         "doc_focused": false
       },
@@ -1326,14 +1444,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/short-names-long-scopes.md",
         "code": {
           "python": "python/code_smells/names/short_names_long_scopes/",
           "csharp": "csharp/src/CodeSmells/Names/ShortNamesLongScopes/",
           "react-ts": "react-ts/src/smells/names/short-names-long-scopes/",
-          "go": "go/smells/names/short-names-long-scopes/"
+          "go": "go/smells/names/short-names-long-scopes/",
+          "angular": "angular/src/smells/names/short-names-long-scopes/"
         },
         "doc_focused": false
       },
@@ -1347,14 +1467,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/encodings-in-names.md",
         "code": {
           "python": "python/code_smells/names/encodings_in_names/",
           "csharp": "csharp/src/CodeSmells/Names/EncodingsInNames/",
           "react-ts": "react-ts/src/smells/names/encodings-in-names/",
-          "go": "go/smells/names/encodings-in-names/"
+          "go": "go/smells/names/encodings-in-names/",
+          "angular": "angular/src/smells/names/encodings-in-names/"
         },
         "doc_focused": false
       },
@@ -1368,14 +1490,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/names-hiding-side-effects.md",
         "code": {
           "python": "python/code_smells/names/names_hiding_side_effects/",
           "csharp": "csharp/src/CodeSmells/Names/NamesHidingSideEffects/",
           "react-ts": "react-ts/src/smells/names/names-hiding-side-effects/",
-          "go": "go/smells/names/names-hiding-side-effects/"
+          "go": "go/smells/names/names-hiding-side-effects/",
+          "angular": "angular/src/smells/names/names-hiding-side-effects/"
         },
         "doc_focused": false
       },
@@ -1389,14 +1513,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/inconsistent-names.md",
         "code": {
           "python": "python/code_smells/names/inconsistent_names/",
           "csharp": "csharp/src/CodeSmells/Names/InconsistentNames/",
           "react-ts": "react-ts/src/smells/names/inconsistent-names/",
-          "go": "go/smells/names/inconsistent-names/"
+          "go": "go/smells/names/inconsistent-names/",
+          "angular": "angular/src/smells/names/inconsistent-names/"
         },
         "doc_focused": false
       },
@@ -1410,14 +1536,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/binary-operator-in-name.md",
         "code": {
           "python": "python/code_smells/names/binary_operator_in_name/",
           "csharp": "csharp/src/CodeSmells/Names/BinaryOperatorInName/",
           "react-ts": "react-ts/src/smells/names/binary-operator-in-name/",
-          "go": "go/smells/names/binary-operator-in-name/"
+          "go": "go/smells/names/binary-operator-in-name/",
+          "angular": "angular/src/smells/names/binary-operator-in-name/"
         },
         "doc_focused": false
       },
@@ -1431,14 +1559,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/10-names/fallacious-method-name.md",
         "code": {
           "python": "python/code_smells/names/fallacious_method_name/",
           "csharp": "csharp/src/CodeSmells/Names/FallaciousMethodName/",
           "react-ts": "react-ts/src/smells/names/fallacious-method-name/",
-          "go": "go/smells/names/fallacious-method-name/"
+          "go": "go/smells/names/fallacious-method-name/",
+          "angular": "angular/src/smells/names/fallacious-method-name/"
         },
         "doc_focused": false
       }
@@ -1460,14 +1590,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/multiple-languages-in-file.md",
         "code": {
           "python": "python/code_smells/general/multiple_languages_in_file/",
           "csharp": "csharp/src/CodeSmells/General/MultipleLanguagesInFile/",
           "react-ts": "react-ts/src/smells/general/multiple-languages-in-file/",
-          "go": "go/smells/general/multiple-languages-in-file/"
+          "go": "go/smells/general/multiple-languages-in-file/",
+          "angular": "angular/src/smells/general/multiple-languages-in-file/"
         },
         "doc_focused": false
       },
@@ -1481,14 +1613,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/obvious-behavior-unimplemented.md",
         "code": {
           "python": "python/code_smells/general/obvious_behavior_unimplemented/",
           "csharp": "csharp/src/CodeSmells/General/ObviousBehaviorUnimplemented/",
           "react-ts": "react-ts/src/smells/general/obvious-behavior-unimplemented/",
-          "go": "go/smells/general/obvious-behavior-unimplemented/"
+          "go": "go/smells/general/obvious-behavior-unimplemented/",
+          "angular": "angular/src/smells/general/obvious-behavior-unimplemented/"
         },
         "doc_focused": false
       },
@@ -1502,14 +1636,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/too-much-information.md",
         "code": {
           "python": "python/code_smells/general/too_much_information/",
           "csharp": "csharp/src/CodeSmells/General/TooMuchInformation/",
           "react-ts": "react-ts/src/smells/general/too-much-information/",
-          "go": "go/smells/general/too-much-information/"
+          "go": "go/smells/general/too-much-information/",
+          "angular": "angular/src/smells/general/too-much-information/"
         },
         "doc_focused": false
       },
@@ -1523,14 +1659,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/vertical-separation.md",
         "code": {
           "python": "python/code_smells/general/vertical_separation/",
           "csharp": "csharp/src/CodeSmells/General/VerticalSeparation/",
           "react-ts": "react-ts/src/smells/general/vertical-separation/",
-          "go": "go/smells/general/vertical-separation/"
+          "go": "go/smells/general/vertical-separation/",
+          "angular": "angular/src/smells/general/vertical-separation/"
         },
         "doc_focused": false
       },
@@ -1544,14 +1682,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/obscured-intent.md",
         "code": {
           "python": "python/code_smells/general/obscured_intent/",
           "csharp": "csharp/src/CodeSmells/General/ObscuredIntent/",
           "react-ts": "react-ts/src/smells/general/obscured-intent/",
-          "go": "go/smells/general/obscured-intent/"
+          "go": "go/smells/general/obscured-intent/",
+          "angular": "angular/src/smells/general/obscured-intent/"
         },
         "doc_focused": false
       },
@@ -1565,14 +1705,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/misplaced-responsibility.md",
         "code": {
           "python": "python/code_smells/general/misplaced_responsibility/",
           "csharp": "csharp/src/CodeSmells/General/MisplacedResponsibility/",
           "react-ts": "react-ts/src/smells/general/misplaced-responsibility/",
-          "go": "go/smells/general/misplaced-responsibility/"
+          "go": "go/smells/general/misplaced-responsibility/",
+          "angular": "angular/src/smells/general/misplaced-responsibility/"
         },
         "doc_focused": false
       },
@@ -1586,14 +1728,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/missing-explanatory-variables.md",
         "code": {
           "python": "python/code_smells/general/missing_explanatory_variables/",
           "csharp": "csharp/src/CodeSmells/General/MissingExplanatoryVariables/",
           "react-ts": "react-ts/src/smells/general/missing-explanatory-variables/",
-          "go": "go/smells/general/missing-explanatory-variables/"
+          "go": "go/smells/general/missing-explanatory-variables/",
+          "angular": "angular/src/smells/general/missing-explanatory-variables/"
         },
         "doc_focused": false
       },
@@ -1607,14 +1751,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/hidden-logical-dependency.md",
         "code": {
           "python": "python/code_smells/general/hidden_logical_dependency/",
           "csharp": "csharp/src/CodeSmells/General/HiddenLogicalDependency/",
           "react-ts": "react-ts/src/smells/general/hidden-logical-dependency/",
-          "go": "go/smells/general/hidden-logical-dependency/"
+          "go": "go/smells/general/hidden-logical-dependency/",
+          "angular": "angular/src/smells/general/hidden-logical-dependency/"
         },
         "doc_focused": false
       },
@@ -1628,14 +1774,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/convention-over-structure.md",
         "code": {
           "python": "python/code_smells/general/convention_over_structure/",
           "csharp": "csharp/src/CodeSmells/General/ConventionOverStructure/",
           "react-ts": "react-ts/src/smells/general/convention-over-structure/",
-          "go": "go/smells/general/convention-over-structure/"
+          "go": "go/smells/general/convention-over-structure/",
+          "angular": "angular/src/smells/general/convention-over-structure/"
         },
         "doc_focused": false
       },
@@ -1649,14 +1797,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/imprecision.md",
         "code": {
           "python": "python/code_smells/general/imprecision/",
           "csharp": "csharp/src/CodeSmells/General/Imprecision/",
           "react-ts": "react-ts/src/smells/general/imprecision/",
-          "go": "go/smells/general/imprecision/"
+          "go": "go/smells/general/imprecision/",
+          "angular": "angular/src/smells/general/imprecision/"
         },
         "doc_focused": false
       },
@@ -1670,14 +1820,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/configurable-data-at-low-levels.md",
         "code": {
           "python": "python/code_smells/general/configurable_data_at_low_levels/",
           "csharp": "csharp/src/CodeSmells/General/ConfigurableDataAtLowLevels/",
           "react-ts": "react-ts/src/smells/general/configurable-data-at-low-levels/",
-          "go": "go/smells/general/configurable-data-at-low-levels/"
+          "go": "go/smells/general/configurable-data-at-low-levels/",
+          "angular": "angular/src/smells/general/configurable-data-at-low-levels/"
         },
         "doc_focused": false
       },
@@ -1691,14 +1843,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/oddball-solution.md",
         "code": {
           "python": "python/code_smells/general/oddball_solution/",
           "csharp": "csharp/src/CodeSmells/General/OddballSolution/",
           "react-ts": "react-ts/src/smells/general/oddball-solution/",
-          "go": "go/smells/general/oddball-solution/"
+          "go": "go/smells/general/oddball-solution/",
+          "angular": "angular/src/smells/general/oddball-solution/"
         },
         "doc_focused": false
       },
@@ -1712,14 +1866,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/complicated-regex.md",
         "code": {
           "python": "python/code_smells/general/complicated_regex/",
           "csharp": "csharp/src/CodeSmells/General/ComplicatedRegex/",
           "react-ts": "react-ts/src/smells/general/complicated-regex/",
-          "go": "go/smells/general/complicated-regex/"
+          "go": "go/smells/general/complicated-regex/",
+          "angular": "angular/src/smells/general/complicated-regex/"
         },
         "doc_focused": false
       },
@@ -1733,14 +1889,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/11-general/callback-hell.md",
         "code": {
           "python": "python/code_smells/general/callback_hell/",
           "csharp": "csharp/src/CodeSmells/General/CallbackHell/",
           "react-ts": "react-ts/src/smells/general/callback-hell/",
-          "go": "go/smells/general/callback-hell/"
+          "go": "go/smells/general/callback-hell/",
+          "angular": "angular/src/smells/general/callback-hell/"
         },
         "doc_focused": false
       }
@@ -1762,14 +1920,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/insufficient-tests.md",
         "code": {
           "python": "python/code_smells/tests/insufficient_tests/",
           "csharp": "csharp/src/CodeSmells/Tests/InsufficientTests/",
           "react-ts": "react-ts/src/smells/tests/insufficient-tests/",
-          "go": "go/smells/tests/insufficient-tests/"
+          "go": "go/smells/tests/insufficient-tests/",
+          "angular": "angular/src/smells/tests/insufficient-tests/"
         },
         "doc_focused": false
       },
@@ -1783,14 +1943,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/ignored-tests.md",
         "code": {
           "python": "python/code_smells/tests/ignored_tests/",
           "csharp": "csharp/src/CodeSmells/Tests/IgnoredTests/",
           "react-ts": "react-ts/src/smells/tests/ignored-tests/",
-          "go": "go/smells/tests/ignored-tests/"
+          "go": "go/smells/tests/ignored-tests/",
+          "angular": "angular/src/smells/tests/ignored-tests/"
         },
         "doc_focused": false
       },
@@ -1804,14 +1966,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/untested-boundaries.md",
         "code": {
           "python": "python/code_smells/tests/untested_boundaries/",
           "csharp": "csharp/src/CodeSmells/Tests/UntestedBoundaries/",
           "react-ts": "react-ts/src/smells/tests/untested-boundaries/",
-          "go": "go/smells/tests/untested-boundaries/"
+          "go": "go/smells/tests/untested-boundaries/",
+          "angular": "angular/src/smells/tests/untested-boundaries/"
         },
         "doc_focused": false
       },
@@ -1825,14 +1989,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/slow-tests.md",
         "code": {
           "python": "python/code_smells/tests/slow_tests/",
           "csharp": "csharp/src/CodeSmells/Tests/SlowTests/",
           "react-ts": "react-ts/src/smells/tests/slow-tests/",
-          "go": "go/smells/tests/slow-tests/"
+          "go": "go/smells/tests/slow-tests/",
+          "angular": "angular/src/smells/tests/slow-tests/"
         },
         "doc_focused": false
       },
@@ -1846,14 +2012,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/assertion-roulette.md",
         "code": {
           "python": "python/code_smells/tests/assertion_roulette/",
           "csharp": "csharp/src/CodeSmells/Tests/AssertionRoulette/",
           "react-ts": "react-ts/src/smells/tests/assertion-roulette/",
-          "go": "go/smells/tests/assertion-roulette/"
+          "go": "go/smells/tests/assertion-roulette/",
+          "angular": "angular/src/smells/tests/assertion-roulette/"
         },
         "doc_focused": false
       },
@@ -1867,14 +2035,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/mystery-guest.md",
         "code": {
           "python": "python/code_smells/tests/mystery_guest/",
           "csharp": "csharp/src/CodeSmells/Tests/MysteryGuest/",
           "react-ts": "react-ts/src/smells/tests/mystery-guest/",
-          "go": "go/smells/tests/mystery-guest/"
+          "go": "go/smells/tests/mystery-guest/",
+          "angular": "angular/src/smells/tests/mystery-guest/"
         },
         "doc_focused": false
       },
@@ -1888,14 +2058,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/eager-test.md",
         "code": {
           "python": "python/code_smells/tests/eager_test/",
           "csharp": "csharp/src/CodeSmells/Tests/EagerTest/",
           "react-ts": "react-ts/src/smells/tests/eager-test/",
-          "go": "go/smells/tests/eager-test/"
+          "go": "go/smells/tests/eager-test/",
+          "angular": "angular/src/smells/tests/eager-test/"
         },
         "doc_focused": false
       },
@@ -1909,14 +2081,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/conditional-test-logic.md",
         "code": {
           "python": "python/code_smells/tests/conditional_test_logic/",
           "csharp": "csharp/src/CodeSmells/Tests/ConditionalTestLogic/",
           "react-ts": "react-ts/src/smells/tests/conditional-test-logic/",
-          "go": "go/smells/tests/conditional-test-logic/"
+          "go": "go/smells/tests/conditional-test-logic/",
+          "angular": "angular/src/smells/tests/conditional-test-logic/"
         },
         "doc_focused": false
       },
@@ -1930,14 +2104,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/sleepy-test.md",
         "code": {
           "python": "python/code_smells/tests/sleepy_test/",
           "csharp": "csharp/src/CodeSmells/Tests/SleepyTest/",
           "react-ts": "react-ts/src/smells/tests/sleepy-test/",
-          "go": "go/smells/tests/sleepy-test/"
+          "go": "go/smells/tests/sleepy-test/",
+          "angular": "angular/src/smells/tests/sleepy-test/"
         },
         "doc_focused": false
       },
@@ -1951,14 +2127,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/fragile-test.md",
         "code": {
           "python": "python/code_smells/tests/fragile_test/",
           "csharp": "csharp/src/CodeSmells/Tests/FragileTest/",
           "react-ts": "react-ts/src/smells/tests/fragile-test/",
-          "go": "go/smells/tests/fragile-test/"
+          "go": "go/smells/tests/fragile-test/",
+          "angular": "angular/src/smells/tests/fragile-test/"
         },
         "doc_focused": false
       },
@@ -1972,14 +2150,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/12-tests/interdependent-tests.md",
         "code": {
           "python": "python/code_smells/tests/interdependent_tests/",
           "csharp": "csharp/src/CodeSmells/Tests/InterdependentTests/",
           "react-ts": "react-ts/src/smells/tests/interdependent-tests/",
-          "go": "go/smells/tests/interdependent-tests/"
+          "go": "go/smells/tests/interdependent-tests/",
+          "angular": "angular/src/smells/tests/interdependent-tests/"
         },
         "doc_focused": false
       }
@@ -2001,14 +2181,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/13-environment/multi-step-build.md",
         "code": {
           "python": "python/code_smells/environment/multi_step_build/",
           "csharp": "csharp/src/CodeSmells/Environment/MultiStepBuild/",
           "react-ts": "react-ts/src/smells/environment/multi-step-build/",
-          "go": "go/smells/environment/multi-step-build/"
+          "go": "go/smells/environment/multi-step-build/",
+          "angular": "angular/src/smells/environment/multi-step-build/"
         },
         "doc_focused": true
       },
@@ -2022,14 +2204,16 @@
           "python",
           "csharp",
           "react-ts",
-          "go"
+          "go",
+          "angular"
         ],
         "doc": "docs/smells/13-environment/multi-step-tests.md",
         "code": {
           "python": "python/code_smells/environment/multi_step_tests/",
           "csharp": "csharp/src/CodeSmells/Environment/MultiStepTests/",
           "react-ts": "react-ts/src/smells/environment/multi-step-tests/",
-          "go": "go/smells/environment/multi-step-tests/"
+          "go": "go/smells/environment/multi-step-tests/",
+          "angular": "angular/src/smells/environment/multi-step-tests/"
         },
         "doc_focused": true
       }
@@ -3322,6 +3506,344 @@
         "doc": "docs/smells/17-go/pointer-to-interface.md",
         "code": {
           "go": "go/smells/go_specific/pointer-to-interface/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "18-angular",
+    "code_dir": "angular_specific",
+    "name": "Angular-specific",
+    "description": "Angular, RxJS and signals anti-patterns.",
+    "smells": [
+      {
+        "id": "CS177",
+        "slug": "subscription-leak",
+        "name": "Subscription Leak",
+        "sources": "angular.dev: takeUntilDestroyed; RxJS docs",
+        "summary": "subscribe() calls that are never unsubscribed keep running after the component is destroyed.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/subscription-leak.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/subscription-leak/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS178",
+        "slug": "nested-subscribes",
+        "name": "Nested Subscribes",
+        "sources": "RxJS docs: higher-order operators",
+        "summary": "subscribe() inside subscribe() instead of switchMap/concatMap/mergeMap: races, leaks and callback hell.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/nested-subscribes.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/nested-subscribes/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS179",
+        "slug": "function-calls-in-template",
+        "name": "Function Calls in Templates",
+        "sources": "angular.dev: computed signals and pure pipes",
+        "summary": "Methods called from templates run on every change detection cycle; use computed signals or pure pipes.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/function-calls-in-template.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/function-calls-in-template/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS180",
+        "slug": "fat-component",
+        "name": "Fat Component",
+        "sources": "Angular style guide: single responsibility",
+        "summary": "A component that fetches data, holds business rules, manages state and renders everything.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/fat-component.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/fat-component/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS181",
+        "slug": "default-change-detection",
+        "name": "Default Change Detection Everywhere",
+        "sources": "angular.dev: OnPush and zoneless",
+        "summary": "Components without OnPush (or signal-driven updates) are checked on every event in the whole app.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/default-change-detection.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/default-change-detection/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS182",
+        "slug": "manual-change-detection",
+        "name": "Manual Change Detection Hacks",
+        "sources": "angular.dev: change detection",
+        "summary": "detectChanges(), markForCheck() or setTimeout() sprinkled around to force the view to update.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/manual-change-detection.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/manual-change-detection/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS183",
+        "slug": "direct-dom-manipulation",
+        "name": "Direct DOM Manipulation",
+        "sources": "angular.dev: Renderer2 and template bindings",
+        "summary": "ElementRef.nativeElement or document.querySelector to change the view instead of bindings.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/direct-dom-manipulation.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/direct-dom-manipulation/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS184",
+        "slug": "mutable-service-state",
+        "name": "Public Mutable Service State",
+        "sources": "angular.dev: signals",
+        "summary": "Services exposing mutable arrays or objects that any component can change without notification.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/mutable-service-state.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/mutable-service-state/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS185",
+        "slug": "index-as-track",
+        "name": "Tracking by Index",
+        "sources": "angular.dev: @for track",
+        "summary": "@for blocks tracked by $index on reorderable lists: DOM and state get mixed up.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/index-as-track.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/index-as-track/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS186",
+        "slug": "constructor-logic",
+        "name": "Logic in Constructors",
+        "sources": "angular.dev: lifecycle hooks",
+        "summary": "Constructors that read inputs, call services or start work instead of declaring dependencies.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/constructor-logic.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/constructor-logic/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS187",
+        "slug": "input-drilling",
+        "name": "Input Drilling",
+        "sources": "angular.dev: dependency injection",
+        "summary": "Data passed through several components via inputs and outputs that do not use it.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/input-drilling.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/input-drilling/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS188",
+        "slug": "shared-module-dumping-ground",
+        "name": "Shared Module Dumping Ground",
+        "sources": "angular.dev: standalone components",
+        "summary": "A SharedModule that imports and re-exports everything, hiding real dependencies.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/shared-module-dumping-ground.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/shared-module-dumping-ground/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS189",
+        "slug": "http-in-components",
+        "name": "HttpClient in Components",
+        "sources": "Angular style guide: data services",
+        "summary": "Components that build URLs and call HttpClient directly instead of using a data service.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/http-in-components.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/http-in-components/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS190",
+        "slug": "promise-observable-mixing",
+        "name": "Mixing Promises and Observables",
+        "sources": "RxJS docs: firstValueFrom",
+        "summary": "toPromise(), async/await and subscribe() mixed in the same flow, losing cancellation.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/promise-observable-mixing.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/promise-observable-mixing/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS191",
+        "slug": "effect-for-derived-state",
+        "name": "effect() for Derived State",
+        "sources": "angular.dev: computed signals",
+        "summary": "Writing signals from effect() to compute state that computed() would derive.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/effect-for-derived-state.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/effect-for-derived-state/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS192",
+        "slug": "mutating-inputs",
+        "name": "Mutating Inputs",
+        "sources": "angular.dev: inputs",
+        "summary": "Child components that mutate objects received as inputs, changing the parent's state behind its back.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/mutating-inputs.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/mutating-inputs/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS193",
+        "slug": "duplicate-async-subscriptions",
+        "name": "Duplicate async Subscriptions",
+        "sources": "RxJS docs: shareReplay",
+        "summary": "The same cold observable bound with several async pipes triggers several HTTP requests.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/duplicate-async-subscriptions.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/duplicate-async-subscriptions/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS194",
+        "slug": "hardcoded-config",
+        "name": "Hard-coded Configuration in Services",
+        "sources": "angular.dev: InjectionToken",
+        "summary": "API URLs and feature flags written inside services instead of injected configuration.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/hardcoded-config.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/hardcoded-config/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS195",
+        "slug": "sanitizer-bypass",
+        "name": "Bypassing the Sanitizer",
+        "sources": "angular.dev: security",
+        "summary": "bypassSecurityTrustHtml on user content opens the door to XSS.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/sanitizer-bypass.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/sanitizer-bypass/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS196",
+        "slug": "component-inheritance",
+        "name": "Component Inheritance Hierarchies",
+        "sources": "angular.dev: composition with inject()",
+        "summary": "Base component classes that share behavior through inheritance instead of composition.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/component-inheritance.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/component-inheritance/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS197",
+        "slug": "untyped-forms",
+        "name": "Untyped Forms",
+        "sources": "angular.dev: typed reactive forms",
+        "summary": "UntypedFormGroup / any-typed form values that lose compile-time checking.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/untyped-forms.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/untyped-forms/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS198",
+        "slug": "any-in-templates",
+        "name": "$any() and any in Templates",
+        "sources": "angular.dev: strict templates",
+        "summary": "$any() casts and any-typed fields that switch off template type checking.",
+        "languages": [
+          "angular"
+        ],
+        "doc": "docs/smells/18-angular/any-in-templates.md",
+        "code": {
+          "angular": "angular/src/smells/angular_specific/any-in-templates/"
         },
         "doc_focused": false
       }

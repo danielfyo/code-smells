@@ -115,6 +115,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Dispensables/DataClass/`](../../../csharp/src/CodeSmells/Dispensables/DataClass/) |
 | React + TS | [`react-ts/src/smells/dispensables/data-class/`](../../../react-ts/src/smells/dispensables/data-class/) |
 | Go | [`go/smells/dispensables/data-class/`](../../../go/smells/dispensables/data-class/) |
+| Angular | [`angular/src/smells/dispensables/data-class/`](../../../angular/src/smells/dispensables/data-class/) |
 
 ## References
 

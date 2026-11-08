@@ -105,6 +105,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Dispensables/ExcessiveComments/`](../../../csharp/src/CodeSmells/Dispensables/ExcessiveComments/) |
 | React + TS | [`react-ts/src/smells/dispensables/excessive-comments/`](../../../react-ts/src/smells/dispensables/excessive-comments/) |
 | Go | [`go/smells/dispensables/excessive-comments/`](../../../go/smells/dispensables/excessive-comments/) |
+| Angular | [`angular/src/smells/dispensables/excessive-comments/`](../../../angular/src/smells/dispensables/excessive-comments/) |
 
 ## References
 

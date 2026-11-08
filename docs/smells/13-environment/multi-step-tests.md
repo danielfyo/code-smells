@@ -97,6 +97,7 @@ As with the build, this is a property of the repository and its tooling, not of 
 - C#: [`csharp/src/CodeSmells/Environment/MultiStepTests/`](../../../csharp/src/CodeSmells/Environment/MultiStepTests/)
 - React + TS: [`react-ts/src/smells/environment/multi-step-tests/`](../../../react-ts/src/smells/environment/multi-step-tests/)
 - Go: [`go/smells/environment/multi-step-tests/`](../../../go/smells/environment/multi-step-tests/)
+- Angular: [`angular/src/smells/environment/multi-step-tests/`](../../../angular/src/smells/environment/multi-step-tests/)
 
 This smell is about the development environment rather than about code, so each folder illustrates it with a
 `smelly/` variant (for example a `BUILD.md` with manual, error-prone steps) and a `refactored/` variant (a

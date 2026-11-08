@@ -131,6 +131,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Bloaters/LongMethod/`](../../../csharp/src/CodeSmells/Bloaters/LongMethod/) |
 | React + TS | [`react-ts/src/smells/bloaters/long-method/`](../../../react-ts/src/smells/bloaters/long-method/) |
 | Go | [`go/smells/bloaters/long-method/`](../../../go/smells/bloaters/long-method/) |
+| Angular | [`angular/src/smells/bloaters/long-method/`](../../../angular/src/smells/bloaters/long-method/) |
 
 ## References
 

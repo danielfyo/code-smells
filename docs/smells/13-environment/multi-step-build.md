@@ -103,6 +103,7 @@ No linter of Python, C#, TypeScript or Go code detects this smell: it is a prope
 - C#: [`csharp/src/CodeSmells/Environment/MultiStepBuild/`](../../../csharp/src/CodeSmells/Environment/MultiStepBuild/)
 - React + TS: [`react-ts/src/smells/environment/multi-step-build/`](../../../react-ts/src/smells/environment/multi-step-build/)
 - Go: [`go/smells/environment/multi-step-build/`](../../../go/smells/environment/multi-step-build/)
+- Angular: [`angular/src/smells/environment/multi-step-build/`](../../../angular/src/smells/environment/multi-step-build/)
 
 This smell is about the development environment rather than about code, so each folder illustrates it with a
 `smelly/` variant (for example a `BUILD.md` with manual, error-prone steps) and a `refactored/` variant (a

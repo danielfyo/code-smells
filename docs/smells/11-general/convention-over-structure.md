@@ -93,6 +93,7 @@ const label = (method: PaymentMethod) => PAYMENT_INFO[method].label;
 - C#: [`csharp/src/CodeSmells/General/ConventionOverStructure/`](../../../csharp/src/CodeSmells/General/ConventionOverStructure/)
 - React + TS: [`react-ts/src/smells/general/convention-over-structure/`](../../../react-ts/src/smells/general/convention-over-structure/)
 - Go: [`go/smells/general/convention-over-structure/`](../../../go/smells/general/convention-over-structure/)
+- Angular: [`angular/src/smells/general/convention-over-structure/`](../../../angular/src/smells/general/convention-over-structure/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

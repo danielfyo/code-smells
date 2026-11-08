@@ -110,6 +110,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/InappropriateIntimacy/`](../../../csharp/src/CodeSmells/Couplers/InappropriateIntimacy/) |
 | React + TS | [`react-ts/src/smells/couplers/inappropriate-intimacy/`](../../../react-ts/src/smells/couplers/inappropriate-intimacy/) |
 | Go | [`go/smells/couplers/inappropriate-intimacy/`](../../../go/smells/couplers/inappropriate-intimacy/) |
+| Angular | [`angular/src/smells/couplers/inappropriate-intimacy/`](../../../angular/src/smells/couplers/inappropriate-intimacy/) |
 
 ## References
 

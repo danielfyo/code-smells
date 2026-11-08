@@ -99,6 +99,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/MessageChains/`](../../../csharp/src/CodeSmells/Couplers/MessageChains/) |
 | React + TS | [`react-ts/src/smells/couplers/message-chains/`](../../../react-ts/src/smells/couplers/message-chains/) |
 | Go | [`go/smells/couplers/message-chains/`](../../../go/smells/couplers/message-chains/) |
+| Angular | [`angular/src/smells/couplers/message-chains/`](../../../angular/src/smells/couplers/message-chains/) |
 
 ## References
 

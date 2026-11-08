@@ -89,6 +89,7 @@ const label = formatDate(d);
 - C#: [`csharp/src/CodeSmells/General/OddballSolution/`](../../../csharp/src/CodeSmells/General/OddballSolution/)
 - React + TS: [`react-ts/src/smells/general/oddball-solution/`](../../../react-ts/src/smells/general/oddball-solution/)
 - Go: [`go/smells/general/oddball-solution/`](../../../go/smells/general/oddball-solution/)
+- Angular: [`angular/src/smells/general/oddball-solution/`](../../../angular/src/smells/general/oddball-solution/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

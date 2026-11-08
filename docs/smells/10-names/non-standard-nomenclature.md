@@ -92,6 +92,7 @@ class InvoiceFactory {
 - C#: [`csharp/src/CodeSmells/Names/NonStandardNomenclature/`](../../../csharp/src/CodeSmells/Names/NonStandardNomenclature/)
 - React + TS: [`react-ts/src/smells/names/non-standard-nomenclature/`](../../../react-ts/src/smells/names/non-standard-nomenclature/)
 - Go: [`go/smells/names/non-standard-nomenclature/`](../../../go/smells/names/non-standard-nomenclature/)
+- Angular: [`angular/src/smells/names/non-standard-nomenclature/`](../../../angular/src/smells/names/non-standard-nomenclature/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

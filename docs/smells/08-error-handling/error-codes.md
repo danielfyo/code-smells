@@ -104,6 +104,7 @@ return `(balance, error)` with sentinel errors (`ErrInsufficientFunds`) comparab
 - C#: [`csharp/src/CodeSmells/ErrorHandling/ErrorCodes/`](../../../csharp/src/CodeSmells/ErrorHandling/ErrorCodes/)
 - React + TS: [`react-ts/src/smells/error_handling/error-codes/`](../../../react-ts/src/smells/error_handling/error-codes/)
 - Go: [`go/smells/error_handling/error-codes/`](../../../go/smells/error_handling/error-codes/)
+- Angular: [`angular/src/smells/error_handling/error-codes/`](../../../angular/src/smells/error_handling/error-codes/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

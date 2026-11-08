@@ -100,6 +100,7 @@ If a suppression is truly needed, it must be local, target a specific rule and e
 - C#: [`csharp/src/CodeSmells/ErrorHandling/OverriddenSafeties/`](../../../csharp/src/CodeSmells/ErrorHandling/OverriddenSafeties/)
 - React + TS: [`react-ts/src/smells/error_handling/overridden-safeties/`](../../../react-ts/src/smells/error_handling/overridden-safeties/)
 - Go: [`go/smells/error_handling/overridden-safeties/`](../../../go/smells/error_handling/overridden-safeties/)
+- Angular: [`angular/src/smells/error_handling/overridden-safeties/`](../../../angular/src/smells/error_handling/overridden-safeties/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

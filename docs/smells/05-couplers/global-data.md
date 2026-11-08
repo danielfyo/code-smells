@@ -110,6 +110,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/GlobalData/`](../../../csharp/src/CodeSmells/Couplers/GlobalData/) |
 | React + TS | [`react-ts/src/smells/couplers/global-data/`](../../../react-ts/src/smells/couplers/global-data/) |
 | Go | [`go/smells/couplers/global-data/`](../../../go/smells/couplers/global-data/) |
+| Angular | [`angular/src/smells/couplers/global-data/`](../../../angular/src/smells/couplers/global-data/) |
 
 ## References
 

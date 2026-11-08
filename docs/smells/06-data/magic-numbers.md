@@ -104,6 +104,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Data/MagicNumbers/`](../../../csharp/src/CodeSmells/Data/MagicNumbers/) |
 | React + TS | [`react-ts/src/smells/data/magic-numbers/`](../../../react-ts/src/smells/data/magic-numbers/) |
 | Go | [`go/smells/data/magic-numbers/`](../../../go/smells/data/magic-numbers/) |
+| Angular | [`angular/src/smells/data/magic-numbers/`](../../../angular/src/smells/data/magic-numbers/) |
 
 ## References
 

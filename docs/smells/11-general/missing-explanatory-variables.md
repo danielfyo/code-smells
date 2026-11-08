@@ -84,6 +84,7 @@ def can_ship_free(order: Order, today: date) -> bool:
 - C#: [`csharp/src/CodeSmells/General/MissingExplanatoryVariables/`](../../../csharp/src/CodeSmells/General/MissingExplanatoryVariables/)
 - React + TS: [`react-ts/src/smells/general/missing-explanatory-variables/`](../../../react-ts/src/smells/general/missing-explanatory-variables/)
 - Go: [`go/smells/general/missing-explanatory-variables/`](../../../go/smells/general/missing-explanatory-variables/)
+- Angular: [`angular/src/smells/general/missing-explanatory-variables/`](../../../angular/src/smells/general/missing-explanatory-variables/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

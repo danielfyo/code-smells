@@ -81,6 +81,24 @@ jobs:
         run: |
           { echo "## React + TypeScript coverage"; echo '```'; cat coverage/summary.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
 
+  angular:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: angular } }
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version: "22", cache: npm, cache-dependency-path: angular/package-lock.json }
+      - run: npm ci
+      - run: npm audit --audit-level=moderate
+      - run: npm run typecheck
+      - run: npm run coverage
+      - run: npm run build
+      - name: Coverage summary
+        run: |
+          { echo "## Angular coverage"; echo '```'; cat coverage/code-smells-angular/summary.txt 2>/dev/null || cat coverage/summary.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
   go:
     runs-on: ubuntu-latest
     defaults: { run: { working-directory: go } }

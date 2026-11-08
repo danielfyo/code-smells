@@ -101,6 +101,7 @@ is raised, chaining the original cause (`from exc`). Any other error keeps propa
 - C#: [`csharp/src/CodeSmells/ErrorHandling/SwallowedExceptions/`](../../../csharp/src/CodeSmells/ErrorHandling/SwallowedExceptions/)
 - React + TS: [`react-ts/src/smells/error_handling/swallowed-exceptions/`](../../../react-ts/src/smells/error_handling/swallowed-exceptions/)
 - Go: [`go/smells/error_handling/swallowed-exceptions/`](../../../go/smells/error_handling/swallowed-exceptions/)
+- Angular: [`angular/src/smells/error_handling/swallowed-exceptions/`](../../../angular/src/smells/error_handling/swallowed-exceptions/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

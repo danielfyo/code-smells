@@ -124,6 +124,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/OoAbusers/SwitchStatements/`](../../../csharp/src/CodeSmells/OoAbusers/SwitchStatements/) |
 | React + TS | [`react-ts/src/smells/oo_abusers/switch-statements/`](../../../react-ts/src/smells/oo_abusers/switch-statements/) |
 | Go | [`go/smells/oo_abusers/switch-statements/`](../../../go/smells/oo_abusers/switch-statements/) |
+| Angular | [`angular/src/smells/oo_abusers/switch-statements/`](../../../angular/src/smells/oo_abusers/switch-statements/) |
 
 ## References
 

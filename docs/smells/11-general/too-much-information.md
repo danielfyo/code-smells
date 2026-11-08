@@ -94,6 +94,7 @@ public class ShoppingCart
 - C#: [`csharp/src/CodeSmells/General/TooMuchInformation/`](../../../csharp/src/CodeSmells/General/TooMuchInformation/)
 - React + TS: [`react-ts/src/smells/general/too-much-information/`](../../../react-ts/src/smells/general/too-much-information/)
 - Go: [`go/smells/general/too-much-information/`](../../../go/smells/general/too-much-information/)
+- Angular: [`angular/src/smells/general/too-much-information/`](../../../angular/src/smells/general/too-much-information/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

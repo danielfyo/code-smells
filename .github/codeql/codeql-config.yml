@@ -9,4 +9,5 @@ paths-ignore:
   - "**/Smelly.ts"
   - "**/Smelly.tsx"
   - "**/smelly.test.tsx"
+  - "**/smelly*.ts"
   - "**/node_modules/**"

@@ -89,6 +89,7 @@ public class SmsSender : INotificationSender
 - C#: [`csharp/src/CodeSmells/Names/WrongAbstractionLevelName/`](../../../csharp/src/CodeSmells/Names/WrongAbstractionLevelName/)
 - React + TS: [`react-ts/src/smells/names/wrong-abstraction-level-name/`](../../../react-ts/src/smells/names/wrong-abstraction-level-name/)
 - Go: [`go/smells/names/wrong-abstraction-level-name/`](../../../go/smells/names/wrong-abstraction-level-name/)
+- Angular: [`angular/src/smells/names/wrong-abstraction-level-name/`](../../../angular/src/smells/names/wrong-abstraction-level-name/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

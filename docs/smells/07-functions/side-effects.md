@@ -111,6 +111,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Functions/SideEffects/`](../../../csharp/src/CodeSmells/Functions/SideEffects/) |
 | React + TS | [`react-ts/src/smells/functions/side-effects/`](../../../react-ts/src/smells/functions/side-effects/) |
 | Go | [`go/smells/functions/side-effects/`](../../../go/smells/functions/side-effects/) |
+| Angular | [`angular/src/smells/functions/side-effects/`](../../../angular/src/smells/functions/side-effects/) |
 
 ## References
 

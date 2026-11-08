@@ -95,6 +95,7 @@ mechanism that fails when the test starts passing (`xfail(strict=True)` in pytes
 - C#: [`csharp/src/CodeSmells/Tests/IgnoredTests/`](../../../csharp/src/CodeSmells/Tests/IgnoredTests/)
 - React + TS: [`react-ts/src/smells/tests/ignored-tests/`](../../../react-ts/src/smells/tests/ignored-tests/)
 - Go: [`go/smells/tests/ignored-tests/`](../../../go/smells/tests/ignored-tests/)
+- Angular: [`angular/src/smells/tests/ignored-tests/`](../../../angular/src/smells/tests/ignored-tests/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

@@ -7,7 +7,7 @@ body:
     id: area
     attributes:
       label: Area
-      options: [Documentation / explanation, Python, C# (.NET), React + TypeScript, Go, Catalog / tools, CI / tooling]
+      options: [Documentation / explanation, Python, C# (.NET), React + TypeScript, Go, Angular, Catalog / tools, CI / tooling]
     validations:
       required: true
   - type: input

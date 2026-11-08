@@ -16,6 +16,7 @@ REQUIRED = {
     "csharp": lambda p: any(p.glob("*.cs")) or any(p.glob("*.md")),
     "react-ts": lambda p: any(p.rglob("*mell*")) and any(p.rglob("*efactored*")),
     "go": lambda p: (p / "smelly").is_dir() and (p / "refactored").is_dir(),
+    "angular": lambda p: any(p.rglob("*smelly*")) and any(p.rglob("*refactored*")),
 }
 
 

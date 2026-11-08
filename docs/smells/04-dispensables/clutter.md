@@ -101,6 +101,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Dispensables/Clutter/`](../../../csharp/src/CodeSmells/Dispensables/Clutter/) |
 | React + TS | [`react-ts/src/smells/dispensables/clutter/`](../../../react-ts/src/smells/dispensables/clutter/) |
 | Go | [`go/smells/dispensables/clutter/`](../../../go/smells/dispensables/clutter/) |
+| Angular | [`angular/src/smells/dispensables/clutter/`](../../../angular/src/smells/dispensables/clutter/) |
 
 ## References
 

@@ -99,6 +99,7 @@ public void Coupon_reduces_the_total_by_ten_percent()
 - C#: [`csharp/src/CodeSmells/Tests/EagerTest/`](../../../csharp/src/CodeSmells/Tests/EagerTest/)
 - React + TS: [`react-ts/src/smells/tests/eager-test/`](../../../react-ts/src/smells/tests/eager-test/)
 - Go: [`go/smells/tests/eager-test/`](../../../go/smells/tests/eager-test/)
+- Angular: [`angular/src/smells/tests/eager-test/`](../../../angular/src/smells/tests/eager-test/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

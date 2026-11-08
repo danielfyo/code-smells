@@ -28,5 +28,5 @@ body:
     attributes:
       label: Equivalence
       options:
-        - label: I understand that generic smells must be implemented in Python, C#, React + TypeScript and Go, with tests.
+        - label: I understand that generic smells must be implemented in Python, C#, React + TypeScript, Go and Angular, with tests.
           required: true

@@ -108,6 +108,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Functions/DeepNesting/`](../../../csharp/src/CodeSmells/Functions/DeepNesting/) |
 | React + TS | [`react-ts/src/smells/functions/deep-nesting/`](../../../react-ts/src/smells/functions/deep-nesting/) |
 | Go | [`go/smells/functions/deep-nesting/`](../../../go/smells/functions/deep-nesting/) |
+| Angular | [`angular/src/smells/functions/deep-nesting/`](../../../angular/src/smells/functions/deep-nesting/) |
 
 ## References
 

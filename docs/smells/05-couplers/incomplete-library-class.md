@@ -98,6 +98,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Couplers/IncompleteLibraryClass/`](../../../csharp/src/CodeSmells/Couplers/IncompleteLibraryClass/) |
 | React + TS | [`react-ts/src/smells/couplers/incomplete-library-class/`](../../../react-ts/src/smells/couplers/incomplete-library-class/) |
 | Go | [`go/smells/couplers/incomplete-library-class/`](../../../go/smells/couplers/incomplete-library-class/) |
+| Angular | [`angular/src/smells/couplers/incomplete-library-class/`](../../../angular/src/smells/couplers/incomplete-library-class/) |
 
 ## References
 

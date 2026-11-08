@@ -94,6 +94,7 @@ def parse_invoice_number(text: str) -> tuple[str, int, int]:
 - C#: [`csharp/src/CodeSmells/General/ComplicatedRegex/`](../../../csharp/src/CodeSmells/General/ComplicatedRegex/)
 - React + TS: [`react-ts/src/smells/general/complicated-regex/`](../../../react-ts/src/smells/general/complicated-regex/)
 - Go: [`go/smells/general/complicated-regex/`](../../../go/smells/general/complicated-regex/)
+- Angular: [`angular/src/smells/general/complicated-regex/`](../../../angular/src/smells/general/complicated-regex/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

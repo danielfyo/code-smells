@@ -110,6 +110,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/Dispensables/DuplicateCode/`](../../../csharp/src/CodeSmells/Dispensables/DuplicateCode/) |
 | React + TS | [`react-ts/src/smells/dispensables/duplicate-code/`](../../../react-ts/src/smells/dispensables/duplicate-code/) |
 | Go | [`go/smells/dispensables/duplicate-code/`](../../../go/smells/dispensables/duplicate-code/) |
+| Angular | [`angular/src/smells/dispensables/duplicate-code/`](../../../angular/src/smells/dispensables/duplicate-code/) |
 
 ## References
 

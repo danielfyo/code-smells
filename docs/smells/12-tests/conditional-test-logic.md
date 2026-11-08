@@ -93,6 +93,7 @@ it.each([
 - C#: [`csharp/src/CodeSmells/Tests/ConditionalTestLogic/`](../../../csharp/src/CodeSmells/Tests/ConditionalTestLogic/)
 - React + TS: [`react-ts/src/smells/tests/conditional-test-logic/`](../../../react-ts/src/smells/tests/conditional-test-logic/)
 - Go: [`go/smells/tests/conditional-test-logic/`](../../../go/smells/tests/conditional-test-logic/)
+- Angular: [`angular/src/smells/tests/conditional-test-logic/`](../../../angular/src/smells/tests/conditional-test-logic/)
 
 Each folder contains the production code under test and two versions of the tests: the `smelly` one, showing
 the smell (marked with `SMELL:` comments), and the `refactored` one, with the clean test (`REFACTOR:`

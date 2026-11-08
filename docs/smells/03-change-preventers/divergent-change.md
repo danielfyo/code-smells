@@ -111,6 +111,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/ChangePreventers/DivergentChange/`](../../../csharp/src/CodeSmells/ChangePreventers/DivergentChange/) |
 | React + TS | [`react-ts/src/smells/change_preventers/divergent-change/`](../../../react-ts/src/smells/change_preventers/divergent-change/) |
 | Go | [`go/smells/change_preventers/divergent-change/`](../../../go/smells/change_preventers/divergent-change/) |
+| Angular | [`angular/src/smells/change_preventers/divergent-change/`](../../../angular/src/smells/change_preventers/divergent-change/) |
 
 ## References
 

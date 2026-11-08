@@ -94,6 +94,7 @@ def customer_report(conn, customer_id: int) -> str:
 - C#: [`csharp/src/CodeSmells/General/MultipleLanguagesInFile/`](../../../csharp/src/CodeSmells/General/MultipleLanguagesInFile/)
 - React + TS: [`react-ts/src/smells/general/multiple-languages-in-file/`](../../../react-ts/src/smells/general/multiple-languages-in-file/)
 - Go: [`go/smells/general/multiple-languages-in-file/`](../../../go/smells/general/multiple-languages-in-file/)
+- Angular: [`angular/src/smells/general/multiple-languages-in-file/`](../../../angular/src/smells/general/multiple-languages-in-file/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

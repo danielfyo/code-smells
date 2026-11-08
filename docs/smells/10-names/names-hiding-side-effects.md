@@ -98,6 +98,7 @@ class CartStore {
 - C#: [`csharp/src/CodeSmells/Names/NamesHidingSideEffects/`](../../../csharp/src/CodeSmells/Names/NamesHidingSideEffects/)
 - React + TS: [`react-ts/src/smells/names/names-hiding-side-effects/`](../../../react-ts/src/smells/names/names-hiding-side-effects/)
 - Go: [`go/smells/names/names-hiding-side-effects/`](../../../go/smells/names/names-hiding-side-effects/)
+- Angular: [`angular/src/smells/names/names-hiding-side-effects/`](../../../angular/src/smells/names/names-hiding-side-effects/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 

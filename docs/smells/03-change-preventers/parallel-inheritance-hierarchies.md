@@ -107,6 +107,7 @@ Each folder contains the `smelly` version, the `refactored` version and the test
 | C# | [`csharp/src/CodeSmells/ChangePreventers/ParallelInheritanceHierarchies/`](../../../csharp/src/CodeSmells/ChangePreventers/ParallelInheritanceHierarchies/) |
 | React + TS | [`react-ts/src/smells/change_preventers/parallel-inheritance-hierarchies/`](../../../react-ts/src/smells/change_preventers/parallel-inheritance-hierarchies/) |
 | Go | [`go/smells/change_preventers/parallel-inheritance-hierarchies/`](../../../go/smells/change_preventers/parallel-inheritance-hierarchies/) |
+| Angular | [`angular/src/smells/change_preventers/parallel-inheritance-hierarchies/`](../../../angular/src/smells/change_preventers/parallel-inheritance-hierarchies/) |
 
 ## References
 

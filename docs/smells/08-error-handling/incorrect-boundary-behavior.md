@@ -96,6 +96,7 @@ def page(items: list[Item], number: int, size: int) -> list[Item]:
 - C#: [`csharp/src/CodeSmells/ErrorHandling/IncorrectBoundaryBehavior/`](../../../csharp/src/CodeSmells/ErrorHandling/IncorrectBoundaryBehavior/)
 - React + TS: [`react-ts/src/smells/error_handling/incorrect-boundary-behavior/`](../../../react-ts/src/smells/error_handling/incorrect-boundary-behavior/)
 - Go: [`go/smells/error_handling/incorrect-boundary-behavior/`](../../../go/smells/error_handling/incorrect-boundary-behavior/)
+- Angular: [`angular/src/smells/error_handling/incorrect-boundary-behavior/`](../../../angular/src/smells/error_handling/incorrect-boundary-behavior/)
 
 Each folder contains a `smelly` version (the smell, marked with `SMELL:` comments) and a `refactored` version (marked with `REFACTOR:` comments), plus tests showing that both have the same observable behavior.
 
