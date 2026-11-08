@@ -1,0 +1,13 @@
+.catalog {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog .price {
+  font-weight: bold;
+}
