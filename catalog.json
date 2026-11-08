@@ -1,0 +1,3330 @@
+[
+  {
+    "dir": "01-bloaters",
+    "code_dir": "bloaters",
+    "name": "Bloaters",
+    "description": "Code, methods and classes that have grown so large they are hard to work with.",
+    "smells": [
+      {
+        "id": "CS001",
+        "slug": "long-method",
+        "name": "Long Method",
+        "sources": "Fowler 1999; Clean Code G30",
+        "summary": "A function does too many things and spans too many lines; the longer it is, the harder it is to understand, test and reuse.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/01-bloaters/long-method.md",
+        "code": {
+          "python": "python/code_smells/bloaters/long_method/",
+          "csharp": "csharp/src/CodeSmells/Bloaters/LongMethod/",
+          "react-ts": "react-ts/src/smells/bloaters/long-method/",
+          "go": "go/smells/bloaters/long-method/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS002",
+        "slug": "large-class",
+        "name": "Large Class / God Class",
+        "sources": "Fowler 1999; Riel 1996",
+        "summary": "A class with too many fields, methods and responsibilities that knows and does everything.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/01-bloaters/large-class.md",
+        "code": {
+          "python": "python/code_smells/bloaters/large_class/",
+          "csharp": "csharp/src/CodeSmells/Bloaters/LargeClass/",
+          "react-ts": "react-ts/src/smells/bloaters/large-class/",
+          "go": "go/smells/bloaters/large-class/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS003",
+        "slug": "long-parameter-list",
+        "name": "Long Parameter List",
+        "sources": "Fowler 1999; Clean Code F1",
+        "summary": "Functions with more than three or four parameters, hard to call correctly and to read.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/01-bloaters/long-parameter-list.md",
+        "code": {
+          "python": "python/code_smells/bloaters/long_parameter_list/",
+          "csharp": "csharp/src/CodeSmells/Bloaters/LongParameterList/",
+          "react-ts": "react-ts/src/smells/bloaters/long-parameter-list/",
+          "go": "go/smells/bloaters/long-parameter-list/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS004",
+        "slug": "primitive-obsession",
+        "name": "Primitive Obsession",
+        "sources": "Fowler 1999",
+        "summary": "Using primitive types (string, int) for domain concepts such as money, emails or ranges instead of dedicated types.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/01-bloaters/primitive-obsession.md",
+        "code": {
+          "python": "python/code_smells/bloaters/primitive_obsession/",
+          "csharp": "csharp/src/CodeSmells/Bloaters/PrimitiveObsession/",
+          "react-ts": "react-ts/src/smells/bloaters/primitive-obsession/",
+          "go": "go/smells/bloaters/primitive-obsession/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS005",
+        "slug": "data-clumps",
+        "name": "Data Clumps",
+        "sources": "Fowler 1999",
+        "summary": "The same groups of variables travel together everywhere (street, city, zip) without being grouped into an object.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/01-bloaters/data-clumps.md",
+        "code": {
+          "python": "python/code_smells/bloaters/data_clumps/",
+          "csharp": "csharp/src/CodeSmells/Bloaters/DataClumps/",
+          "react-ts": "react-ts/src/smells/bloaters/data-clumps/",
+          "go": "go/smells/bloaters/data-clumps/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "02-oo-abusers",
+    "code_dir": "oo_abusers",
+    "name": "Object-Orientation Abusers",
+    "description": "Incomplete or incorrect application of object-oriented programming principles.",
+    "smells": [
+      {
+        "id": "CS006",
+        "slug": "switch-statements",
+        "name": "Switch Statements / Repeated Switches",
+        "sources": "Fowler 1999/2018; Clean Code G23",
+        "summary": "The same switch or if/else chain on a type is repeated in several places; every new type forces you to touch them all.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/02-oo-abusers/switch-statements.md",
+        "code": {
+          "python": "python/code_smells/oo_abusers/switch_statements/",
+          "csharp": "csharp/src/CodeSmells/OoAbusers/SwitchStatements/",
+          "react-ts": "react-ts/src/smells/oo_abusers/switch-statements/",
+          "go": "go/smells/oo_abusers/switch-statements/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS007",
+        "slug": "temporary-field",
+        "name": "Temporary Field",
+        "sources": "Fowler 1999",
+        "summary": "Fields that only hold a value under certain circumstances and are empty the rest of the time.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/02-oo-abusers/temporary-field.md",
+        "code": {
+          "python": "python/code_smells/oo_abusers/temporary_field/",
+          "csharp": "csharp/src/CodeSmells/OoAbusers/TemporaryField/",
+          "react-ts": "react-ts/src/smells/oo_abusers/temporary-field/",
+          "go": "go/smells/oo_abusers/temporary-field/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS008",
+        "slug": "refused-bequest",
+        "name": "Refused Bequest",
+        "sources": "Fowler 1999",
+        "summary": "A subclass inherits methods and data it does not want or cannot use, violating the Liskov Substitution Principle.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/02-oo-abusers/refused-bequest.md",
+        "code": {
+          "python": "python/code_smells/oo_abusers/refused_bequest/",
+          "csharp": "csharp/src/CodeSmells/OoAbusers/RefusedBequest/",
+          "react-ts": "react-ts/src/smells/oo_abusers/refused-bequest/",
+          "go": "go/smells/oo_abusers/refused-bequest/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS009",
+        "slug": "alternative-classes-different-interfaces",
+        "name": "Alternative Classes with Different Interfaces",
+        "sources": "Fowler 1999",
+        "summary": "Two classes do the same thing with different names and signatures, so they cannot be swapped.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/02-oo-abusers/alternative-classes-different-interfaces.md",
+        "code": {
+          "python": "python/code_smells/oo_abusers/alternative_classes_different_interfaces/",
+          "csharp": "csharp/src/CodeSmells/OoAbusers/AlternativeClassesDifferentInterfaces/",
+          "react-ts": "react-ts/src/smells/oo_abusers/alternative-classes-different-interfaces/",
+          "go": "go/smells/oo_abusers/alternative-classes-different-interfaces/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS010",
+        "slug": "base-class-depends-on-subclass",
+        "name": "Base Class Depending on Its Derivatives",
+        "sources": "Clean Code G7",
+        "summary": "A base class knows about or references its subclasses, breaking the hierarchy and the Open/Closed Principle.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/02-oo-abusers/base-class-depends-on-subclass.md",
+        "code": {
+          "python": "python/code_smells/oo_abusers/base_class_depends_on_subclass/",
+          "csharp": "csharp/src/CodeSmells/OoAbusers/BaseClassDependsOnSubclass/",
+          "react-ts": "react-ts/src/smells/oo_abusers/base-class-depends-on-subclass/",
+          "go": "go/smells/oo_abusers/base-class-depends-on-subclass/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS011",
+        "slug": "inappropriate-static",
+        "name": "Inappropriate Static",
+        "sources": "Clean Code G18",
+        "summary": "Static functions that should be polymorphic or that hide dependencies, making them hard to replace and test.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/02-oo-abusers/inappropriate-static.md",
+        "code": {
+          "python": "python/code_smells/oo_abusers/inappropriate_static/",
+          "csharp": "csharp/src/CodeSmells/OoAbusers/InappropriateStatic/",
+          "react-ts": "react-ts/src/smells/oo_abusers/inappropriate-static/",
+          "go": "go/smells/oo_abusers/inappropriate-static/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "03-change-preventers",
+    "code_dir": "change_preventers",
+    "name": "Change Preventers",
+    "description": "Changing something in one place forces many changes in other places.",
+    "smells": [
+      {
+        "id": "CS012",
+        "slug": "divergent-change",
+        "name": "Divergent Change",
+        "sources": "Fowler 1999",
+        "summary": "A single class is changed for many different reasons (violates the Single Responsibility Principle).",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/03-change-preventers/divergent-change.md",
+        "code": {
+          "python": "python/code_smells/change_preventers/divergent_change/",
+          "csharp": "csharp/src/CodeSmells/ChangePreventers/DivergentChange/",
+          "react-ts": "react-ts/src/smells/change_preventers/divergent-change/",
+          "go": "go/smells/change_preventers/divergent-change/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS013",
+        "slug": "shotgun-surgery",
+        "name": "Shotgun Surgery",
+        "sources": "Fowler 1999",
+        "summary": "A single conceptual change requires many small edits across many different classes.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/03-change-preventers/shotgun-surgery.md",
+        "code": {
+          "python": "python/code_smells/change_preventers/shotgun_surgery/",
+          "csharp": "csharp/src/CodeSmells/ChangePreventers/ShotgunSurgery/",
+          "react-ts": "react-ts/src/smells/change_preventers/shotgun-surgery/",
+          "go": "go/smells/change_preventers/shotgun-surgery/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS014",
+        "slug": "parallel-inheritance-hierarchies",
+        "name": "Parallel Inheritance Hierarchies",
+        "sources": "Fowler 1999",
+        "summary": "Every time you add a subclass to one hierarchy you must add one to a parallel hierarchy.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/03-change-preventers/parallel-inheritance-hierarchies.md",
+        "code": {
+          "python": "python/code_smells/change_preventers/parallel_inheritance_hierarchies/",
+          "csharp": "csharp/src/CodeSmells/ChangePreventers/ParallelInheritanceHierarchies/",
+          "react-ts": "react-ts/src/smells/change_preventers/parallel-inheritance-hierarchies/",
+          "go": "go/smells/change_preventers/parallel-inheritance-hierarchies/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS015",
+        "slug": "combinatorial-explosion",
+        "name": "Combinatorial Explosion",
+        "sources": "Kerievsky 2004; Jerzyk 2023",
+        "summary": "Many pieces of code do the same thing with different combinations of data or behavior.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/03-change-preventers/combinatorial-explosion.md",
+        "code": {
+          "python": "python/code_smells/change_preventers/combinatorial_explosion/",
+          "csharp": "csharp/src/CodeSmells/ChangePreventers/CombinatorialExplosion/",
+          "react-ts": "react-ts/src/smells/change_preventers/combinatorial-explosion/",
+          "go": "go/smells/change_preventers/combinatorial-explosion/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "04-dispensables",
+    "code_dir": "dispensables",
+    "name": "Dispensables",
+    "description": "Something pointless or unneeded whose absence would make the code cleaner and easier to understand.",
+    "smells": [
+      {
+        "id": "CS016",
+        "slug": "duplicate-code",
+        "name": "Duplicate Code",
+        "sources": "Fowler 1999; Clean Code G5 (DRY)",
+        "summary": "The same logic appears in several places; every change must be replicated and it is easy to miss one.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/04-dispensables/duplicate-code.md",
+        "code": {
+          "python": "python/code_smells/dispensables/duplicate_code/",
+          "csharp": "csharp/src/CodeSmells/Dispensables/DuplicateCode/",
+          "react-ts": "react-ts/src/smells/dispensables/duplicate-code/",
+          "go": "go/smells/dispensables/duplicate-code/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS017",
+        "slug": "lazy-class",
+        "name": "Lazy Class / Lazy Element",
+        "sources": "Fowler 1999/2018",
+        "summary": "A class or function that does so little it does not justify its existence.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/04-dispensables/lazy-class.md",
+        "code": {
+          "python": "python/code_smells/dispensables/lazy_class/",
+          "csharp": "csharp/src/CodeSmells/Dispensables/LazyClass/",
+          "react-ts": "react-ts/src/smells/dispensables/lazy-class/",
+          "go": "go/smells/dispensables/lazy-class/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS018",
+        "slug": "data-class",
+        "name": "Data Class",
+        "sources": "Fowler 1999",
+        "summary": "Classes with only fields and getters/setters while the logic that manipulates them lives elsewhere.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/04-dispensables/data-class.md",
+        "code": {
+          "python": "python/code_smells/dispensables/data_class/",
+          "csharp": "csharp/src/CodeSmells/Dispensables/DataClass/",
+          "react-ts": "react-ts/src/smells/dispensables/data-class/",
+          "go": "go/smells/dispensables/data-class/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS019",
+        "slug": "dead-code",
+        "name": "Dead Code",
+        "sources": "Fowler 1999; Clean Code G9/F4",
+        "summary": "Variables, parameters, functions or branches that are never used or executed.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/04-dispensables/dead-code.md",
+        "code": {
+          "python": "python/code_smells/dispensables/dead_code/",
+          "csharp": "csharp/src/CodeSmells/Dispensables/DeadCode/",
+          "react-ts": "react-ts/src/smells/dispensables/dead-code/",
+          "go": "go/smells/dispensables/dead-code/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS020",
+        "slug": "speculative-generality",
+        "name": "Speculative Generality",
+        "sources": "Fowler 1999",
+        "summary": "Abstractions, hooks and parameters created \"just in case\" that nobody needs (YAGNI).",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/04-dispensables/speculative-generality.md",
+        "code": {
+          "python": "python/code_smells/dispensables/speculative_generality/",
+          "csharp": "csharp/src/CodeSmells/Dispensables/SpeculativeGenerality/",
+          "react-ts": "react-ts/src/smells/dispensables/speculative-generality/",
+          "go": "go/smells/dispensables/speculative-generality/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS021",
+        "slug": "excessive-comments",
+        "name": "Comments (as Deodorant)",
+        "sources": "Fowler 1999",
+        "summary": "Comments used to explain confusing code instead of rewriting it so it explains itself.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/04-dispensables/excessive-comments.md",
+        "code": {
+          "python": "python/code_smells/dispensables/excessive_comments/",
+          "csharp": "csharp/src/CodeSmells/Dispensables/ExcessiveComments/",
+          "react-ts": "react-ts/src/smells/dispensables/excessive-comments/",
+          "go": "go/smells/dispensables/excessive-comments/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS022",
+        "slug": "clutter",
+        "name": "Clutter",
+        "sources": "Clean Code G12",
+        "summary": "Empty constructors, unused variables, unnecessary imports and noise that adds nothing.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/04-dispensables/clutter.md",
+        "code": {
+          "python": "python/code_smells/dispensables/clutter/",
+          "csharp": "csharp/src/CodeSmells/Dispensables/Clutter/",
+          "react-ts": "react-ts/src/smells/dispensables/clutter/",
+          "go": "go/smells/dispensables/clutter/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "05-couplers",
+    "code_dir": "couplers",
+    "name": "Couplers",
+    "description": "Excessive coupling between classes, or excessive delegation.",
+    "smells": [
+      {
+        "id": "CS023",
+        "slug": "feature-envy",
+        "name": "Feature Envy",
+        "sources": "Fowler 1999; Clean Code G14",
+        "summary": "A method uses another class's data more than its own.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/feature-envy.md",
+        "code": {
+          "python": "python/code_smells/couplers/feature_envy/",
+          "csharp": "csharp/src/CodeSmells/Couplers/FeatureEnvy/",
+          "react-ts": "react-ts/src/smells/couplers/feature-envy/",
+          "go": "go/smells/couplers/feature-envy/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS024",
+        "slug": "inappropriate-intimacy",
+        "name": "Inappropriate Intimacy",
+        "sources": "Fowler 1999",
+        "summary": "A class reaches into the internal details (private fields, state) of another class.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/inappropriate-intimacy.md",
+        "code": {
+          "python": "python/code_smells/couplers/inappropriate_intimacy/",
+          "csharp": "csharp/src/CodeSmells/Couplers/InappropriateIntimacy/",
+          "react-ts": "react-ts/src/smells/couplers/inappropriate-intimacy/",
+          "go": "go/smells/couplers/inappropriate-intimacy/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS025",
+        "slug": "message-chains",
+        "name": "Message Chains (Train Wreck)",
+        "sources": "Fowler 1999; Clean Code G36; Law of Demeter",
+        "summary": "Chains like a.getB().getC().getD() couple the client to the whole navigation structure.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/message-chains.md",
+        "code": {
+          "python": "python/code_smells/couplers/message_chains/",
+          "csharp": "csharp/src/CodeSmells/Couplers/MessageChains/",
+          "react-ts": "react-ts/src/smells/couplers/message-chains/",
+          "go": "go/smells/couplers/message-chains/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS026",
+        "slug": "middle-man",
+        "name": "Middle Man",
+        "sources": "Fowler 1999",
+        "summary": "A class where most methods simply delegate to another class.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/middle-man.md",
+        "code": {
+          "python": "python/code_smells/couplers/middle_man/",
+          "csharp": "csharp/src/CodeSmells/Couplers/MiddleMan/",
+          "react-ts": "react-ts/src/smells/couplers/middle-man/",
+          "go": "go/smells/couplers/middle-man/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS027",
+        "slug": "incomplete-library-class",
+        "name": "Incomplete Library Class",
+        "sources": "Fowler 1999",
+        "summary": "A library does not provide what you need and the extension logic ends up scattered across the code.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/incomplete-library-class.md",
+        "code": {
+          "python": "python/code_smells/couplers/incomplete_library_class/",
+          "csharp": "csharp/src/CodeSmells/Couplers/IncompleteLibraryClass/",
+          "react-ts": "react-ts/src/smells/couplers/incomplete-library-class/",
+          "go": "go/smells/couplers/incomplete-library-class/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS028",
+        "slug": "global-data",
+        "name": "Global Data",
+        "sources": "Fowler 2018",
+        "summary": "Global state that can be modified from anywhere, impossible to trace and to test.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/global-data.md",
+        "code": {
+          "python": "python/code_smells/couplers/global_data/",
+          "csharp": "csharp/src/CodeSmells/Couplers/GlobalData/",
+          "react-ts": "react-ts/src/smells/couplers/global-data/",
+          "go": "go/smells/couplers/global-data/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS029",
+        "slug": "insider-trading",
+        "name": "Insider Trading",
+        "sources": "Fowler 2018",
+        "summary": "Modules that secretly exchange internal data instead of using explicit interfaces.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/insider-trading.md",
+        "code": {
+          "python": "python/code_smells/couplers/insider_trading/",
+          "csharp": "csharp/src/CodeSmells/Couplers/InsiderTrading/",
+          "react-ts": "react-ts/src/smells/couplers/insider-trading/",
+          "go": "go/smells/couplers/insider-trading/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS030",
+        "slug": "artificial-coupling",
+        "name": "Artificial Coupling",
+        "sources": "Clean Code G13",
+        "summary": "Unrelated elements become coupled because they are declared together (generic constants inside concrete classes).",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/artificial-coupling.md",
+        "code": {
+          "python": "python/code_smells/couplers/artificial_coupling/",
+          "csharp": "csharp/src/CodeSmells/Couplers/ArtificialCoupling/",
+          "react-ts": "react-ts/src/smells/couplers/artificial-coupling/",
+          "go": "go/smells/couplers/artificial-coupling/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS031",
+        "slug": "hidden-temporal-coupling",
+        "name": "Hidden Temporal Coupling",
+        "sources": "Clean Code G31",
+        "summary": "Calls must happen in a specific order but nothing in the code enforces it or makes it visible.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/05-couplers/hidden-temporal-coupling.md",
+        "code": {
+          "python": "python/code_smells/couplers/hidden_temporal_coupling/",
+          "csharp": "csharp/src/CodeSmells/Couplers/HiddenTemporalCoupling/",
+          "react-ts": "react-ts/src/smells/couplers/hidden-temporal-coupling/",
+          "go": "go/smells/couplers/hidden-temporal-coupling/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "06-data",
+    "code_dir": "data",
+    "name": "Data Dealers",
+    "description": "Problems in how data is represented, mutated and shared.",
+    "smells": [
+      {
+        "id": "CS032",
+        "slug": "mutable-data",
+        "name": "Mutable Data",
+        "sources": "Fowler 2018",
+        "summary": "Data that changes in unexpected places causing bugs that are hard to trace.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/06-data/mutable-data.md",
+        "code": {
+          "python": "python/code_smells/data/mutable_data/",
+          "csharp": "csharp/src/CodeSmells/Data/MutableData/",
+          "react-ts": "react-ts/src/smells/data/mutable-data/",
+          "go": "go/smells/data/mutable-data/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS033",
+        "slug": "magic-numbers",
+        "name": "Magic Numbers / Magic Strings",
+        "sources": "Clean Code G25",
+        "summary": "Unnamed literals whose meaning must be guessed.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/06-data/magic-numbers.md",
+        "code": {
+          "python": "python/code_smells/data/magic_numbers/",
+          "csharp": "csharp/src/CodeSmells/Data/MagicNumbers/",
+          "react-ts": "react-ts/src/smells/data/magic-numbers/",
+          "go": "go/smells/data/magic-numbers/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS034",
+        "slug": "boolean-blindness",
+        "name": "Boolean Blindness",
+        "sources": "Jerzyk 2023; Harper",
+        "summary": "Booleans lose the meaning of what they represent, making calls like f(true, false) unreadable.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/06-data/boolean-blindness.md",
+        "code": {
+          "python": "python/code_smells/data/boolean_blindness/",
+          "csharp": "csharp/src/CodeSmells/Data/BooleanBlindness/",
+          "react-ts": "react-ts/src/smells/data/boolean-blindness/",
+          "go": "go/smells/data/boolean-blindness/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS035",
+        "slug": "null-abuse",
+        "name": "Null Check / Null Abuse",
+        "sources": "Jerzyk 2023; Hoare",
+        "summary": "Returning and checking null everywhere instead of using null objects, optionals or explicit errors.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/06-data/null-abuse.md",
+        "code": {
+          "python": "python/code_smells/data/null_abuse/",
+          "csharp": "csharp/src/CodeSmells/Data/NullAbuse/",
+          "react-ts": "react-ts/src/smells/data/null-abuse/",
+          "go": "go/smells/data/null-abuse/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS036",
+        "slug": "status-variable",
+        "name": "Status Variable",
+        "sources": "Jerzyk 2023",
+        "summary": "Mutable flag variables used to control the flow of loops or functions.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/06-data/status-variable.md",
+        "code": {
+          "python": "python/code_smells/data/status_variable/",
+          "csharp": "csharp/src/CodeSmells/Data/StatusVariable/",
+          "react-ts": "react-ts/src/smells/data/status-variable/",
+          "go": "go/smells/data/status-variable/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS037",
+        "slug": "loops",
+        "name": "Loops / Imperative Loops",
+        "sources": "Fowler 2018",
+        "summary": "Hand-written loops where a collection pipeline (map/filter/reduce) would express intent better.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/06-data/loops.md",
+        "code": {
+          "python": "python/code_smells/data/loops/",
+          "csharp": "csharp/src/CodeSmells/Data/Loops/",
+          "react-ts": "react-ts/src/smells/data/loops/",
+          "go": "go/smells/data/loops/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "07-functions",
+    "code_dir": "functions",
+    "name": "Functions & Conditional Logic",
+    "description": "Signatures, side effects and conditional logic that are hard to understand or use.",
+    "smells": [
+      {
+        "id": "CS038",
+        "slug": "output-arguments",
+        "name": "Output Arguments",
+        "sources": "Clean Code F2",
+        "summary": "Parameters the function mutates to return results instead of using the return value.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/07-functions/output-arguments.md",
+        "code": {
+          "python": "python/code_smells/functions/output_arguments/",
+          "csharp": "csharp/src/CodeSmells/Functions/OutputArguments/",
+          "react-ts": "react-ts/src/smells/functions/output-arguments/",
+          "go": "go/smells/functions/output-arguments/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS039",
+        "slug": "flag-arguments",
+        "name": "Flag / Selector Arguments",
+        "sources": "Clean Code F3/G15",
+        "summary": "A boolean or enum makes the function do different things: it is really several functions.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/07-functions/flag-arguments.md",
+        "code": {
+          "python": "python/code_smells/functions/flag_arguments/",
+          "csharp": "csharp/src/CodeSmells/Functions/FlagArguments/",
+          "react-ts": "react-ts/src/smells/functions/flag-arguments/",
+          "go": "go/smells/functions/flag-arguments/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS040",
+        "slug": "side-effects",
+        "name": "Side Effects",
+        "sources": "Clean Code; Jerzyk 2023",
+        "summary": "A function promises one thing but also silently changes global state, its arguments or the system.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/07-functions/side-effects.md",
+        "code": {
+          "python": "python/code_smells/functions/side_effects/",
+          "csharp": "csharp/src/CodeSmells/Functions/SideEffects/",
+          "react-ts": "react-ts/src/smells/functions/side-effects/",
+          "go": "go/smells/functions/side-effects/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS041",
+        "slug": "deep-nesting",
+        "name": "Deep Nesting / Arrow Code",
+        "sources": "McConnell; Jerzyk 2023",
+        "summary": "Many levels of nested if/for form an arrow shape and hide the main path.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/07-functions/deep-nesting.md",
+        "code": {
+          "python": "python/code_smells/functions/deep_nesting/",
+          "csharp": "csharp/src/CodeSmells/Functions/DeepNesting/",
+          "react-ts": "react-ts/src/smells/functions/deep-nesting/",
+          "go": "go/smells/functions/deep-nesting/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS042",
+        "slug": "complicated-boolean-expression",
+        "name": "Complicated Boolean Expression",
+        "sources": "Clean Code G28; Jerzyk 2023",
+        "summary": "Long, opaque conditions that should be encapsulated in well-named functions or variables.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/07-functions/complicated-boolean-expression.md",
+        "code": {
+          "python": "python/code_smells/functions/complicated_boolean_expression/",
+          "csharp": "csharp/src/CodeSmells/Functions/ComplicatedBooleanExpression/",
+          "react-ts": "react-ts/src/smells/functions/complicated-boolean-expression/",
+          "go": "go/smells/functions/complicated-boolean-expression/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS043",
+        "slug": "negative-conditionals",
+        "name": "Negative Conditionals",
+        "sources": "Clean Code G29",
+        "summary": "Conditions expressed negatively (or double-negatively) are harder to read than their positive form.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/07-functions/negative-conditionals.md",
+        "code": {
+          "python": "python/code_smells/functions/negative_conditionals/",
+          "csharp": "csharp/src/CodeSmells/Functions/NegativeConditionals/",
+          "react-ts": "react-ts/src/smells/functions/negative-conditionals/",
+          "go": "go/smells/functions/negative-conditionals/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS044",
+        "slug": "mixed-abstraction-levels",
+        "name": "Mixed Levels of Abstraction",
+        "sources": "Clean Code G6/G34",
+        "summary": "A function mixes low-level details with high-level operations.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/07-functions/mixed-abstraction-levels.md",
+        "code": {
+          "python": "python/code_smells/functions/mixed_abstraction_levels/",
+          "csharp": "csharp/src/CodeSmells/Functions/MixedAbstractionLevels/",
+          "react-ts": "react-ts/src/smells/functions/mixed-abstraction-levels/",
+          "go": "go/smells/functions/mixed-abstraction-levels/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS045",
+        "slug": "command-query-violation",
+        "name": "Command-Query Separation Violation",
+        "sources": "Meyer; Clean Code",
+        "summary": "Functions that both change state and return information, creating ambiguity.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/07-functions/command-query-violation.md",
+        "code": {
+          "python": "python/code_smells/functions/command_query_violation/",
+          "csharp": "csharp/src/CodeSmells/Functions/CommandQueryViolation/",
+          "react-ts": "react-ts/src/smells/functions/command-query-violation/",
+          "go": "go/smells/functions/command-query-violation/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "08-error-handling",
+    "code_dir": "error_handling",
+    "name": "Error Handling",
+    "description": "Errors that are ignored, hidden or used as a control-flow mechanism.",
+    "smells": [
+      {
+        "id": "CS046",
+        "slug": "swallowed-exceptions",
+        "name": "Swallowed Exceptions / Afraid to Fail",
+        "sources": "Jerzyk 2023; Clean Code",
+        "summary": "Catching errors and doing nothing (or only logging), leaving the system in an inconsistent state.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/08-error-handling/swallowed-exceptions.md",
+        "code": {
+          "python": "python/code_smells/error_handling/swallowed_exceptions/",
+          "csharp": "csharp/src/CodeSmells/ErrorHandling/SwallowedExceptions/",
+          "react-ts": "react-ts/src/smells/error_handling/swallowed-exceptions/",
+          "go": "go/smells/error_handling/swallowed-exceptions/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS047",
+        "slug": "error-codes",
+        "name": "Returning Error Codes",
+        "sources": "Clean Code ch. 7",
+        "summary": "Returning -1, null or magic codes instead of explicit errors that cannot be ignored.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/08-error-handling/error-codes.md",
+        "code": {
+          "python": "python/code_smells/error_handling/error_codes/",
+          "csharp": "csharp/src/CodeSmells/ErrorHandling/ErrorCodes/",
+          "react-ts": "react-ts/src/smells/error_handling/error-codes/",
+          "go": "go/smells/error_handling/error-codes/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS048",
+        "slug": "exceptions-for-control-flow",
+        "name": "Exceptions for Control Flow",
+        "sources": "Bloch; Microsoft Guidelines",
+        "summary": "Using exceptions for expected cases of the normal flow instead of conditions.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/08-error-handling/exceptions-for-control-flow.md",
+        "code": {
+          "python": "python/code_smells/error_handling/exceptions_for_control_flow/",
+          "csharp": "csharp/src/CodeSmells/ErrorHandling/ExceptionsForControlFlow/",
+          "react-ts": "react-ts/src/smells/error_handling/exceptions-for-control-flow/",
+          "go": "go/smells/error_handling/exceptions-for-control-flow/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS049",
+        "slug": "overridden-safeties",
+        "name": "Overridden Safeties",
+        "sources": "Clean Code G4",
+        "summary": "Turning off compiler warnings, linters or failing tests to \"keep going\".",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/08-error-handling/overridden-safeties.md",
+        "code": {
+          "python": "python/code_smells/error_handling/overridden_safeties/",
+          "csharp": "csharp/src/CodeSmells/ErrorHandling/OverriddenSafeties/",
+          "react-ts": "react-ts/src/smells/error_handling/overridden-safeties/",
+          "go": "go/smells/error_handling/overridden-safeties/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS050",
+        "slug": "incorrect-boundary-behavior",
+        "name": "Incorrect Behavior at the Boundaries",
+        "sources": "Clean Code G3/G33",
+        "summary": "Boundary conditions (empty, zero, last element, off-by-one) scattered around or not handled.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/08-error-handling/incorrect-boundary-behavior.md",
+        "code": {
+          "python": "python/code_smells/error_handling/incorrect_boundary_behavior/",
+          "csharp": "csharp/src/CodeSmells/ErrorHandling/IncorrectBoundaryBehavior/",
+          "react-ts": "react-ts/src/smells/error_handling/incorrect-boundary-behavior/",
+          "go": "go/smells/error_handling/incorrect-boundary-behavior/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "09-comments",
+    "code_dir": "comments",
+    "name": "Comments",
+    "description": "Comments that add nothing, lie, or replace good code (Clean Code C1-C5).",
+    "smells": [
+      {
+        "id": "CS051",
+        "slug": "inappropriate-information",
+        "name": "Inappropriate Information",
+        "sources": "Clean Code C1",
+        "summary": "Comments holding information that belongs in another system: author, dates, change history, tickets.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/09-comments/inappropriate-information.md",
+        "code": {
+          "python": "python/code_smells/comments/inappropriate_information/",
+          "csharp": "csharp/src/CodeSmells/Comments/InappropriateInformation/",
+          "react-ts": "react-ts/src/smells/comments/inappropriate-information/",
+          "go": "go/smells/comments/inappropriate-information/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS052",
+        "slug": "obsolete-comment",
+        "name": "Obsolete Comment",
+        "sources": "Clean Code C2; Jerzyk 2023 (Fallacious Comment)",
+        "summary": "Comments that have drifted away from the code and now lie.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/09-comments/obsolete-comment.md",
+        "code": {
+          "python": "python/code_smells/comments/obsolete_comment/",
+          "csharp": "csharp/src/CodeSmells/Comments/ObsoleteComment/",
+          "react-ts": "react-ts/src/smells/comments/obsolete-comment/",
+          "go": "go/smells/comments/obsolete-comment/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS053",
+        "slug": "redundant-comment",
+        "name": "Redundant Comment",
+        "sources": "Clean Code C3",
+        "summary": "Comments that repeat what the code already says clearly.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/09-comments/redundant-comment.md",
+        "code": {
+          "python": "python/code_smells/comments/redundant_comment/",
+          "csharp": "csharp/src/CodeSmells/Comments/RedundantComment/",
+          "react-ts": "react-ts/src/smells/comments/redundant-comment/",
+          "go": "go/smells/comments/redundant-comment/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS054",
+        "slug": "poorly-written-comment",
+        "name": "Poorly Written Comment",
+        "sources": "Clean Code C4",
+        "summary": "Ambiguous, rambling or sloppy comments that confuse more than they help.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/09-comments/poorly-written-comment.md",
+        "code": {
+          "python": "python/code_smells/comments/poorly_written_comment/",
+          "csharp": "csharp/src/CodeSmells/Comments/PoorlyWrittenComment/",
+          "react-ts": "react-ts/src/smells/comments/poorly-written-comment/",
+          "go": "go/smells/comments/poorly-written-comment/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS055",
+        "slug": "commented-out-code",
+        "name": "Commented-Out Code",
+        "sources": "Clean Code C5",
+        "summary": "Blocks of commented-out code nobody dares to delete; that is what version control is for.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/09-comments/commented-out-code.md",
+        "code": {
+          "python": "python/code_smells/comments/commented_out_code/",
+          "csharp": "csharp/src/CodeSmells/Comments/CommentedOutCode/",
+          "react-ts": "react-ts/src/smells/comments/commented-out-code/",
+          "go": "go/smells/comments/commented-out-code/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "10-names",
+    "code_dir": "names",
+    "name": "Names",
+    "description": "Names that fail to communicate, confuse or lie (Clean Code N1-N7).",
+    "smells": [
+      {
+        "id": "CS056",
+        "slug": "uncommunicative-name",
+        "name": "Mysterious / Uncommunicative Name",
+        "sources": "Fowler 2018; Clean Code N1",
+        "summary": "Names like d, tmp, data2 or proc that do not reveal intent.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/uncommunicative-name.md",
+        "code": {
+          "python": "python/code_smells/names/uncommunicative_name/",
+          "csharp": "csharp/src/CodeSmells/Names/UncommunicativeName/",
+          "react-ts": "react-ts/src/smells/names/uncommunicative-name/",
+          "go": "go/smells/names/uncommunicative-name/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS057",
+        "slug": "wrong-abstraction-level-name",
+        "name": "Names at the Wrong Level of Abstraction",
+        "sources": "Clean Code N2",
+        "summary": "Names that reveal the implementation (dialModem) instead of the concept (connect).",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/wrong-abstraction-level-name.md",
+        "code": {
+          "python": "python/code_smells/names/wrong_abstraction_level_name/",
+          "csharp": "csharp/src/CodeSmells/Names/WrongAbstractionLevelName/",
+          "react-ts": "react-ts/src/smells/names/wrong-abstraction-level-name/",
+          "go": "go/smells/names/wrong-abstraction-level-name/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS058",
+        "slug": "non-standard-nomenclature",
+        "name": "Non-Standard Nomenclature",
+        "sources": "Clean Code N3",
+        "summary": "Ignoring well-known pattern names and the conventions of the language and the domain.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/non-standard-nomenclature.md",
+        "code": {
+          "python": "python/code_smells/names/non_standard_nomenclature/",
+          "csharp": "csharp/src/CodeSmells/Names/NonStandardNomenclature/",
+          "react-ts": "react-ts/src/smells/names/non-standard-nomenclature/",
+          "go": "go/smells/names/non-standard-nomenclature/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS059",
+        "slug": "ambiguous-name",
+        "name": "Ambiguous Name",
+        "sources": "Clean Code N4",
+        "summary": "Names open to several interpretations, such as doRename or process.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/ambiguous-name.md",
+        "code": {
+          "python": "python/code_smells/names/ambiguous_name/",
+          "csharp": "csharp/src/CodeSmells/Names/AmbiguousName/",
+          "react-ts": "react-ts/src/smells/names/ambiguous-name/",
+          "go": "go/smells/names/ambiguous-name/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS060",
+        "slug": "short-names-long-scopes",
+        "name": "Short Names for Long Scopes",
+        "sources": "Clean Code N5",
+        "summary": "Single-letter names used in wide scopes or long-lived variables.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/short-names-long-scopes.md",
+        "code": {
+          "python": "python/code_smells/names/short_names_long_scopes/",
+          "csharp": "csharp/src/CodeSmells/Names/ShortNamesLongScopes/",
+          "react-ts": "react-ts/src/smells/names/short-names-long-scopes/",
+          "go": "go/smells/names/short-names-long-scopes/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS061",
+        "slug": "encodings-in-names",
+        "name": "Encodings in Names / Type Embedded in Name",
+        "sources": "Clean Code N6; Jerzyk 2023",
+        "summary": "Hungarian notation, m_ prefixes or embedded types (strName, needless IUserInterface).",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/encodings-in-names.md",
+        "code": {
+          "python": "python/code_smells/names/encodings_in_names/",
+          "csharp": "csharp/src/CodeSmells/Names/EncodingsInNames/",
+          "react-ts": "react-ts/src/smells/names/encodings-in-names/",
+          "go": "go/smells/names/encodings-in-names/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS062",
+        "slug": "names-hiding-side-effects",
+        "name": "Names Should Describe Side Effects",
+        "sources": "Clean Code N7",
+        "summary": "A getX() that also creates, saves or modifies things without its name saying so.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/names-hiding-side-effects.md",
+        "code": {
+          "python": "python/code_smells/names/names_hiding_side_effects/",
+          "csharp": "csharp/src/CodeSmells/Names/NamesHidingSideEffects/",
+          "react-ts": "react-ts/src/smells/names/names-hiding-side-effects/",
+          "go": "go/smells/names/names-hiding-side-effects/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS063",
+        "slug": "inconsistent-names",
+        "name": "Inconsistent Names",
+        "sources": "Clean Code G11; Jerzyk 2023",
+        "summary": "The same concept goes by several names (fetch/get/retrieve, user/client/customer).",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/inconsistent-names.md",
+        "code": {
+          "python": "python/code_smells/names/inconsistent_names/",
+          "csharp": "csharp/src/CodeSmells/Names/InconsistentNames/",
+          "react-ts": "react-ts/src/smells/names/inconsistent-names/",
+          "go": "go/smells/names/inconsistent-names/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS064",
+        "slug": "binary-operator-in-name",
+        "name": "Binary Operator in Name",
+        "sources": "Jerzyk 2023",
+        "summary": "Names containing And/Or (validateAndSave) reveal that the function does more than one thing.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/binary-operator-in-name.md",
+        "code": {
+          "python": "python/code_smells/names/binary_operator_in_name/",
+          "csharp": "csharp/src/CodeSmells/Names/BinaryOperatorInName/",
+          "react-ts": "react-ts/src/smells/names/binary-operator-in-name/",
+          "go": "go/smells/names/binary-operator-in-name/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS065",
+        "slug": "fallacious-method-name",
+        "name": "Fallacious Method Name",
+        "sources": "Jerzyk 2023",
+        "summary": "The name promises something different from what the method does (isValid that mutates, getX that returns something else).",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/10-names/fallacious-method-name.md",
+        "code": {
+          "python": "python/code_smells/names/fallacious_method_name/",
+          "csharp": "csharp/src/CodeSmells/Names/FallaciousMethodName/",
+          "react-ts": "react-ts/src/smells/names/fallacious-method-name/",
+          "go": "go/smells/names/fallacious-method-name/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "11-general",
+    "code_dir": "general",
+    "name": "General",
+    "description": "General design and readability heuristics (Clean Code G1-G36).",
+    "smells": [
+      {
+        "id": "CS066",
+        "slug": "multiple-languages-in-file",
+        "name": "Multiple Languages in One Source File",
+        "sources": "Clean Code G1",
+        "summary": "SQL, HTML, JS, XML... mixed in the same source file.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/multiple-languages-in-file.md",
+        "code": {
+          "python": "python/code_smells/general/multiple_languages_in_file/",
+          "csharp": "csharp/src/CodeSmells/General/MultipleLanguagesInFile/",
+          "react-ts": "react-ts/src/smells/general/multiple-languages-in-file/",
+          "go": "go/smells/general/multiple-languages-in-file/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS067",
+        "slug": "obvious-behavior-unimplemented",
+        "name": "Obvious Behavior Is Unimplemented",
+        "sources": "Clean Code G2 (Principle of Least Surprise)",
+        "summary": "A function does not do what anyone would expect from its name or type.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/obvious-behavior-unimplemented.md",
+        "code": {
+          "python": "python/code_smells/general/obvious_behavior_unimplemented/",
+          "csharp": "csharp/src/CodeSmells/General/ObviousBehaviorUnimplemented/",
+          "react-ts": "react-ts/src/smells/general/obvious-behavior-unimplemented/",
+          "go": "go/smells/general/obvious-behavior-unimplemented/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS068",
+        "slug": "too-much-information",
+        "name": "Too Much Information / Indecent Exposure",
+        "sources": "Clean Code G8; Kerievsky 2004",
+        "summary": "Wide interfaces that expose internal details that should be private.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/too-much-information.md",
+        "code": {
+          "python": "python/code_smells/general/too_much_information/",
+          "csharp": "csharp/src/CodeSmells/General/TooMuchInformation/",
+          "react-ts": "react-ts/src/smells/general/too-much-information/",
+          "go": "go/smells/general/too-much-information/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS069",
+        "slug": "vertical-separation",
+        "name": "Vertical Separation",
+        "sources": "Clean Code G10",
+        "summary": "Variables and functions defined far away from where they are used.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/vertical-separation.md",
+        "code": {
+          "python": "python/code_smells/general/vertical_separation/",
+          "csharp": "csharp/src/CodeSmells/General/VerticalSeparation/",
+          "react-ts": "react-ts/src/smells/general/vertical-separation/",
+          "go": "go/smells/general/vertical-separation/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS070",
+        "slug": "obscured-intent",
+        "name": "Obscured Intent / Clever Code",
+        "sources": "Clean Code G16; Jerzyk 2023",
+        "summary": "Compact, cryptic code that shows off cleverness but hides what it does.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/obscured-intent.md",
+        "code": {
+          "python": "python/code_smells/general/obscured_intent/",
+          "csharp": "csharp/src/CodeSmells/General/ObscuredIntent/",
+          "react-ts": "react-ts/src/smells/general/obscured-intent/",
+          "go": "go/smells/general/obscured-intent/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS071",
+        "slug": "misplaced-responsibility",
+        "name": "Misplaced Responsibility",
+        "sources": "Clean Code G17",
+        "summary": "Code placed where it was convenient for the author, not where the reader would look for it.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/misplaced-responsibility.md",
+        "code": {
+          "python": "python/code_smells/general/misplaced_responsibility/",
+          "csharp": "csharp/src/CodeSmells/General/MisplacedResponsibility/",
+          "react-ts": "react-ts/src/smells/general/misplaced-responsibility/",
+          "go": "go/smells/general/misplaced-responsibility/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS072",
+        "slug": "missing-explanatory-variables",
+        "name": "Missing Explanatory Variables",
+        "sources": "Clean Code G19",
+        "summary": "Complex expressions not broken down into well-named intermediate variables.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/missing-explanatory-variables.md",
+        "code": {
+          "python": "python/code_smells/general/missing_explanatory_variables/",
+          "csharp": "csharp/src/CodeSmells/General/MissingExplanatoryVariables/",
+          "react-ts": "react-ts/src/smells/general/missing-explanatory-variables/",
+          "go": "go/smells/general/missing-explanatory-variables/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS073",
+        "slug": "hidden-logical-dependency",
+        "name": "Logical Dependency Not Made Physical",
+        "sources": "Clean Code G22",
+        "summary": "A module assumes something about another (a size, an order) without explicitly asking for it.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/hidden-logical-dependency.md",
+        "code": {
+          "python": "python/code_smells/general/hidden_logical_dependency/",
+          "csharp": "csharp/src/CodeSmells/General/HiddenLogicalDependency/",
+          "react-ts": "react-ts/src/smells/general/hidden-logical-dependency/",
+          "go": "go/smells/general/hidden-logical-dependency/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS074",
+        "slug": "convention-over-structure",
+        "name": "Prefer Structure over Convention",
+        "sources": "Clean Code G27",
+        "summary": "Relying on conventions (\"remember to add a case\") instead of letting the structure enforce it.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/convention-over-structure.md",
+        "code": {
+          "python": "python/code_smells/general/convention_over_structure/",
+          "csharp": "csharp/src/CodeSmells/General/ConventionOverStructure/",
+          "react-ts": "react-ts/src/smells/general/convention-over-structure/",
+          "go": "go/smells/general/convention-over-structure/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS075",
+        "slug": "imprecision",
+        "name": "Be Precise / Imprecision",
+        "sources": "Clean Code G26",
+        "summary": "Using float for money, ignoring concurrency or assuming a query returns a single result.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/imprecision.md",
+        "code": {
+          "python": "python/code_smells/general/imprecision/",
+          "csharp": "csharp/src/CodeSmells/General/Imprecision/",
+          "react-ts": "react-ts/src/smells/general/imprecision/",
+          "go": "go/smells/general/imprecision/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS076",
+        "slug": "configurable-data-at-low-levels",
+        "name": "Configurable Data at Low Levels",
+        "sources": "Clean Code G35",
+        "summary": "Configuration constants buried deep in the code.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/configurable-data-at-low-levels.md",
+        "code": {
+          "python": "python/code_smells/general/configurable_data_at_low_levels/",
+          "csharp": "csharp/src/CodeSmells/General/ConfigurableDataAtLowLevels/",
+          "react-ts": "react-ts/src/smells/general/configurable-data-at-low-levels/",
+          "go": "go/smells/general/configurable-data-at-low-levels/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS077",
+        "slug": "oddball-solution",
+        "name": "Oddball Solution",
+        "sources": "Kerievsky 2004; Jerzyk 2023",
+        "summary": "The same problem is solved in different ways in different parts of the system.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/oddball-solution.md",
+        "code": {
+          "python": "python/code_smells/general/oddball_solution/",
+          "csharp": "csharp/src/CodeSmells/General/OddballSolution/",
+          "react-ts": "react-ts/src/smells/general/oddball-solution/",
+          "go": "go/smells/general/oddball-solution/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS078",
+        "slug": "complicated-regex",
+        "name": "Complicated Regex Expression",
+        "sources": "Jerzyk 2023",
+        "summary": "Long, cryptic regular expressions without names, comments or decomposition.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/complicated-regex.md",
+        "code": {
+          "python": "python/code_smells/general/complicated_regex/",
+          "csharp": "csharp/src/CodeSmells/General/ComplicatedRegex/",
+          "react-ts": "react-ts/src/smells/general/complicated-regex/",
+          "go": "go/smells/general/complicated-regex/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS079",
+        "slug": "callback-hell",
+        "name": "Callback Hell / Pyramid of Doom",
+        "sources": "Jerzyk 2023",
+        "summary": "Callbacks nested inside callbacks make asynchronous flow unreadable.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/11-general/callback-hell.md",
+        "code": {
+          "python": "python/code_smells/general/callback_hell/",
+          "csharp": "csharp/src/CodeSmells/General/CallbackHell/",
+          "react-ts": "react-ts/src/smells/general/callback-hell/",
+          "go": "go/smells/general/callback-hell/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "12-tests",
+    "code_dir": "tests",
+    "name": "Test Smells",
+    "description": "Smells in test code (Clean Code T1-T9 and xUnit Test Patterns).",
+    "smells": [
+      {
+        "id": "CS080",
+        "slug": "insufficient-tests",
+        "name": "Insufficient Tests",
+        "sources": "Clean Code T1/T2/T8",
+        "summary": "Only the happy path is tested; there is no coverage tool and relevant cases go untested.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/insufficient-tests.md",
+        "code": {
+          "python": "python/code_smells/tests/insufficient_tests/",
+          "csharp": "csharp/src/CodeSmells/Tests/InsufficientTests/",
+          "react-ts": "react-ts/src/smells/tests/insufficient-tests/",
+          "go": "go/smells/tests/insufficient-tests/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS081",
+        "slug": "ignored-tests",
+        "name": "Ignored Tests",
+        "sources": "Clean Code T4",
+        "summary": "Disabled or skipped tests with no documented reason that nobody ever re-enables.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/ignored-tests.md",
+        "code": {
+          "python": "python/code_smells/tests/ignored_tests/",
+          "csharp": "csharp/src/CodeSmells/Tests/IgnoredTests/",
+          "react-ts": "react-ts/src/smells/tests/ignored-tests/",
+          "go": "go/smells/tests/ignored-tests/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS082",
+        "slug": "untested-boundaries",
+        "name": "Untested Boundary Conditions",
+        "sources": "Clean Code T3/T5/T6",
+        "summary": "Boundary cases and the neighborhood of known bugs are not tested.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/untested-boundaries.md",
+        "code": {
+          "python": "python/code_smells/tests/untested_boundaries/",
+          "csharp": "csharp/src/CodeSmells/Tests/UntestedBoundaries/",
+          "react-ts": "react-ts/src/smells/tests/untested-boundaries/",
+          "go": "go/smells/tests/untested-boundaries/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS083",
+        "slug": "slow-tests",
+        "name": "Slow Tests",
+        "sources": "Clean Code T9; Meszaros 2007",
+        "summary": "Tests that depend on network, disk or real waits and are so slow nobody runs them.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/slow-tests.md",
+        "code": {
+          "python": "python/code_smells/tests/slow_tests/",
+          "csharp": "csharp/src/CodeSmells/Tests/SlowTests/",
+          "react-ts": "react-ts/src/smells/tests/slow-tests/",
+          "go": "go/smells/tests/slow-tests/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS084",
+        "slug": "assertion-roulette",
+        "name": "Assertion Roulette",
+        "sources": "van Deursen 2001; Meszaros 2007",
+        "summary": "Many assertions without messages in one test: when it fails you cannot tell which one or why.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/assertion-roulette.md",
+        "code": {
+          "python": "python/code_smells/tests/assertion_roulette/",
+          "csharp": "csharp/src/CodeSmells/Tests/AssertionRoulette/",
+          "react-ts": "react-ts/src/smells/tests/assertion-roulette/",
+          "go": "go/smells/tests/assertion-roulette/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS085",
+        "slug": "mystery-guest",
+        "name": "Mystery Guest",
+        "sources": "van Deursen 2001; Meszaros 2007",
+        "summary": "The test depends on external resources (files, DB) that are invisible when reading it.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/mystery-guest.md",
+        "code": {
+          "python": "python/code_smells/tests/mystery_guest/",
+          "csharp": "csharp/src/CodeSmells/Tests/MysteryGuest/",
+          "react-ts": "react-ts/src/smells/tests/mystery-guest/",
+          "go": "go/smells/tests/mystery-guest/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS086",
+        "slug": "eager-test",
+        "name": "Eager Test",
+        "sources": "van Deursen 2001",
+        "summary": "A single test verifies many different behaviors at once.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/eager-test.md",
+        "code": {
+          "python": "python/code_smells/tests/eager_test/",
+          "csharp": "csharp/src/CodeSmells/Tests/EagerTest/",
+          "react-ts": "react-ts/src/smells/tests/eager-test/",
+          "go": "go/smells/tests/eager-test/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS087",
+        "slug": "conditional-test-logic",
+        "name": "Conditional Test Logic",
+        "sources": "Meszaros 2007",
+        "summary": "Tests with if, loops or try/catch that may never execute their assertions.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/conditional-test-logic.md",
+        "code": {
+          "python": "python/code_smells/tests/conditional_test_logic/",
+          "csharp": "csharp/src/CodeSmells/Tests/ConditionalTestLogic/",
+          "react-ts": "react-ts/src/smells/tests/conditional-test-logic/",
+          "go": "go/smells/tests/conditional-test-logic/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS088",
+        "slug": "sleepy-test",
+        "name": "Sleepy Test",
+        "sources": "Peruma 2019",
+        "summary": "Using sleep to wait for asynchrony: slow, non-deterministic tests.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/sleepy-test.md",
+        "code": {
+          "python": "python/code_smells/tests/sleepy_test/",
+          "csharp": "csharp/src/CodeSmells/Tests/SleepyTest/",
+          "react-ts": "react-ts/src/smells/tests/sleepy-test/",
+          "go": "go/smells/tests/sleepy-test/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS089",
+        "slug": "fragile-test",
+        "name": "Fragile Test / Testing Implementation Details",
+        "sources": "Meszaros 2007",
+        "summary": "Tests coupled to implementation details that break with any refactoring.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/fragile-test.md",
+        "code": {
+          "python": "python/code_smells/tests/fragile_test/",
+          "csharp": "csharp/src/CodeSmells/Tests/FragileTest/",
+          "react-ts": "react-ts/src/smells/tests/fragile-test/",
+          "go": "go/smells/tests/fragile-test/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS090",
+        "slug": "interdependent-tests",
+        "name": "Interdependent Tests / Shared Fixture",
+        "sources": "Meszaros 2007",
+        "summary": "Tests sharing mutable state that only pass in a specific order.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/12-tests/interdependent-tests.md",
+        "code": {
+          "python": "python/code_smells/tests/interdependent_tests/",
+          "csharp": "csharp/src/CodeSmells/Tests/InterdependentTests/",
+          "react-ts": "react-ts/src/smells/tests/interdependent-tests/",
+          "go": "go/smells/tests/interdependent-tests/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "13-environment",
+    "code_dir": "environment",
+    "name": "Environment",
+    "description": "Development environment problems: build and tests (Clean Code E1-E2).",
+    "smells": [
+      {
+        "id": "CS091",
+        "slug": "multi-step-build",
+        "name": "Build Requires More Than One Step",
+        "sources": "Clean Code E1",
+        "summary": "Building the project requires a manual sequence of commands, files and tribal knowledge.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/13-environment/multi-step-build.md",
+        "code": {
+          "python": "python/code_smells/environment/multi_step_build/",
+          "csharp": "csharp/src/CodeSmells/Environment/MultiStepBuild/",
+          "react-ts": "react-ts/src/smells/environment/multi-step-build/",
+          "go": "go/smells/environment/multi-step-build/"
+        },
+        "doc_focused": true
+      },
+      {
+        "id": "CS092",
+        "slug": "multi-step-tests",
+        "name": "Tests Require More Than One Step",
+        "sources": "Clean Code E2",
+        "summary": "Running all the tests cannot be done with a single command.",
+        "languages": [
+          "python",
+          "csharp",
+          "react-ts",
+          "go"
+        ],
+        "doc": "docs/smells/13-environment/multi-step-tests.md",
+        "code": {
+          "python": "python/code_smells/environment/multi_step_tests/",
+          "csharp": "csharp/src/CodeSmells/Environment/MultiStepTests/",
+          "react-ts": "react-ts/src/smells/environment/multi-step-tests/",
+          "go": "go/smells/environment/multi-step-tests/"
+        },
+        "doc_focused": true
+      }
+    ]
+  },
+  {
+    "dir": "14-python",
+    "code_dir": "python_specific",
+    "name": "Python-specific",
+    "description": "Idiomatic Python anti-patterns.",
+    "smells": [
+      {
+        "id": "CS093",
+        "slug": "mutable-default-argument",
+        "name": "Mutable Default Argument",
+        "sources": "Little Book of Python Anti-Patterns",
+        "summary": "Default values are evaluated once: a default list is shared between calls.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/mutable-default-argument.md",
+        "code": {
+          "python": "python/code_smells/python_specific/mutable_default_argument/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS094",
+        "slug": "bare-except",
+        "name": "Bare except",
+        "sources": "PEP 8; Pylint W0702",
+        "summary": "`except:` catches even KeyboardInterrupt and SystemExit and hides real errors.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/bare-except.md",
+        "code": {
+          "python": "python/code_smells/python_specific/bare_except/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS095",
+        "slug": "wildcard-import",
+        "name": "Wildcard Import",
+        "sources": "PEP 8",
+        "summary": "`from x import *` pollutes the namespace and hides where each name comes from.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/wildcard-import.md",
+        "code": {
+          "python": "python/code_smells/python_specific/wildcard_import/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS096",
+        "slug": "identity-vs-equality",
+        "name": "Using `is` for Value Comparison",
+        "sources": "Python docs",
+        "summary": "Comparing values with `is` works by accident (integer caching) and fails intermittently.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/identity-vs-equality.md",
+        "code": {
+          "python": "python/code_smells/python_specific/identity_vs_equality/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS097",
+        "slug": "late-binding-closures",
+        "name": "Late-Binding Closures",
+        "sources": "The Hitchhiker's Guide to Python",
+        "summary": "Lambdas created in a loop capture the variable, not its value: they all see the last one.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/late-binding-closures.md",
+        "code": {
+          "python": "python/code_smells/python_specific/late_binding_closures/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS098",
+        "slug": "java-style-getters-setters",
+        "name": "Java-style Getters and Setters",
+        "sources": "Little Book of Python Anti-Patterns",
+        "summary": "Trivial get_x/set_x methods instead of attributes or @property.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/java-style-getters-setters.md",
+        "code": {
+          "python": "python/code_smells/python_specific/java_style_getters_setters/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS099",
+        "slug": "missing-context-manager",
+        "name": "Not Using Context Managers",
+        "sources": "PEP 343",
+        "summary": "Opening resources without `with`, risking leaks when an exception is raised.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/missing-context-manager.md",
+        "code": {
+          "python": "python/code_smells/python_specific/missing_context_manager/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS100",
+        "slug": "range-len-iteration",
+        "name": "range(len()) Iteration",
+        "sources": "PEP 20; Pylint C0200",
+        "summary": "Manual indexing instead of iterating directly or using enumerate/zip.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/range-len-iteration.md",
+        "code": {
+          "python": "python/code_smells/python_specific/range_len_iteration/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS101",
+        "slug": "type-checking-with-type",
+        "name": "Type Checking with type()",
+        "sources": "PEP 8",
+        "summary": "`type(x) == Class` breaks inheritance; use isinstance or, better, polymorphism/duck typing.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/type-checking-with-type.md",
+        "code": {
+          "python": "python/code_smells/python_specific/type_checking_with_type/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS102",
+        "slug": "string-concatenation-in-loop",
+        "name": "String Concatenation in a Loop",
+        "sources": "Python docs",
+        "summary": "`s += x` in a loop is quadratic and hard to read; use str.join or f-strings.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/string-concatenation-in-loop.md",
+        "code": {
+          "python": "python/code_smells/python_specific/string_concatenation_in_loop/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS103",
+        "slug": "global-statement",
+        "name": "global Statement",
+        "sources": "Pylint W0603",
+        "summary": "Functions that modify module-level variables through `global`.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/global-statement.md",
+        "code": {
+          "python": "python/code_smells/python_specific/global_statement/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS104",
+        "slug": "monkey-patching",
+        "name": "Monkey Patching in Production Code",
+        "sources": "Python community",
+        "summary": "Modifying third-party classes or modules at runtime from production code.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/monkey-patching.md",
+        "code": {
+          "python": "python/code_smells/python_specific/monkey_patching/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS105",
+        "slug": "dict-as-object",
+        "name": "Stringly-typed Dicts instead of Classes",
+        "sources": "Python community",
+        "summary": "Passing dicts with magic keys instead of dataclasses, NamedTuple or TypedDict.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/dict-as-object.md",
+        "code": {
+          "python": "python/code_smells/python_specific/dict_as_object/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS106",
+        "slug": "reinventing-stdlib",
+        "name": "Reinventing the Standard Library",
+        "sources": "Python community",
+        "summary": "Re-implementing by hand what collections, itertools, pathlib, etc. already provide.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/reinventing-stdlib.md",
+        "code": {
+          "python": "python/code_smells/python_specific/reinventing_stdlib/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS107",
+        "slug": "shadowing-builtins",
+        "name": "Shadowing Built-ins",
+        "sources": "Pylint W0622",
+        "summary": "Naming variables list, dict, id, type, input... hiding the built-in functions.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/shadowing-builtins.md",
+        "code": {
+          "python": "python/code_smells/python_specific/shadowing_builtins/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS108",
+        "slug": "assert-for-validation",
+        "name": "assert for Data Validation",
+        "sources": "Bandit B101",
+        "summary": "asserts disappear under `python -O`; they cannot be used to validate input data.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/assert-for-validation.md",
+        "code": {
+          "python": "python/code_smells/python_specific/assert_for_validation/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS109",
+        "slug": "inconsistent-return",
+        "name": "Inconsistent Return Statements",
+        "sources": "PEP 8; Pylint R1710",
+        "summary": "Some branches return a value while others implicitly return None.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/inconsistent-return.md",
+        "code": {
+          "python": "python/code_smells/python_specific/inconsistent_return/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS110",
+        "slug": "complex-comprehension",
+        "name": "Overly Complex Comprehension",
+        "sources": "Google Python Style Guide",
+        "summary": "Comprehensions with several for/if clauses and nested logic on one line.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/complex-comprehension.md",
+        "code": {
+          "python": "python/code_smells/python_specific/complex_comprehension/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS111",
+        "slug": "import-time-side-effects",
+        "name": "Import-time Side Effects",
+        "sources": "Python community",
+        "summary": "Connections, file reads or heavy work executed when a module is imported.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/import-time-side-effects.md",
+        "code": {
+          "python": "python/code_smells/python_specific/import_time_side_effects/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS112",
+        "slug": "missing-type-hints",
+        "name": "Missing Type Hints / Any Abuse",
+        "sources": "PEP 484",
+        "summary": "Public APIs without annotations or full of Any, defeating static analysis.",
+        "languages": [
+          "python"
+        ],
+        "doc": "docs/smells/14-python/missing-type-hints.md",
+        "code": {
+          "python": "python/code_smells/python_specific/missing_type_hints/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "15-csharp",
+    "code_dir": "csharp_specific",
+    "name": "C# / .NET-specific",
+    "description": "Idiomatic C# and .NET anti-patterns.",
+    "smells": [
+      {
+        "id": "CS113",
+        "slug": "async-void",
+        "name": "async void Methods",
+        "sources": "D. Fowler AsyncGuidance; VSTHRD100",
+        "summary": "Exceptions that cannot be caught and crash the process, and calls that cannot be awaited.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/async-void.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/AsyncVoid/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS114",
+        "slug": "sync-over-async",
+        "name": "Sync over Async (.Result / .Wait())",
+        "sources": "D. Fowler AsyncGuidance",
+        "summary": "Blocking on Tasks causes deadlocks and thread-pool starvation.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/sync-over-async.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/SyncOverAsync/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS115",
+        "slug": "missing-dispose",
+        "name": "Missing using / IDisposable Leak",
+        "sources": "CA2000",
+        "summary": "IDisposable resources that are never released (connections, streams, sockets).",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/missing-dispose.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/MissingDispose/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS116",
+        "slug": "throw-ex",
+        "name": "Rethrowing with `throw ex`",
+        "sources": "CA2200",
+        "summary": "`throw ex;` resets the stack trace and loses where the error happened.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/throw-ex.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/ThrowEx/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS117",
+        "slug": "catch-general-exception",
+        "name": "Catching General Exception",
+        "sources": "CA1031",
+        "summary": "Indiscriminate `catch (Exception)` that hides programming errors.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/catch-general-exception.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/CatchGeneralException/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS118",
+        "slug": "string-concat-in-loop",
+        "name": "String Concatenation in Loops",
+        "sources": "Microsoft Docs",
+        "summary": "`+=` on strings in loops allocates thousands of objects; use StringBuilder or string.Join.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/string-concat-in-loop.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/StringConcatInLoop/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS119",
+        "slug": "multiple-enumeration",
+        "name": "Multiple Enumeration of IEnumerable",
+        "sources": "CA1851",
+        "summary": "Iterating a deferred IEnumerable several times repeats queries or side effects.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/multiple-enumeration.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/MultipleEnumeration/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS120",
+        "slug": "httpclient-per-request",
+        "name": "new HttpClient per Request",
+        "sources": "Microsoft Docs",
+        "summary": "Creating and disposing HttpClient on every call exhausts sockets; use IHttpClientFactory.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/httpclient-per-request.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/HttpclientPerRequest/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS121",
+        "slug": "datetime-now-dependency",
+        "name": "DateTime.Now Hidden Dependency",
+        "sources": ".NET 8 TimeProvider",
+        "summary": "Logic that depends on the system clock and cannot be tested deterministically.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/datetime-now-dependency.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/DatetimeNowDependency/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS122",
+        "slug": "service-locator",
+        "name": "Service Locator Anti-pattern",
+        "sources": "M. Seemann",
+        "summary": "Asking a global container for dependencies hides the real dependencies of a class.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/service-locator.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/ServiceLocator/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS123",
+        "slug": "static-mutable-state",
+        "name": "Static Mutable State",
+        "sources": "Microsoft Docs",
+        "summary": "Mutable static fields shared across threads and requests.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/static-mutable-state.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/StaticMutableState/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS124",
+        "slug": "anemic-domain-model",
+        "name": "Anemic Domain Model",
+        "sources": "Fowler 2003",
+        "summary": "Entities without behavior manipulated by services that hold all the logic.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/anemic-domain-model.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/AnemicDomainModel/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS125",
+        "slug": "lock-on-this",
+        "name": "Locking on this / Public Objects",
+        "sources": "Microsoft Docs",
+        "summary": "Locking on publicly reachable objects lets external code cause deadlocks.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/lock-on-this.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/LockOnThis/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS126",
+        "slug": "exposed-mutable-collections",
+        "name": "Exposing Mutable Collections",
+        "sources": "CA2227; Framework Design Guidelines",
+        "summary": "Public List<T> properties with setters that let callers break invariants.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/exposed-mutable-collections.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/ExposedMutableCollections/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS127",
+        "slug": "null-forgiving-abuse",
+        "name": "Null-Forgiving Operator Abuse",
+        "sources": "C# Nullable Reference Types",
+        "summary": "Silencing nullability warnings with `!` instead of handling null.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/null-forgiving-abuse.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/NullForgivingAbuse/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS128",
+        "slug": "linq-side-effects",
+        "name": "Side Effects in LINQ",
+        "sources": "Microsoft Docs",
+        "summary": "Mutating state inside Select/Where; deferred execution makes it unpredictable.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/linq-side-effects.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/LinqSideEffects/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS129",
+        "slug": "fake-async",
+        "name": "Fake Async (Task.Run Wrapping)",
+        "sources": "S. Cleary",
+        "summary": "Wrapping synchronous code in Task.Run inside a library to look asynchronous.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/fake-async.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/FakeAsync/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS130",
+        "slug": "new-in-constructor",
+        "name": "Control Freak (Newing Dependencies)",
+        "sources": "M. Seemann",
+        "summary": "Instantiating dependencies inside the class prevents injecting and testing them.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/new-in-constructor.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/NewInConstructor/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS131",
+        "slug": "region-abuse",
+        "name": "#region Abuse",
+        "sources": ".NET community",
+        "summary": "Using #region to hide huge classes instead of splitting them.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/region-abuse.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/RegionAbuse/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS132",
+        "slug": "magic-config-strings",
+        "name": "Magic Configuration Strings",
+        "sources": "Options pattern (Microsoft Docs)",
+        "summary": "Reading configuration with scattered string keys instead of strongly typed IOptions<T>.",
+        "languages": [
+          "csharp"
+        ],
+        "doc": "docs/smells/15-csharp/magic-config-strings.md",
+        "code": {
+          "csharp": "csharp/src/CodeSmells/CsharpSpecific/MagicConfigStrings/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "16-react-ts",
+    "code_dir": "react_ts_specific",
+    "name": "React + TypeScript-specific",
+    "description": "React and TypeScript anti-patterns.",
+    "smells": [
+      {
+        "id": "CS133",
+        "slug": "prop-drilling",
+        "name": "Prop Drilling",
+        "sources": "Ferreira 2022 (React smells)",
+        "summary": "Passing props through many intermediate components that do not use them.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/prop-drilling.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/prop-drilling/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS134",
+        "slug": "god-component",
+        "name": "God Component / Large Component",
+        "sources": "Ferreira 2022",
+        "summary": "A component that fetches data, manages state, holds business logic and renders the whole UI.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/god-component.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/god-component/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS135",
+        "slug": "derived-state-in-effect",
+        "name": "Derived State via useEffect",
+        "sources": "react.dev: You Might Not Need an Effect",
+        "summary": "Computing in an effect + setState something that can be calculated during render.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/derived-state-in-effect.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/derived-state-in-effect/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS136",
+        "slug": "props-copied-to-state",
+        "name": "Props Copied into State",
+        "sources": "react.dev",
+        "summary": "Initializing useState from a prop creates two sources of truth that drift apart.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/props-copied-to-state.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/props-copied-to-state/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS137",
+        "slug": "missing-effect-cleanup",
+        "name": "Missing Effect Cleanup",
+        "sources": "react.dev",
+        "summary": "Subscriptions, timers or listeners that are never removed.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/missing-effect-cleanup.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/missing-effect-cleanup/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS138",
+        "slug": "stale-closure",
+        "name": "Stale Closure / Missing Dependencies",
+        "sources": "eslint-plugin-react-hooks",
+        "summary": "Omitting hook dependencies makes them read stale values.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/stale-closure.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/stale-closure/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS139",
+        "slug": "direct-state-mutation",
+        "name": "Direct State Mutation",
+        "sources": "react.dev",
+        "summary": "Mutating state objects or arrays instead of creating new ones: React does not re-render.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/direct-state-mutation.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/direct-state-mutation/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS140",
+        "slug": "index-as-key",
+        "name": "Array Index as Key",
+        "sources": "react.dev",
+        "summary": "Using the index as key in lists that change mixes up state and DOM.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/index-as-key.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/index-as-key/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS141",
+        "slug": "any-type",
+        "name": "any Abuse",
+        "sources": "typescript-eslint no-explicit-any",
+        "summary": "`any` switches off the type system and silently propagates errors.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/any-type.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/any-type/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS142",
+        "slug": "non-null-assertion",
+        "name": "Non-null Assertion Abuse",
+        "sources": "typescript-eslint",
+        "summary": "`value!` lies to the compiler about values that may be null.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/non-null-assertion.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/non-null-assertion/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS143",
+        "slug": "type-assertion-abuse",
+        "name": "Type Assertion (as) Abuse",
+        "sources": "typescript-eslint",
+        "summary": "`as Type` to force external data without validating it at runtime.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/type-assertion-abuse.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/type-assertion-abuse/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS144",
+        "slug": "component-inside-component",
+        "name": "Component Defined Inside Component",
+        "sources": "react.dev",
+        "summary": "Defining components in another component's body recreates them on every render and loses their state.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/component-inside-component.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/component-inside-component/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS145",
+        "slug": "boolean-prop-explosion",
+        "name": "Boolean Props Explosion",
+        "sources": "React community",
+        "summary": "isPrimary, isDanger, isSmall... impossible combinations instead of a typed variant.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/boolean-prop-explosion.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/boolean-prop-explosion/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS146",
+        "slug": "nested-ternaries-jsx",
+        "name": "Nested Ternaries in JSX",
+        "sources": "React community",
+        "summary": "Ternaries inside ternaries to decide what to render.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/nested-ternaries-jsx.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/nested-ternaries-jsx/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS147",
+        "slug": "effect-chains",
+        "name": "Chains of Effects",
+        "sources": "react.dev",
+        "summary": "Effects updating state that triggers other effects in cascade.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/effect-chains.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/effect-chains/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS148",
+        "slug": "context-overuse",
+        "name": "Monolithic / Overused Context",
+        "sources": "React community",
+        "summary": "A single giant context for everything causes massive re-renders and coupling.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/context-overuse.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/context-overuse/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS149",
+        "slug": "premature-memoization",
+        "name": "Premature Memoization",
+        "sources": "react.dev",
+        "summary": "useMemo/useCallback/memo everywhere without measuring, adding complexity without benefit.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/premature-memoization.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/premature-memoization/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS150",
+        "slug": "fetch-race-condition",
+        "name": "Fetch in Effect without Abort",
+        "sources": "react.dev",
+        "summary": "Requests in effects without cancellation: stale responses overwrite fresh ones.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/fetch-race-condition.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/fetch-race-condition/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS151",
+        "slug": "stringly-typed",
+        "name": "Stringly Typed Code",
+        "sources": "TypeScript community",
+        "summary": "Free-form strings where a union of literals or a discriminated type would provide safety.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/stringly-typed.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/stringly-typed/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS152",
+        "slug": "useState-explosion",
+        "name": "Too Many Related useState",
+        "sources": "react.dev",
+        "summary": "Many related useState calls that must change together; useReducer or an object is better.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/useState-explosion.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/useState-explosion/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS153",
+        "slug": "business-logic-in-components",
+        "name": "Business Logic in Components",
+        "sources": "React community",
+        "summary": "Business rules mixed with JSX instead of living in hooks or pure modules.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/business-logic-in-components.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/business-logic-in-components/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS154",
+        "slug": "props-spreading",
+        "name": "Indiscriminate Props Spreading",
+        "sources": "eslint-plugin-react jsx-props-no-spreading",
+        "summary": "`{...props}` passing unknown attributes to the DOM and hiding the component contract.",
+        "languages": [
+          "react-ts"
+        ],
+        "doc": "docs/smells/16-react-ts/props-spreading.md",
+        "code": {
+          "react-ts": "react-ts/src/smells/react_ts_specific/props-spreading/"
+        },
+        "doc_focused": false
+      }
+    ]
+  },
+  {
+    "dir": "17-go",
+    "code_dir": "go_specific",
+    "name": "Go-specific",
+    "description": "Idiomatic Go anti-patterns.",
+    "smells": [
+      {
+        "id": "CS155",
+        "slug": "ignored-errors",
+        "name": "Ignored Errors",
+        "sources": "Go Code Review Comments; errcheck",
+        "summary": "Discarding errors with `_` or not checking them at all.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/ignored-errors.md",
+        "code": {
+          "go": "go/smells/go_specific/ignored-errors/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS156",
+        "slug": "panic-for-control-flow",
+        "name": "panic for Control Flow",
+        "sources": "Effective Go",
+        "summary": "Using panic/recover for expected errors instead of returning error.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/panic-for-control-flow.md",
+        "code": {
+          "go": "go/smells/go_specific/panic-for-control-flow/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS157",
+        "slug": "interface-pollution",
+        "name": "Interface Pollution",
+        "sources": "100 Go Mistakes #5",
+        "summary": "Interfaces created on the producer side \"just in case\" with a single implementation.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/interface-pollution.md",
+        "code": {
+          "go": "go/smells/go_specific/interface-pollution/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS158",
+        "slug": "empty-interface-abuse",
+        "name": "Empty Interface Abuse",
+        "sources": "100 Go Mistakes #8",
+        "summary": "Using any where a concrete or generic type would provide type safety.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/empty-interface-abuse.md",
+        "code": {
+          "go": "go/smells/go_specific/empty-interface-abuse/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS159",
+        "slug": "goroutine-leak",
+        "name": "Goroutine Leak",
+        "sources": "Go Code Review Comments",
+        "summary": "Goroutines blocked forever with no way to finish.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/goroutine-leak.md",
+        "code": {
+          "go": "go/smells/go_specific/goroutine-leak/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS160",
+        "slug": "missing-context",
+        "name": "Missing Context Propagation",
+        "sources": "Go blog: Context",
+        "summary": "Ignoring context.Context: no cancellation and no timeouts.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/missing-context.md",
+        "code": {
+          "go": "go/smells/go_specific/missing-context/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS161",
+        "slug": "naked-returns",
+        "name": "Naked Returns in Long Functions",
+        "sources": "Go Code Review Comments",
+        "summary": "Bare returns in long functions with named results.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/naked-returns.md",
+        "code": {
+          "go": "go/smells/go_specific/naked-returns/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS162",
+        "slug": "init-abuse",
+        "name": "init() Abuse",
+        "sources": "100 Go Mistakes #3",
+        "summary": "Logic with side effects, I/O or hidden errors inside init functions.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/init-abuse.md",
+        "code": {
+          "go": "go/smells/go_specific/init-abuse/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS163",
+        "slug": "package-level-state",
+        "name": "Mutable Package-level State",
+        "sources": "Dave Cheney",
+        "summary": "Mutable package-level variables that prevent parallel tests.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/package-level-state.md",
+        "code": {
+          "go": "go/smells/go_specific/package-level-state/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS164",
+        "slug": "stuttering-names",
+        "name": "Stuttering Names",
+        "sources": "Effective Go",
+        "summary": "user.UserService, http.HTTPServer: repeating the package name.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/stuttering-names.md",
+        "code": {
+          "go": "go/smells/go_specific/stuttering-names/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS165",
+        "slug": "get-prefix-getters",
+        "name": "Getters with Get Prefix",
+        "sources": "Effective Go",
+        "summary": "In Go the getter for owner is Owner(), not GetOwner().",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/get-prefix-getters.md",
+        "code": {
+          "go": "go/smells/go_specific/get-prefix-getters/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS166",
+        "slug": "error-string-style",
+        "name": "Error Strings Style",
+        "sources": "Go Code Review Comments",
+        "summary": "Error messages capitalized, ending in punctuation or lacking context.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/error-string-style.md",
+        "code": {
+          "go": "go/smells/go_specific/error-string-style/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS167",
+        "slug": "lost-error-wrapping",
+        "name": "Lost Error Wrapping (%v vs %w)",
+        "sources": "Go 1.13 errors",
+        "summary": "Formatting with %v or comparing with == prevents errors.Is/As.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/lost-error-wrapping.md",
+        "code": {
+          "go": "go/smells/go_specific/lost-error-wrapping/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS168",
+        "slug": "defer-in-loop",
+        "name": "defer in Loop",
+        "sources": "100 Go Mistakes #35",
+        "summary": "defers run when the function returns, not per iteration: resources pile up.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/defer-in-loop.md",
+        "code": {
+          "go": "go/smells/go_specific/defer-in-loop/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS169",
+        "slug": "loop-variable-capture",
+        "name": "Loop Variable Capture",
+        "sources": "Go 1.22 release notes",
+        "summary": "Before Go 1.22 every goroutine/closure shared the loop variable.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/loop-variable-capture.md",
+        "code": {
+          "go": "go/smells/go_specific/loop-variable-capture/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS170",
+        "slug": "copying-mutex",
+        "name": "Copying sync.Mutex",
+        "sources": "go vet copylocks",
+        "summary": "Value receivers copy the mutex and synchronization disappears.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/copying-mutex.md",
+        "code": {
+          "go": "go/smells/go_specific/copying-mutex/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS171",
+        "slug": "typed-nil-interface",
+        "name": "Typed nil in Interface",
+        "sources": "Go FAQ",
+        "summary": "Returning a nil pointer as error yields a non-nil interface.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/typed-nil-interface.md",
+        "code": {
+          "go": "go/smells/go_specific/typed-nil-interface/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS172",
+        "slug": "utils-package",
+        "name": "utils / common Packages",
+        "sources": "Dave Cheney; Go blog: Package names",
+        "summary": "Catch-all packages with no cohesion or meaningful name.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/utils-package.md",
+        "code": {
+          "go": "go/smells/go_specific/utils-package/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS173",
+        "slug": "time-after-in-loop",
+        "name": "time.After in Loops",
+        "sources": "100 Go Mistakes #76",
+        "summary": "Each iteration creates a new timer; use time.NewTimer or context.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/time-after-in-loop.md",
+        "code": {
+          "go": "go/smells/go_specific/time-after-in-loop/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS174",
+        "slug": "waitgroup-add-in-goroutine",
+        "name": "WaitGroup.Add inside Goroutine",
+        "sources": "100 Go Mistakes #71",
+        "summary": "Calling Add inside the goroutine races with Wait.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/waitgroup-add-in-goroutine.md",
+        "code": {
+          "go": "go/smells/go_specific/waitgroup-add-in-goroutine/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS175",
+        "slug": "unsynchronized-map",
+        "name": "Concurrent Map Access without Sync",
+        "sources": "Go FAQ; race detector",
+        "summary": "Reading and writing a map from several goroutines without protection.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/unsynchronized-map.md",
+        "code": {
+          "go": "go/smells/go_specific/unsynchronized-map/"
+        },
+        "doc_focused": false
+      },
+      {
+        "id": "CS176",
+        "slug": "pointer-to-interface",
+        "name": "Pointer to Interface",
+        "sources": "Go Code Review Comments",
+        "summary": "*MyInterface is almost never needed and reveals confusion.",
+        "languages": [
+          "go"
+        ],
+        "doc": "docs/smells/17-go/pointer-to-interface.md",
+        "code": {
+          "go": "go/smells/go_specific/pointer-to-interface/"
+        },
+        "doc_focused": false
+      }
+    ]
+  }
+]
