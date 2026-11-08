@@ -99,6 +99,22 @@ Nobody pushes to `main` directly: every change arrives through a pull request.
    - **Commits are signed** ([how to sign commits](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits)).
    - Pull requests are merged with a merge commit or squashed (no rebase merges).
 
+## Repository settings (maintainers)
+
+Settings that cannot live in files (rulesets protecting `main` and release tags, security features,
+topics, merge strategy) are applied with a script. It needs the GitHub CLI logged in as an admin:
+
+```powershell
+gh auth login
+.\scripts\setup-repo.ps1            # Windows PowerShell / PowerShell 7
+```
+
+```bash
+scripts/setup-repo.sh               # macOS / Linux (or: make setup-repo)
+```
+
+Both scripts are idempotent: run them again whenever the CI jobs or settings change.
+
 ## Code of Conduct
 
 By participating you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
