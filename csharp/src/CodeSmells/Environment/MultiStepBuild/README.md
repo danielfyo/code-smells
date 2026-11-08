@@ -24,8 +24,8 @@ instead of `Smelly.cs` / `Refactored.cs`.
 - **REFACTOR:** a single entry point (`build.sh`, `make build` or `dotnet build`) used by people and CI alike.
 
 ```bash
-./refactored/build.sh            # Debug
-./refactored/build.sh Release    # Release
+bash refactored/build.sh            # Debug
+bash refactored/build.sh Release    # Release
 ```
 
 In this repository the real equivalent is `dotnet build CodeSmells.sln` from the repository root

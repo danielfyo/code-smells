@@ -26,4 +26,4 @@ go:
 # Applies GitHub repository settings (rulesets, security features, topics). Requires admin rights.
 # On Windows use: .\scripts\setup-repo.ps1
 setup-repo:
-	scripts/setup-repo.sh
+	bash scripts/setup-repo.sh

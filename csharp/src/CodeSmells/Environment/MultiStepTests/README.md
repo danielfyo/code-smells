@@ -21,8 +21,8 @@ This is an **environment** smell, so it is illustrated with documentation and sc
 - **REFACTOR:** the same command locally and in CI.
 
 ```bash
-./refactored/test.sh             # whole suite
-./refactored/test.sh --coverage  # whole suite + coverage (coverlet)
+bash refactored/test.sh             # whole suite
+bash refactored/test.sh --coverage  # whole suite + coverage (coverlet)
 ```
 
 In this repository the real equivalent is `dotnet test CodeSmells.sln` from the repository root

@@ -113,8 +113,8 @@ to protect are parameters, and the script asks for them when they are omitted:
 ```
 
 ```bash
-scripts/setup-repo.sh                                  # macOS / Linux: asks for repository and branch
-scripts/setup-repo.sh danielfyo/code-smells main
+bash scripts/setup-repo.sh                                # macOS / Linux: asks for repository and branch
+bash scripts/setup-repo.sh danielfyo/code-smells main
 ```
 
 Both scripts are idempotent: run them again whenever the CI jobs or settings change.
