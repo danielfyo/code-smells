@@ -24,10 +24,20 @@ This document defines how every code smell is organized. **`catalog.json`** (gen
 | C# / .NET 8 | `csharp/src/CodeSmells/<Category>/<SlugPascal>/` | `Smelly.cs`, `Refactored.cs` (namespaces `CodeSmells.<Category>.<SlugPascal>.Smelly` / `.Refactored`); tests in `csharp/tests/CodeSmells.Tests/<Category>/<SlugPascal>Tests.cs` | `dotnet test CodeSmells.sln` (repo root) |
 | React + TS | `react-ts/src/smells/<category>/<slug>/` | `Smelly.tsx` / `Refactored.tsx` (or `.ts` when there is no UI), `<slug>.test.tsx` | `cd react-ts && npm run check` |
 | Go 1.24 | `go/smells/<category>/<slug>/` | `smelly/` and `refactored/` subpackages, each with its `.go` and `_test.go` | `cd go && go vet ./... && go test ./...` |
+| Angular 22 | `angular/src/smells/<category>/<slug>/` | `smelly.ts` and `refactored.ts` (standalone components, services, pipes or plain TS; extra files such as `smelly.service.ts` are allowed), `<slug>.spec.ts` (Vitest + TestBed, zoneless) | `cd angular && npm ci && npm run check` |
 
 Code categories: `bloaters`, `oo_abusers`, `change_preventers`, `dispensables`, `couplers`, `data`,
 `functions`, `error_handling`, `comments`, `names`, `general`, `tests`, `environment`,
-`python_specific`, `csharp_specific`, `react_ts_specific`, `go_specific`.
+`python_specific`, `csharp_specific`, `react_ts_specific`, `go_specific`, `angular_specific`.
+
+### Angular specifics
+
+- Standalone components only, `ChangeDetectionStrategy.OnPush` in refactored code, signals (`signal`,
+  `computed`, `input()`, `output()`) and `inject()` for dependencies; RxJS where streams are the point.
+- The project builds with `strictTemplates` and extended diagnostics as errors: smelly code may be badly
+  designed but must still compile.
+- Tests use `TestBed` with `provideZonelessChangeDetection()` and `await fixture.whenStable()`;
+  `HttpClient` examples use `provideHttpClient()` + `provideHttpClientTesting()`.
 
 ### Special cases
 

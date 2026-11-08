@@ -40,9 +40,11 @@ CATEGORIES = [
      "React and TypeScript anti-patterns."),
     ("17-go", "go_specific", "Go-specific",
      "Idiomatic Go anti-patterns."),
+    ("18-angular", "angular_specific", "Angular-specific",
+     "Angular, RxJS and signals anti-patterns."),
 ]
 
-ALL = ["python", "csharp", "react-ts", "go"]
+ALL = ["python", "csharp", "react-ts", "go", "angular"]
 
 # code_dir -> list of (slug, name, sources, summary, languages)
 SMELLS = {
@@ -255,6 +257,30 @@ SMELLS = {
         ("waitgroup-add-in-goroutine", "WaitGroup.Add inside Goroutine", "100 Go Mistakes #71", "Calling Add inside the goroutine races with Wait.", ["go"]),
         ("unsynchronized-map", "Concurrent Map Access without Sync", "Go FAQ; race detector", "Reading and writing a map from several goroutines without protection.", ["go"]),
         ("pointer-to-interface", "Pointer to Interface", "Go Code Review Comments", "*MyInterface is almost never needed and reveals confusion.", ["go"]),
+    ],
+    "angular_specific": [
+        ("subscription-leak", "Subscription Leak", "angular.dev: takeUntilDestroyed; RxJS docs", "subscribe() calls that are never unsubscribed keep running after the component is destroyed.", ["angular"]),
+        ("nested-subscribes", "Nested Subscribes", "RxJS docs: higher-order operators", "subscribe() inside subscribe() instead of switchMap/concatMap/mergeMap: races, leaks and callback hell.", ["angular"]),
+        ("function-calls-in-template", "Function Calls in Templates", "angular.dev: computed signals and pure pipes", "Methods called from templates run on every change detection cycle; use computed signals or pure pipes.", ["angular"]),
+        ("fat-component", "Fat Component", "Angular style guide: single responsibility", "A component that fetches data, holds business rules, manages state and renders everything.", ["angular"]),
+        ("default-change-detection", "Default Change Detection Everywhere", "angular.dev: OnPush and zoneless", "Components without OnPush (or signal-driven updates) are checked on every event in the whole app.", ["angular"]),
+        ("manual-change-detection", "Manual Change Detection Hacks", "angular.dev: change detection", "detectChanges(), markForCheck() or setTimeout() sprinkled around to force the view to update.", ["angular"]),
+        ("direct-dom-manipulation", "Direct DOM Manipulation", "angular.dev: Renderer2 and template bindings", "ElementRef.nativeElement or document.querySelector to change the view instead of bindings.", ["angular"]),
+        ("mutable-service-state", "Public Mutable Service State", "angular.dev: signals", "Services exposing mutable arrays or objects that any component can change without notification.", ["angular"]),
+        ("index-as-track", "Tracking by Index", "angular.dev: @for track", "@for blocks tracked by $index on reorderable lists: DOM and state get mixed up.", ["angular"]),
+        ("constructor-logic", "Logic in Constructors", "angular.dev: lifecycle hooks", "Constructors that read inputs, call services or start work instead of declaring dependencies.", ["angular"]),
+        ("input-drilling", "Input Drilling", "angular.dev: dependency injection", "Data passed through several components via inputs and outputs that do not use it.", ["angular"]),
+        ("shared-module-dumping-ground", "Shared Module Dumping Ground", "angular.dev: standalone components", "A SharedModule that imports and re-exports everything, hiding real dependencies.", ["angular"]),
+        ("http-in-components", "HttpClient in Components", "Angular style guide: data services", "Components that build URLs and call HttpClient directly instead of using a data service.", ["angular"]),
+        ("promise-observable-mixing", "Mixing Promises and Observables", "RxJS docs: firstValueFrom", "toPromise(), async/await and subscribe() mixed in the same flow, losing cancellation.", ["angular"]),
+        ("effect-for-derived-state", "effect() for Derived State", "angular.dev: computed signals", "Writing signals from effect() to compute state that computed() would derive.", ["angular"]),
+        ("mutating-inputs", "Mutating Inputs", "angular.dev: inputs", "Child components that mutate objects received as inputs, changing the parent's state behind its back.", ["angular"]),
+        ("duplicate-async-subscriptions", "Duplicate async Subscriptions", "RxJS docs: shareReplay", "The same cold observable bound with several async pipes triggers several HTTP requests.", ["angular"]),
+        ("hardcoded-config", "Hard-coded Configuration in Services", "angular.dev: InjectionToken", "API URLs and feature flags written inside services instead of injected configuration.", ["angular"]),
+        ("sanitizer-bypass", "Bypassing the Sanitizer", "angular.dev: security", "bypassSecurityTrustHtml on user content opens the door to XSS.", ["angular"]),
+        ("component-inheritance", "Component Inheritance Hierarchies", "angular.dev: composition with inject()", "Base component classes that share behavior through inheritance instead of composition.", ["angular"]),
+        ("untyped-forms", "Untyped Forms", "angular.dev: typed reactive forms", "UntypedFormGroup / any-typed form values that lose compile-time checking.", ["angular"]),
+        ("any-in-templates", "$any() and any in Templates", "angular.dev: strict templates", "$any() casts and any-typed fields that switch off template type checking.", ["angular"]),
     ],
 }
 

@@ -1,0 +1,24 @@
+# Angular ignores. Based on the Angular CLI defaults and
+# https://github.com/github/gitignore/blob/main/Node.gitignore
+# Note: package-lock.json IS committed (reproducible installs with `npm ci`).
+
+# Dependencies
+/node_modules/
+
+# Build output and caches
+/dist/
+/out-tsc/
+/tmp/
+/.angular/
+*.tsbuildinfo
+
+# Tests and coverage
+/coverage/
+__screenshots__/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+testem.log
+
+# Local env files (.env, .env.*) are ignored by the root .gitignore.

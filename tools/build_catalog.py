@@ -13,8 +13,9 @@ LANG_META = {
     "csharp": ("csharp", "C# 12 / .NET 8", "dotnet test CodeSmells.sln  # from the repo root"),
     "react-ts": ("react-ts", "React 19 + TypeScript 5", "cd react-ts && npm ci && npm run check"),
     "go": ("go", "Go 1.24", "cd go && go vet ./... && go test ./..."),
+    "angular": ("angular", "Angular 22", "cd angular && npm ci && npm run check"),
 }
-LANG_LABEL = {"python": "Python", "csharp": "C#", "react-ts": "React/TS", "go": "Go"}
+LANG_LABEL = {"python": "Python", "csharp": "C#", "react-ts": "React/TS", "go": "Go", "angular": "Angular"}
 
 
 def pascal(s: str) -> str:
@@ -35,6 +36,8 @@ def code_paths(cat_code: str, slug: str, langs: list[str]) -> dict[str, str]:
         out["react-ts"] = f"react-ts/src/smells/{cat_code}/{slug}/"
     if "go" in langs:
         out["go"] = f"go/smells/{cat_code}/{slug}/"
+    if "angular" in langs:
+        out["angular"] = f"angular/src/smells/{cat_code}/{slug}/"
     return out
 
 
