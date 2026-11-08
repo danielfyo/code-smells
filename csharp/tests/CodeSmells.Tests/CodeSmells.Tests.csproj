@@ -1,13 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <LangVersion>latest</LangVersion>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <NoWarn>$(NoWarn);CS0168;CS0219;CS1998;xUnit1004;xUnit2013</NoWarn>
+    <!-- CA2007: no ConfigureAwait in tests. xUnit1004: the skipped test is the "Ignored Tests" smell.
+         CS0168/CS0219/CS1998: smelly test examples on purpose. -->
+    <NoWarn>$(NoWarn);CS0168;CS0219;CS1998;CA2007;xUnit1004;xUnit2013</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>

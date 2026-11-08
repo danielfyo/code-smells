@@ -1,13 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <LangVersion>latest</LangVersion>
     <RootNamespace>CodeSmells</RootNamespace>
-    <!-- Smelly examples contain anti-patterns on purpose; warnings must not break the build. -->
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <!-- Compiler warnings that Smelly examples trigger on purpose (unused variables and fields,
+         async without await, unobserved tasks). Analyzer rules are scoped in .editorconfig. -->
     <NoWarn>$(NoWarn);CS0168;CS0169;CS0219;CS0414;CS0649;CS1998;CS4014</NoWarn>
   </PropertyGroup>
 
