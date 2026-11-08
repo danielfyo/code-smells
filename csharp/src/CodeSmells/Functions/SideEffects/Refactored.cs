@@ -22,7 +22,11 @@ public sealed class PromotionService
     // ...and the state change has a name that announces it.
     public void ApplySummerPromo(Cart cart)
     {
-        if (!IsEligibleForSummerPromo(cart)) return;
+        if (!IsEligibleForSummerPromo(cart))
+        {
+            return;
+        }
+
         cart.Total -= Discount;
         cart.AppliedPromotions.Add(Code);
         AuditLog.Add($"promo {Code} applied to {cart.CustomerId}");

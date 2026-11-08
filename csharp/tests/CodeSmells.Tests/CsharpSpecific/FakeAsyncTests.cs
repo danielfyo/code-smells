@@ -1,6 +1,6 @@
 using System.Text;
-using S = CodeSmells.CsharpSpecific.FakeAsync.Smelly;
 using R = CodeSmells.CsharpSpecific.FakeAsync.Refactored;
+using S = CodeSmells.CsharpSpecific.FakeAsync.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

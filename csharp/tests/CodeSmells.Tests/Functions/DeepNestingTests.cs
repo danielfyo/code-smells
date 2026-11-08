@@ -1,5 +1,5 @@
-using S = CodeSmells.Functions.DeepNesting.Smelly;
 using R = CodeSmells.Functions.DeepNesting.Refactored;
+using S = CodeSmells.Functions.DeepNesting.Smelly;
 
 namespace CodeSmells.Tests.Functions;
 

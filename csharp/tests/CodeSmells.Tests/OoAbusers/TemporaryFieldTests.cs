@@ -1,5 +1,5 @@
-using S = CodeSmells.OoAbusers.TemporaryField.Smelly;
 using R = CodeSmells.OoAbusers.TemporaryField.Refactored;
+using S = CodeSmells.OoAbusers.TemporaryField.Smelly;
 
 namespace CodeSmells.Tests.OoAbusers;
 

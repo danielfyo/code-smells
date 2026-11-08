@@ -11,7 +11,10 @@ public class InMemoryUserRepository
 
     public void Add(User user)
     {
-        if (!_users.TryAdd(user.Id, user)) throw new InvalidOperationException($"User {user.Id} already exists");
+        if (!_users.TryAdd(user.Id, user))
+        {
+            throw new InvalidOperationException($"User {user.Id} already exists");
+        }
     }
 
     public User? Find(int id) => _users.GetValueOrDefault(id);

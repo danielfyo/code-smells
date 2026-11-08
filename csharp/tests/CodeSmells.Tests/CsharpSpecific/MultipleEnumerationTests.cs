@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.MultipleEnumeration.Smelly;
 using R = CodeSmells.CsharpSpecific.MultipleEnumeration.Refactored;
+using S = CodeSmells.CsharpSpecific.MultipleEnumeration.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 
@@ -13,7 +13,10 @@ public class MultipleEnumerationTests
         public IEnumerable<decimal> Run()
         {
             Executions++;
-            foreach (var row in rows) yield return row;
+            foreach (var row in rows)
+            {
+                yield return row;
+            }
         }
     }
 
@@ -49,6 +52,9 @@ public class MultipleEnumerationTests
     // Every enumeration calls Run() again, just like a deferred LINQ query.
     private static IEnumerable<decimal> Wrap(CountingQuery query)
     {
-        foreach (var row in query.Run()) yield return row;
+        foreach (var row in query.Run())
+        {
+            yield return row;
+        }
     }
 }

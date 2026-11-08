@@ -1,5 +1,5 @@
-using S = CodeSmells.ChangePreventers.ParallelInheritanceHierarchies.Smelly;
 using R = CodeSmells.ChangePreventers.ParallelInheritanceHierarchies.Refactored;
+using S = CodeSmells.ChangePreventers.ParallelInheritanceHierarchies.Smelly;
 
 namespace CodeSmells.Tests.ChangePreventers;
 

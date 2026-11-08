@@ -33,7 +33,11 @@ public sealed class Warehouse
             order.MarkBackordered();
             return;
         }
-        foreach (var line in order.Lines) _stock[line.Sku] -= line.Quantity;
+        foreach (var line in order.Lines)
+        {
+            _stock[line.Sku] -= line.Quantity;
+        }
+
         order.MarkShipped();
     }
 }

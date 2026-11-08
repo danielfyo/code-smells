@@ -24,7 +24,11 @@ public sealed class Subscription(string customerId, decimal monthlyPrice, DateOn
     public void Upgrade()
     {
         EnsureActive();
-        if (Plan == Plan.Premium) return;
+        if (Plan == Plan.Premium)
+        {
+            return;
+        }
+
         Plan = Plan.Premium;
         MonthlyPrice += PremiumSurcharge;
     }
@@ -33,6 +37,9 @@ public sealed class Subscription(string customerId, decimal monthlyPrice, DateOn
 
     private void EnsureActive()
     {
-        if (Status != SubscriptionStatus.Active) throw new InvalidOperationException("Subscription is not active");
+        if (Status != SubscriptionStatus.Active)
+        {
+            throw new InvalidOperationException("Subscription is not active");
+        }
     }
 }

@@ -1,5 +1,5 @@
-using S = CodeSmells.General.ConventionOverStructure.Smelly;
 using R = CodeSmells.General.ConventionOverStructure.Refactored;
+using S = CodeSmells.General.ConventionOverStructure.Smelly;
 
 namespace CodeSmells.Tests.General;
 

@@ -13,7 +13,10 @@ public static class BusinessCalendarExtensions
         for (var added = 0; added < businessDays;)
         {
             date = date.AddDays(1);
-            if (date.IsBusinessDay(holidays)) added++;
+            if (date.IsBusinessDay(holidays))
+            {
+                added++;
+            }
         }
         return date;
     }

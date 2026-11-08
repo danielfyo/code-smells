@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.ExposedMutableCollections.Smelly;
 using R = CodeSmells.CsharpSpecific.ExposedMutableCollections.Refactored;
+using S = CodeSmells.CsharpSpecific.ExposedMutableCollections.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

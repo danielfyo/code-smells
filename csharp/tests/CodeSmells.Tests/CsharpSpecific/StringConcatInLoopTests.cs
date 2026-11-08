@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.StringConcatInLoop.Smelly;
 using R = CodeSmells.CsharpSpecific.StringConcatInLoop.Refactored;
+using S = CodeSmells.CsharpSpecific.StringConcatInLoop.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

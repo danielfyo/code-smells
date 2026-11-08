@@ -1,5 +1,5 @@
-using S = CodeSmells.ChangePreventers.DivergentChange.Smelly;
 using R = CodeSmells.ChangePreventers.DivergentChange.Refactored;
+using S = CodeSmells.ChangePreventers.DivergentChange.Smelly;
 
 namespace CodeSmells.Tests.ChangePreventers;
 

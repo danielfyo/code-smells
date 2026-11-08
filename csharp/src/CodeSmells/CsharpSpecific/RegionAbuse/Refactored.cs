@@ -15,9 +15,21 @@ public class CustomerValidator(CustomerRepository repository)
 {
     public string? Validate(string name, string email)
     {
-        if (string.IsNullOrWhiteSpace(name)) return "Name is required";
-        if (!email.Contains('@')) return "Invalid email";
-        if (repository.Exists(email)) return "Email already registered";
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            return "Name is required";
+        }
+
+        if (!email.Contains('@'))
+        {
+            return "Invalid email";
+        }
+
+        if (repository.Exists(email))
+        {
+            return "Email already registered";
+        }
+
         return null;
     }
 }
@@ -45,7 +57,10 @@ public class RegisterCustomer(CustomerRepository repository, CustomerValidator v
     public RegistrationResult Handle(string name, string email, string country)
     {
         var error = validator.Validate(name, email);
-        if (error is not null) return new RegistrationResult(false, error, 0m);
+        if (error is not null)
+        {
+            return new RegistrationResult(false, error, 0m);
+        }
 
         repository.Save(email, name);
         var discount = WelcomeDiscountPolicy.For(country);

@@ -1,5 +1,5 @@
-using S = CodeSmells.General.ObviousBehaviorUnimplemented.Smelly;
 using R = CodeSmells.General.ObviousBehaviorUnimplemented.Refactored;
+using S = CodeSmells.General.ObviousBehaviorUnimplemented.Smelly;
 
 namespace CodeSmells.Tests.General;
 

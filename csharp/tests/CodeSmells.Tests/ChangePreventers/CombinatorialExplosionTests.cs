@@ -1,5 +1,5 @@
-using S = CodeSmells.ChangePreventers.CombinatorialExplosion.Smelly;
 using R = CodeSmells.ChangePreventers.CombinatorialExplosion.Refactored;
+using S = CodeSmells.ChangePreventers.CombinatorialExplosion.Smelly;
 
 namespace CodeSmells.Tests.ChangePreventers;
 

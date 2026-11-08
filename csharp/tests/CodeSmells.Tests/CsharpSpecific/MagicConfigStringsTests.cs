@@ -2,8 +2,8 @@ using CodeSmells.CsharpSpecific.MagicConfigStrings.Refactored;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using S = CodeSmells.CsharpSpecific.MagicConfigStrings.Smelly;
 using R = CodeSmells.CsharpSpecific.MagicConfigStrings.Refactored;
+using S = CodeSmells.CsharpSpecific.MagicConfigStrings.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

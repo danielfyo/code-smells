@@ -1,5 +1,5 @@
-using S = CodeSmells.OoAbusers.RefusedBequest.Smelly;
 using R = CodeSmells.OoAbusers.RefusedBequest.Refactored;
+using S = CodeSmells.OoAbusers.RefusedBequest.Smelly;
 
 namespace CodeSmells.Tests.OoAbusers;
 

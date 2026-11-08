@@ -1,5 +1,5 @@
-using S = CodeSmells.Names.UncommunicativeName.Smelly;
 using R = CodeSmells.Names.UncommunicativeName.Refactored;
+using S = CodeSmells.Names.UncommunicativeName.Smelly;
 
 namespace CodeSmells.Tests.Names;
 

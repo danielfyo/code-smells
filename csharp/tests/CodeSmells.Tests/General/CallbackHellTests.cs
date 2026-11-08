@@ -1,5 +1,5 @@
-using S = CodeSmells.General.CallbackHell.Smelly;
 using R = CodeSmells.General.CallbackHell.Refactored;
+using S = CodeSmells.General.CallbackHell.Smelly;
 
 namespace CodeSmells.Tests.General;
 

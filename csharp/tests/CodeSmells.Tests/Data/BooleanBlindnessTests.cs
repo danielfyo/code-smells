@@ -1,5 +1,5 @@
-using S = CodeSmells.Data.BooleanBlindness.Smelly;
 using R = CodeSmells.Data.BooleanBlindness.Refactored;
+using S = CodeSmells.Data.BooleanBlindness.Smelly;
 
 namespace CodeSmells.Tests.Data;
 

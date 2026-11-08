@@ -1,5 +1,5 @@
-using S = CodeSmells.ErrorHandling.IncorrectBoundaryBehavior.Smelly;
 using R = CodeSmells.ErrorHandling.IncorrectBoundaryBehavior.Refactored;
+using S = CodeSmells.ErrorHandling.IncorrectBoundaryBehavior.Smelly;
 
 namespace CodeSmells.Tests.ErrorHandling;
 

@@ -1,5 +1,5 @@
-using S = CodeSmells.Couplers.HiddenTemporalCoupling.Smelly;
 using R = CodeSmells.Couplers.HiddenTemporalCoupling.Refactored;
+using S = CodeSmells.Couplers.HiddenTemporalCoupling.Smelly;
 
 namespace CodeSmells.Tests.Couplers;
 

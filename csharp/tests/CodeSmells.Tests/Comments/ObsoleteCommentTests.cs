@@ -1,6 +1,6 @@
 using System.Globalization;
-using S = CodeSmells.Comments.ObsoleteComment.Smelly;
 using R = CodeSmells.Comments.ObsoleteComment.Refactored;
+using S = CodeSmells.Comments.ObsoleteComment.Smelly;
 
 namespace CodeSmells.Tests.Comments;
 

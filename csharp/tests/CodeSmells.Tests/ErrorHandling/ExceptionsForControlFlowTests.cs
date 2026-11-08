@@ -1,5 +1,5 @@
-using S = CodeSmells.ErrorHandling.ExceptionsForControlFlow.Smelly;
 using R = CodeSmells.ErrorHandling.ExceptionsForControlFlow.Refactored;
+using S = CodeSmells.ErrorHandling.ExceptionsForControlFlow.Smelly;
 
 namespace CodeSmells.Tests.ErrorHandling;
 

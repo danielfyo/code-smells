@@ -1,5 +1,5 @@
-using S = CodeSmells.Data.StatusVariable.Smelly;
 using R = CodeSmells.Data.StatusVariable.Refactored;
+using S = CodeSmells.Data.StatusVariable.Smelly;
 
 namespace CodeSmells.Tests.Data;
 

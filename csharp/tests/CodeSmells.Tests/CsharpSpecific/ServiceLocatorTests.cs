@@ -1,6 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
-using S = CodeSmells.CsharpSpecific.ServiceLocator.Smelly;
 using R = CodeSmells.CsharpSpecific.ServiceLocator.Refactored;
+using S = CodeSmells.CsharpSpecific.ServiceLocator.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

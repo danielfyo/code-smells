@@ -23,7 +23,11 @@ public class OrderCsvExporter
         var count = 0;
         while (reader.ReadLine() is { } line)
         {
-            if (line.Length == 0) throw new InvalidDataException("Empty line");
+            if (line.Length == 0)
+            {
+                throw new InvalidDataException("Empty line");
+            }
+
             count++;
         }
         return count;

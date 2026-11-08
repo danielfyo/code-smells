@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.SyncOverAsync.Smelly;
 using R = CodeSmells.CsharpSpecific.SyncOverAsync.Refactored;
+using S = CodeSmells.CsharpSpecific.SyncOverAsync.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

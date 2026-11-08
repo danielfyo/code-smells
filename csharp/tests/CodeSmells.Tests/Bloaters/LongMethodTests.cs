@@ -1,5 +1,5 @@
-using S = CodeSmells.Bloaters.LongMethod.Smelly;
 using R = CodeSmells.Bloaters.LongMethod.Refactored;
+using S = CodeSmells.Bloaters.LongMethod.Smelly;
 
 namespace CodeSmells.Tests.Bloaters;
 
@@ -8,7 +8,11 @@ public class LongMethodTests
     private static string Smelly(string customer, bool vip, string country, params (string Sku, int Qty, decimal Price)[] lines)
     {
         var order = new S.Order { CustomerName = customer, IsVip = vip, Country = country };
-        foreach (var l in lines) order.Lines.Add(new S.OrderLine { Sku = l.Sku, Quantity = l.Qty, UnitPrice = l.Price });
+        foreach (var l in lines)
+        {
+            order.Lines.Add(new S.OrderLine { Sku = l.Sku, Quantity = l.Qty, UnitPrice = l.Price });
+        }
+
         return new S.ReceiptService().BuildReceipt(order);
     }
 

@@ -1,5 +1,5 @@
-using S = CodeSmells.General.TooMuchInformation.Smelly;
 using R = CodeSmells.General.TooMuchInformation.Refactored;
+using S = CodeSmells.General.TooMuchInformation.Smelly;
 
 namespace CodeSmells.Tests.General;
 

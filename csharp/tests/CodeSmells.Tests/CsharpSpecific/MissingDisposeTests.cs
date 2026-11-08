@@ -1,6 +1,6 @@
 using System.Text;
-using S = CodeSmells.CsharpSpecific.MissingDispose.Smelly;
 using R = CodeSmells.CsharpSpecific.MissingDispose.Refactored;
+using S = CodeSmells.CsharpSpecific.MissingDispose.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

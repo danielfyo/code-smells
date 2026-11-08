@@ -1,5 +1,5 @@
-using S = CodeSmells.Functions.NegativeConditionals.Smelly;
 using R = CodeSmells.Functions.NegativeConditionals.Refactored;
+using S = CodeSmells.Functions.NegativeConditionals.Smelly;
 
 namespace CodeSmells.Tests.Functions;
 

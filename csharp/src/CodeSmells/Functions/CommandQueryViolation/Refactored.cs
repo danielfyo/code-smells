@@ -13,7 +13,11 @@ public sealed class GiftCardRegistry
     // ...and the command changes state without returning business information.
     public void Charge(string code, decimal amount)
     {
-        if (amount > BalanceOf(code)) throw new InvalidOperationException("Saldo insuficiente");
+        if (amount > BalanceOf(code))
+        {
+            throw new InvalidOperationException("Saldo insuficiente");
+        }
+
         _balances[code] = BalanceOf(code) - amount;
     }
 

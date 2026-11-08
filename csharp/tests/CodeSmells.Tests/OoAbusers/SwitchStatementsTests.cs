@@ -1,5 +1,5 @@
-using S = CodeSmells.OoAbusers.SwitchStatements.Smelly;
 using R = CodeSmells.OoAbusers.SwitchStatements.Refactored;
+using S = CodeSmells.OoAbusers.SwitchStatements.Smelly;
 
 namespace CodeSmells.Tests.OoAbusers;
 

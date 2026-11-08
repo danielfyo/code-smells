@@ -48,10 +48,26 @@ public sealed class LibraryService(MemberRegistry members, Catalog catalog, Fine
 
     public void Lend(string isbn, string memberId, DateOnly today)
     {
-        if (!members.Exists(memberId)) throw new InvalidOperationException("Unknown member");
-        if (!catalog.Exists(isbn)) throw new InvalidOperationException("Unknown book");
-        if (_loans.ContainsKey(isbn)) throw new InvalidOperationException("Book already on loan");
-        if (fines.Of(memberId) > 0) throw new InvalidOperationException("Member has pending fines");
+        if (!members.Exists(memberId))
+        {
+            throw new InvalidOperationException("Unknown member");
+        }
+
+        if (!catalog.Exists(isbn))
+        {
+            throw new InvalidOperationException("Unknown book");
+        }
+
+        if (_loans.ContainsKey(isbn))
+        {
+            throw new InvalidOperationException("Book already on loan");
+        }
+
+        if (fines.Of(memberId) > 0)
+        {
+            throw new InvalidOperationException("Member has pending fines");
+        }
+
         _loans[isbn] = new Loan(memberId, today.AddDays(14));
         notifier.Send(members.NameOf(memberId), $"you borrowed '{catalog.TitleOf(isbn)}'");
     }

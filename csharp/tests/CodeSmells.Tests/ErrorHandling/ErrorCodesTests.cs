@@ -1,5 +1,5 @@
-using S = CodeSmells.ErrorHandling.ErrorCodes.Smelly;
 using R = CodeSmells.ErrorHandling.ErrorCodes.Refactored;
+using S = CodeSmells.ErrorHandling.ErrorCodes.Smelly;
 
 namespace CodeSmells.Tests.ErrorHandling;
 
@@ -11,7 +11,9 @@ public class ErrorCodesTests
         var s = new S.TicketOffice(); s.AddEvent("concert", 3);
         var r = new R.TicketOffice(); r.AddEvent("concert", 3);
         foreach (var (ev, qty) in new[] { ("concert", 2), ("concert", 2), ("opera", 1), ("concert", 0), ("concert", 1) })
+        {
             Assert.Equal(S.BookingUi.Describe(s.Book(ev, qty)), R.BookingUi.Describe(r.Book(ev, qty)));
+        }
     }
 
     [Fact]

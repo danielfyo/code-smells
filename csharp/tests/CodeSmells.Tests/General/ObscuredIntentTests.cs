@@ -1,5 +1,5 @@
-using S = CodeSmells.General.ObscuredIntent.Smelly;
 using R = CodeSmells.General.ObscuredIntent.Refactored;
+using S = CodeSmells.General.ObscuredIntent.Smelly;
 
 namespace CodeSmells.Tests.General;
 

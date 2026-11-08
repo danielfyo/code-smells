@@ -1,6 +1,6 @@
 using System.Globalization;
-using S = CodeSmells.CsharpSpecific.StaticMutableState.Smelly;
 using R = CodeSmells.CsharpSpecific.StaticMutableState.Refactored;
+using S = CodeSmells.CsharpSpecific.StaticMutableState.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

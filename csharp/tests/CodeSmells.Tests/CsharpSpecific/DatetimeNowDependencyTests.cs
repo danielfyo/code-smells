@@ -1,5 +1,5 @@
-using S = CodeSmells.CsharpSpecific.DatetimeNowDependency.Smelly;
 using R = CodeSmells.CsharpSpecific.DatetimeNowDependency.Refactored;
+using S = CodeSmells.CsharpSpecific.DatetimeNowDependency.Smelly;
 
 namespace CodeSmells.Tests.CsharpSpecific;
 

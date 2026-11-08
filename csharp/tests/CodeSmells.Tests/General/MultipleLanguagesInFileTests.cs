@@ -1,5 +1,5 @@
-using S = CodeSmells.General.MultipleLanguagesInFile.Smelly;
 using R = CodeSmells.General.MultipleLanguagesInFile.Refactored;
+using S = CodeSmells.General.MultipleLanguagesInFile.Smelly;
 
 namespace CodeSmells.Tests.General;
 

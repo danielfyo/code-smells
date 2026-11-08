@@ -15,7 +15,11 @@ public static class ParkingFeeCalculator
 
     public static decimal Fee(int minutes, VehicleType vehicle, bool isWeekend)
     {
-        if (minutes <= FreeGraceMinutes) return 0m;
+        if (minutes <= FreeGraceMinutes)
+        {
+            return 0m;
+        }
+
         var billedHours = (int)Math.Ceiling(minutes / (double)MinutesPerHour);
         var fee = vehicle switch
         {

@@ -8,13 +8,21 @@ public sealed class Account(string id, decimal balance, bool isFrozen = false)
 
     public void Debit(decimal amount)
     {
-        if (amount > Balance) throw new InvalidOperationException("Insufficient funds");
+        if (amount > Balance)
+        {
+            throw new InvalidOperationException("Insufficient funds");
+        }
+
         Balance -= amount;
     }
 
     public void Credit(decimal amount)
     {
-        if (IsFrozen) throw new InvalidOperationException($"Account {Id} is frozen");
+        if (IsFrozen)
+        {
+            throw new InvalidOperationException($"Account {Id} is frozen");
+        }
+
         Balance += amount;
     }
 }

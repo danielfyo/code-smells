@@ -20,7 +20,11 @@ public class PriceCalculator
 
     private decimal ApplyVolumeDiscount(decimal price, int quantity)
     {
-        if (quantity < 10) return price;
+        if (quantity < 10)
+        {
+            return price;
+        }
+
         _appliedRules.Add("volume");
         return price * 0.9m;
     }

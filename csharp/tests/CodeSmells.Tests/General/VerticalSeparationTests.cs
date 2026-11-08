@@ -1,5 +1,5 @@
-using S = CodeSmells.General.VerticalSeparation.Smelly;
 using R = CodeSmells.General.VerticalSeparation.Refactored;
+using S = CodeSmells.General.VerticalSeparation.Smelly;
 
 namespace CodeSmells.Tests.General;
 

@@ -1,5 +1,5 @@
-using S = CodeSmells.Data.MagicNumbers.Smelly;
 using R = CodeSmells.Data.MagicNumbers.Refactored;
+using S = CodeSmells.Data.MagicNumbers.Smelly;
 
 namespace CodeSmells.Tests.Data;
 

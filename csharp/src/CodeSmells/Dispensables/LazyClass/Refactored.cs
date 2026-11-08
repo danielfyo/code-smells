@@ -11,7 +11,11 @@ public sealed class InventoryItem(string sku, int quantity)
 
     public void Remove(int units)
     {
-        if (units > Quantity) throw new InvalidOperationException("Insufficient stock");
+        if (units > Quantity)
+        {
+            throw new InvalidOperationException("Insufficient stock");
+        }
+
         Quantity -= units;
     }
 }

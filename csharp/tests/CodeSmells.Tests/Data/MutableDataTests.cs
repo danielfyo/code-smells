@@ -1,5 +1,5 @@
-using S = CodeSmells.Data.MutableData.Smelly;
 using R = CodeSmells.Data.MutableData.Refactored;
+using S = CodeSmells.Data.MutableData.Smelly;
 
 namespace CodeSmells.Tests.Data;
 

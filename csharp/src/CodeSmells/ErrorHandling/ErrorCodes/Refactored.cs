@@ -20,9 +20,21 @@ public sealed class TicketOffice
 
     public BookingResult Book(string eventId, int quantity)
     {
-        if (quantity <= 0) return new BookingResult.InvalidQuantity(quantity);
-        if (!_availableSeats.TryGetValue(eventId, out var left)) return new BookingResult.UnknownEvent(eventId);
-        if (left < quantity) return new BookingResult.SoldOut(left);
+        if (quantity <= 0)
+        {
+            return new BookingResult.InvalidQuantity(quantity);
+        }
+
+        if (!_availableSeats.TryGetValue(eventId, out var left))
+        {
+            return new BookingResult.UnknownEvent(eventId);
+        }
+
+        if (left < quantity)
+        {
+            return new BookingResult.SoldOut(left);
+        }
+
         _availableSeats[eventId] = left - quantity;
         return new BookingResult.Booked(_nextBooking++);
     }

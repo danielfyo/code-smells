@@ -1,5 +1,5 @@
-using S = CodeSmells.Couplers.InappropriateIntimacy.Smelly;
 using R = CodeSmells.Couplers.InappropriateIntimacy.Refactored;
+using S = CodeSmells.Couplers.InappropriateIntimacy.Smelly;
 
 namespace CodeSmells.Tests.Couplers;
 

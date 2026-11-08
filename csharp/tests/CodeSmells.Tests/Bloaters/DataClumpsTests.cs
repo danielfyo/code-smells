@@ -1,5 +1,5 @@
-using S = CodeSmells.Bloaters.DataClumps.Smelly;
 using R = CodeSmells.Bloaters.DataClumps.Refactored;
+using S = CodeSmells.Bloaters.DataClumps.Smelly;
 
 namespace CodeSmells.Tests.Bloaters;
 

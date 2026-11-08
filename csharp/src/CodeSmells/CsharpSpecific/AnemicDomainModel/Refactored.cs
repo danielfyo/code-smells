@@ -20,14 +20,22 @@ public class Order
 
     public void AddLine(string sku, int quantity, decimal unitPrice)
     {
-        if (Status != OrderStatus.Draft) throw new InvalidOperationException("Order is not editable");
+        if (Status != OrderStatus.Draft)
+        {
+            throw new InvalidOperationException("Order is not editable");
+        }
+
         ArgumentOutOfRangeException.ThrowIfNegativeOrZero(quantity);
         _lines.Add(new OrderLine(sku, quantity, unitPrice));
     }
 
     public void Ship()
     {
-        if (_lines.Count == 0) throw new InvalidOperationException("Cannot ship an empty order");
+        if (_lines.Count == 0)
+        {
+            throw new InvalidOperationException("Cannot ship an empty order");
+        }
+
         Status = OrderStatus.Shipped;
     }
 }
