@@ -1,0 +1,19 @@
+[project]
+name = "code-smells"
+version = "1.0.0"
+description = "Code smell catalog with smelly and refactored examples in Python"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "mypy>=1.10", "ruff>=0.5"]
+
+[tool.pytest.ini_options]
+testpaths = ["code_smells"]
+python_files = ["test_*.py"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+# Smelly examples contain anti-patterns on purpose.
+extend-exclude = ["**/smelly.py"]
