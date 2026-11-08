@@ -1,0 +1,12 @@
+# Smelly examples demonstrate insecure and low-quality code on purpose (SQL built by string
+# concatenation, disabled TLS checks, swallowed exceptions...). They are excluded from code scanning
+# so that real findings in refactored code, tools and workflows stay visible.
+name: code-smells CodeQL config
+paths-ignore:
+  - "**/smelly.py"
+  - "**/smelly/**"
+  - "**/Smelly*.cs"
+  - "**/Smelly.ts"
+  - "**/Smelly.tsx"
+  - "**/smelly.test.tsx"
+  - "**/node_modules/**"
