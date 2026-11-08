@@ -1,0 +1,6 @@
+<h2>{{ category() }}</h2>
+<ul class="catalog">
+  @for (product of products(); track product.id) {
+    <li><span>{{ product.name }}</span><span class="price">{{ product.price }} EUR</span></li>
+  }
+</ul>
