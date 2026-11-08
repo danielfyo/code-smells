@@ -1,19 +1,39 @@
 <#
 .SYNOPSIS
   Applies the repository settings that cannot be stored in files: description and topics, merge
-  strategy, security features, Actions token permissions, and rulesets protecting main and release tags.
+  strategy, security features, Actions token permissions, and rulesets protecting a branch and release tags.
 
 .DESCRIPTION
-  Requirements: GitHub CLI (https://cli.github.com) authenticated as a repository admin (`gh auth login`).
-  The script is idempotent: run it again at any time to re-apply the settings.
+  Runs from any folder: it only talks to the GitHub API through the GitHub CLI (https://cli.github.com),
+  so the repository does not need to be cloned. If gh is not authenticated, it starts `gh auth login`.
+  The account must be an admin of the repository. The script is idempotent: run it again at any time.
+
+.PARAMETER Repo
+  Repository as owner/name. Asked interactively when omitted.
+
+.PARAMETER Branch
+  Branch protected by the ruleset (usually the default branch). Asked interactively when omitted.
+
+.PARAMETER Description
+  "About" description. Defaults to this project's description only for danielfyo/code-smells;
+  for other repositories the current description is kept unless this parameter is passed.
+
+.PARAMETER Topics
+  Repository topics. Same default rule as -Description.
 
 .EXAMPLE
-  .\scripts\setup-repo.ps1
-  .\scripts\setup-repo.ps1 -Repo danielfyo/code-smells
+  .\setup-repo.ps1
+  .\setup-repo.ps1 -Repo danielfyo/code-smells -Branch main
 #>
 param(
-  [string]$Repo = 'danielfyo/code-smells'
+  [string]$Repo,
+  [string]$Branch,
+  [string]$Description,
+  [string[]]$Topics
 )
+
+# Lets this PowerShell process run scripts without prompts (Windows only; it does not change system settings).
+if ($env:OS -eq 'Windows_NT') { Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force }
 
 $ErrorActionPreference = 'Stop'
 $Utf8NoBom = [System.Text.UTF8Encoding]::new($false)
@@ -50,14 +70,50 @@ function Set-Ruleset([hashtable]$Ruleset) {
 }
 
 if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
-  throw 'GitHub CLI (gh) is required: https://cli.github.com'
+  throw 'GitHub CLI (gh) is required: https://cli.github.com (winget install --id GitHub.cli)'
 }
-gh auth status | Out-Null
-if ($LASTEXITCODE -ne 0) { throw 'Run "gh auth login" first.' }
+
+# Authenticate if needed.
+gh auth status *> $null
+if ($LASTEXITCODE -ne 0) {
+  Write-Host 'GitHub CLI is not authenticated. Starting "gh auth login"...' -ForegroundColor Yellow
+  gh auth login --hostname github.com --git-protocol https --web
+  gh auth status *> $null
+  if ($LASTEXITCODE -ne 0) { throw 'GitHub authentication failed.' }
+}
+
+# Ask for the repository and branch when they were not passed as parameters.
+while ($Repo -notmatch '^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$') {
+  if ($Repo) { Write-Host "  '$Repo' is not in owner/name format." -ForegroundColor Yellow }
+  $Repo = (Read-Host 'Repository (owner/name)').Trim()
+}
+if (-not $Branch) {
+  $default = gh api "repos/$Repo" --jq .default_branch 2>$null
+  if ($LASTEXITCODE -ne 0 -or -not $default) { throw "Repository '$Repo' not found or not accessible." }
+  $answer = (Read-Host "Branch to protect [$default]").Trim()
+  $Branch = if ($answer) { $answer } else { $default }
+}
+
+# Validate access before changing anything.
+$isAdmin = gh api "repos/$Repo" --jq .permissions.admin 2>$null
+if ($LASTEXITCODE -ne 0) { throw "Repository '$Repo' not found or not accessible." }
+if ($isAdmin -ne 'true') { throw "The authenticated account is not an admin of '$Repo'." }
+gh api "repos/$Repo/branches/$Branch" --silent 2>$null
+if ($LASTEXITCODE -ne 0) { throw "Branch '$Branch' does not exist in '$Repo'." }
+Write-Host "Configuring $Repo (protected branch: $Branch)" -ForegroundColor Green
+
+if ($Repo -eq 'danielfyo/code-smells') {
+  if (-not $Description) {
+    $Description = 'A hands-on catalog of 176 code smells: explained, implemented smelly vs. refactored, and tested in Python, C#/.NET, React + TypeScript and Go.'
+  }
+  if (-not $Topics) {
+    $Topics = @('code-smells', 'refactoring', 'clean-code', 'software-design', 'code-quality', 'best-practices',
+                'anti-patterns', 'testing', 'python', 'csharp', 'dotnet', 'typescript', 'react', 'golang', 'education')
+  }
+}
 
 Step 'General settings and merge strategy'
-Invoke-GitHub PATCH "repos/$Repo" @{
-  description                 = 'A hands-on catalog of 176 code smells: explained, implemented smelly vs. refactored, and tested in Python, C#/.NET, React + TypeScript and Go.'
+$settings = @{
   has_wiki                    = $false
   has_projects                = $false
   allow_merge_commit          = $true
@@ -67,13 +123,14 @@ Invoke-GitHub PATCH "repos/$Repo" @{
   squash_merge_commit_message = 'PR_BODY'
   delete_branch_on_merge      = $true
   allow_update_branch         = $true
-} | Out-Null
+}
+if ($Description) { $settings.description = $Description }
+Invoke-GitHub PATCH "repos/$Repo" $settings | Out-Null
 
-Step 'Topics'
-Invoke-GitHub PUT "repos/$Repo/topics" @{
-  names = @('code-smells', 'refactoring', 'clean-code', 'software-design', 'code-quality', 'best-practices',
-            'anti-patterns', 'testing', 'python', 'csharp', 'dotnet', 'typescript', 'react', 'golang', 'education')
-} | Out-Null
+if ($Topics) {
+  Step 'Topics'
+  Invoke-GitHub PUT "repos/$Repo/topics" @{ names = @($Topics) } | Out-Null
+}
 
 Step 'Security features'
 Invoke-GitHub PUT "repos/$Repo/vulnerability-alerts" | Out-Null
@@ -98,12 +155,12 @@ $ok = Invoke-GitHub PUT "repos/$Repo/actions/permissions/fork-pr-contributor-app
 } -AllowFailure
 if (-not $ok) { Write-Host '   (set it in Settings -> Actions -> General -> Fork pull request workflows)' }
 
-Step 'Ruleset: protect main'
+Step "Ruleset: protect $Branch"
 Set-Ruleset @{
-  name        = 'Protect main'
+  name        = "Protect $Branch"
   target      = 'branch'
   enforcement = 'active'
-  conditions  = @{ ref_name = @{ include = @('~DEFAULT_BRANCH'); exclude = @() } }
+  conditions  = @{ ref_name = @{ include = @("refs/heads/$Branch"); exclude = @() } }
   rules       = @(
     @{ type = 'deletion' },
     @{ type = 'non_fast_forward' },

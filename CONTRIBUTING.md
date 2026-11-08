@@ -102,15 +102,19 @@ Nobody pushes to `main` directly: every change arrives through a pull request.
 ## Repository settings (maintainers)
 
 Settings that cannot live in files (rulesets protecting `main` and release tags, security features,
-topics, merge strategy) are applied with a script. It needs the GitHub CLI logged in as an admin:
+topics, merge strategy) are applied with a script. It only calls the GitHub API, so it works from any
+folder without cloning the repository. It needs the [GitHub CLI](https://cli.github.com) and an admin
+account; if `gh` is not logged in, the script runs `gh auth login` first. The repository and the branch
+to protect are parameters, and the script asks for them when they are omitted:
 
 ```powershell
-gh auth login
-.\scripts\setup-repo.ps1            # Windows PowerShell / PowerShell 7
+.\scripts\setup-repo.ps1                                         # asks for repository and branch
+.\scripts\setup-repo.ps1 -Repo danielfyo/code-smells -Branch main
 ```
 
 ```bash
-scripts/setup-repo.sh               # macOS / Linux (or: make setup-repo)
+scripts/setup-repo.sh                                  # macOS / Linux: asks for repository and branch
+scripts/setup-repo.sh danielfyo/code-smells main
 ```
 
 Both scripts are idempotent: run them again whenever the CI jobs or settings change.
