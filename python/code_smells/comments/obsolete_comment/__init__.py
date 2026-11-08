@@ -1,0 +1,1 @@
+"""Smell: obsolete_comment."""

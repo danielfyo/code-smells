@@ -1,0 +1,59 @@
+# Keeps every toolchain's dependencies up to date with weekly, grouped pull requests.
+# Commit messages follow Conventional Commits: "build(deps): ..." / "ci(deps): ...".
+# Major versions of libraries are upgraded deliberately by a maintainer (they can break the
+# examples), so version updates ignore them; Dependabot alerts still report vulnerabilities.
+# GitHub Actions are pinned to commit SHAs; Dependabot updates the SHA and the version comment.
+version: 2
+
+updates:
+  - package-ecosystem: nuget
+    directory: /csharp
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "*"
+        update-types: [version-update:semver-major]
+    commit-message: { prefix: build, include: scope }
+    groups:
+      dotnet:
+        patterns: ["*"]
+
+  - package-ecosystem: pip
+    directory: /python
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "*"
+        update-types: [version-update:semver-major]
+    commit-message: { prefix: build, include: scope }
+    groups:
+      python:
+        patterns: ["*"]
+
+  - package-ecosystem: gomod
+    directory: /go
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    commit-message: { prefix: build, include: scope }
+
+  - package-ecosystem: npm
+    directory: /react-ts
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "*"
+        update-types: [version-update:semver-major]
+    commit-message: { prefix: build, include: scope }
+    groups:
+      react-ts:
+        patterns: ["*"]
+        update-types: [minor, patch]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly, day: monday }
+    open-pull-requests-limit: 5
+    commit-message: { prefix: ci, include: scope }
+    groups:
+      actions:
+        patterns: ["*"]

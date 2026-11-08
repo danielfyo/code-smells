@@ -1,0 +1,1 @@
+"""Smell: obscured_intent."""

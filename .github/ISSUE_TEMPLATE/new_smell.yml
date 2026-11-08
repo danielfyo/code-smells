@@ -1,0 +1,32 @@
+name: New smell or improvement
+description: Propose a new code smell, a clearer explanation, a better example or a new detection rule.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Which smell or improvement? Include its name and a short definition.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Books, papers, official docs or linter rules that describe it.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why does it help learners?
+    validations:
+      required: true
+  - type: checkboxes
+    id: equivalence
+    attributes:
+      label: Equivalence
+      options:
+        - label: I understand that generic smells must be implemented in Python, C#, React + TypeScript and Go, with tests.
+          required: true

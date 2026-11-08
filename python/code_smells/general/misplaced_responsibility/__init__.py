@@ -1,0 +1,1 @@
+"""Smell: misplaced_responsibility."""

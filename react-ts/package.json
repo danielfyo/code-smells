@@ -1,0 +1,32 @@
+{
+  "name": "code-smells-react-ts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Code smell catalog with smelly and refactored examples in React + TypeScript",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "test:watch": "vitest",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitest/coverage-v8": "^5.1.0",
+    "jsdom": "^31.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

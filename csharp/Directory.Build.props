@@ -1,0 +1,33 @@
+<Project>
+  <!-- Shared settings for every project in the solution. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Deterministic>true</Deterministic>
+
+    <!-- Quality gates: refactored code and clean tests must build with zero warnings.
+         Smelly*.cs files are exempted through .editorconfig because they are bad on purpose. -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <!-- Required by the SDK to report IDE0005 (unused usings) at build time. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- CS1591: missing XML comments; the examples document intent with SMELL/REFACTOR comments.
+         Teaching-code noise:
+         CA1707 underscores in test names (xUnit convention), CA1822 "mark as static" suggestions,
+         CA1515/CA1724 public types and short names, CA1848 LoggerMessage delegates,
+         CA1716 namespaces such as "Smelly"/"Refactored"/"Shared", CA1861 inline arrays in examples. -->
+    <NoWarn>$(NoWarn);CS1591;CA1707;CA1822;CA1515;CA1724;CA1848;CA1716;CA1861</NoWarn>
+
+    <!-- Supply chain: restore from a committed lock file; CI restores in locked mode. -->
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <RestoreLockedMode>true</RestoreLockedMode>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,1 @@
+"""Smell: redundant_comment."""

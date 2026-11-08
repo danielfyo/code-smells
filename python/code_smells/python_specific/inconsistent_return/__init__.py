@@ -1,0 +1,1 @@
+"""Smell: inconsistent_return."""

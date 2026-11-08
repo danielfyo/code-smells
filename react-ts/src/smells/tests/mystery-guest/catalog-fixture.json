@@ -1,0 +1,6 @@
+[
+  { "sku": "A-1", "price": 10, "active": true },
+  { "sku": "A-2", "price": 25, "active": true },
+  { "sku": "A-3", "price": 99, "active": false },
+  { "sku": "A-4", "price": 40, "active": true }
+]

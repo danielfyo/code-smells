@@ -1,0 +1,1 @@
+"""Null Check / Null Abuse."""

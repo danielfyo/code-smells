@@ -1,0 +1,23 @@
+# Normalise line endings: LF in the repository and in working copies, on every OS.
+* text=auto eol=lf
+
+# Windows-only files keep CRLF.
+*.{cmd,bat,ps1} text eol=crlf
+*.sln           text eol=crlf
+
+# Binary files: never touch line endings, never diff as text.
+*.{png,jpg,jpeg,gif,ico,webp,pdf} binary
+*.{woff,woff2,ttf,eot}            binary
+
+# Diff drivers for better hunk headers.
+*.cs   diff=csharp
+*.py   diff=python
+*.go   diff=golang
+*.md   diff=markdown
+
+# GitHub Linguist: hide generated files from diffs and language stats.
+**/package-lock.json        linguist-generated=true
+**/packages.lock.json       linguist-generated=true
+catalog.json                linguist-generated=true
+docs/CATALOG.md             linguist-generated=true
+*/INDEX.md                  linguist-generated=true

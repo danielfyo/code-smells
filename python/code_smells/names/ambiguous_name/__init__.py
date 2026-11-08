@@ -1,0 +1,1 @@
+"""Smell: ambiguous_name."""

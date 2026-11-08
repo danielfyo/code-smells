@@ -1,0 +1,99 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with: { python-version: "3.12" }
+      - name: Generated files are up to date
+        run: |
+          python3 tools/build_catalog.py
+          git diff --exit-code -- catalog.json docs/CATALOG.md '*/INDEX.md'
+      - name: Every smell has docs and implementations
+        run: python3 tools/check_catalog.py --strict
+      - name: No broken documentation links
+        run: python3 tools/check_links.py
+
+  python:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: python } }
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with: { python-version: "3.12", cache: pip, cache-dependency-path: python/pyproject.toml }
+      - run: pip install -e ".[dev]"
+      - run: ruff check . && ruff format --check .
+      - run: mypy
+      - run: pytest --cov
+      - name: Coverage summary
+        run: |
+          { echo "## Python coverage"; coverage report --format=markdown; } >> "$GITHUB_STEP_SUMMARY"
+
+  csharp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
+        with: { dotnet-version: "8.0.x" }
+      - run: dotnet restore CodeSmells.sln --locked-mode
+      - run: dotnet build CodeSmells.sln --no-restore --configuration Release
+      - run: dotnet test CodeSmells.sln --no-build --configuration Release --collect:"XPlat Code Coverage" --results-directory coverage
+      - name: Coverage summary
+        run: |
+          dotnet tool install --global dotnet-reportgenerator-globaltool
+          reportgenerator -reports:"coverage/**/coverage.cobertura.xml" -targetdir:coverage/report -reporttypes:MarkdownSummaryGithub
+          { echo "## .NET coverage"; cat coverage/report/SummaryGithub.md; } >> "$GITHUB_STEP_SUMMARY"
+
+  react-ts:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: react-ts } }
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version: "22", cache: npm, cache-dependency-path: react-ts/package-lock.json }
+      - run: npm ci
+      - run: npm audit --audit-level=moderate
+      - run: npm run typecheck
+      - run: npm run coverage
+      - name: Coverage summary
+        run: |
+          { echo "## React + TypeScript coverage"; echo '```'; cat coverage/summary.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+  go:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: go } }
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with: { go-version-file: go/go.mod, cache-dependency-path: go/go.mod }
+      - name: gofmt
+        run: test -z "$(gofmt -l .)" || { gofmt -l .; exit 1; }
+      - run: go vet ./...
+      - run: go test -race -coverprofile=coverage.out ./...
+      - name: Coverage summary
+        run: |
+          { echo "## Go coverage"; echo '```'; go tool cover -func=coverage.out | tail -1; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
